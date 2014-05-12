@@ -1412,7 +1412,7 @@ ul.pager li a {
 }
 
 /* line 128, ../sass/components/_misc.scss */
-.clearfix {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;

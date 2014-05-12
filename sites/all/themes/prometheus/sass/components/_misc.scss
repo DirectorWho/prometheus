@@ -125,6 +125,6 @@ ul.pager li a {
   @include element-invisible;
 }
 
-.clearfix {
+.clearfix:after {
   @include clear-it;
 }
