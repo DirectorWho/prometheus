@@ -1453,12 +1453,17 @@ footer .region-footer p a:active {
   }
 
   /* line 177, ../sass/components/_menus.scss */
+  .region-menu .menu {
+    margin-top: 0;
+  }
+
+  /* line 181, ../sass/components/_menus.scss */
   #main-menu {
     margin-top: 1px;
     text-align: center;
   }
 
-  /* line 185, ../sass/components/_menus.scss */
+  /* line 189, ../sass/components/_menus.scss */
   .js .region-menu .menu,
   .js .region-menu .menu li ul {
     max-height: none;
@@ -1466,55 +1471,55 @@ footer .region-footer p a:active {
     z-index: 1000;
   }
 
-  /* line 191, ../sass/components/_menus.scss */
+  /* line 195, ../sass/components/_menus.scss */
   .region-menu .menu li.menuparent > a:after {
     content: '';
   }
 
-  /* line 195, ../sass/components/_menus.scss */
+  /* line 199, ../sass/components/_menus.scss */
   .region-menu .menu li.menuparent > a.toggled:after {
     content: '';
   }
 
-  /* line 199, ../sass/components/_menus.scss */
+  /* line 203, ../sass/components/_menus.scss */
   .footer-menu.menu {
     margin-top: .75em;
   }
-  /* line 201, ../sass/components/_menus.scss */
+  /* line 205, ../sass/components/_menus.scss */
   .footer-menu.menu li {
     border-bottom: 0;
     margin-left: 0;
     margin-right: 0;
   }
 
-  /* line 208, ../sass/components/_menus.scss */
+  /* line 212, ../sass/components/_menus.scss */
   .region-menu .menu li.menuparent > a:after {
     content: '';
   }
 
-  /* line 212, ../sass/components/_menus.scss */
+  /* line 216, ../sass/components/_menus.scss */
   .region-menu .menu li.menuparent {
     padding-bottom: .5em;
   }
 
-  /* line 217, ../sass/components/_menus.scss */
+  /* line 221, ../sass/components/_menus.scss */
   .region-menu .menu li,
   .footer-menu.menu li {
     border-top: none;
     padding: .5em 1em;
   }
-  /* line 221, ../sass/components/_menus.scss */
+  /* line 225, ../sass/components/_menus.scss */
   .region-menu .menu li.first,
   .footer-menu.menu li.first {
     padding-left: 0;
   }
-  /* line 224, ../sass/components/_menus.scss */
+  /* line 228, ../sass/components/_menus.scss */
   .region-menu .menu li.last,
   .footer-menu.menu li.last {
     border-right: none;
   }
 
-  /* line 230, ../sass/components/_menus.scss */
+  /* line 234, ../sass/components/_menus.scss */
   .region-menu .menu li,
   .footer-menu.menu li {
     display: inline-block;
@@ -1523,23 +1528,23 @@ footer .region-footer p a:active {
     font-weight: 100;
   }
 
-  /* line 237, ../sass/components/_menus.scss */
+  /* line 241, ../sass/components/_menus.scss */
   a.menu-link {
     display: none;
   }
 
-  /* line 241, ../sass/components/_menus.scss */
+  /* line 245, ../sass/components/_menus.scss */
   .menu ul {
     display: none;
   }
 
-  /* line 245, ../sass/components/_menus.scss */
+  /* line 249, ../sass/components/_menus.scss */
   .menu li:hover > ul {
     border-top: 3px solid #88753e;
     display: block;
   }
 
-  /* line 250, ../sass/components/_menus.scss */
+  /* line 254, ../sass/components/_menus.scss */
   .region-menu .menu li ul {
     background: #3c3c3c;
     position: absolute;
@@ -1548,7 +1553,7 @@ footer .region-footer p a:active {
     width: 12em;
     text-align: left;
   }
-  /* line 257, ../sass/components/_menus.scss */
+  /* line 261, ../sass/components/_menus.scss */
   .region-menu .menu li ul li {
     border-right: none;
     display: inline-block;
@@ -1558,12 +1563,12 @@ footer .region-footer p a:active {
     position: relative;
     width: 15.2em;
   }
-  /* line 265, ../sass/components/_menus.scss */
+  /* line 269, ../sass/components/_menus.scss */
   .region-menu .menu li ul li a {
     display: block;
   }
 }
-/* line 274, ../sass/components/_menus.scss */
+/* line 278, ../sass/components/_menus.scss */
 .sidebars .menu li {
   border-bottom: 1px solid #f2f2f2;
   margin-bottom: .5em;
@@ -1571,16 +1576,16 @@ footer .region-footer p a:active {
   padding-top: 0;
 }
 
-/* line 281, ../sass/components/_menus.scss */
+/* line 285, ../sass/components/_menus.scss */
 .sidebars .menu li.last {
   border: none;
 }
 
-/* line 287, ../sass/components/_menus.scss */
+/* line 291, ../sass/components/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #3c3c3c;
 }
-/* line 289, ../sass/components/_menus.scss */
+/* line 293, ../sass/components/_menus.scss */
 ul.primary li {
   display: inline-block;
   list-style: none;
@@ -1592,11 +1597,11 @@ ul.primary li {
   margin-right: 0.5em;
   padding: 0 1em;
 }
-/* line 299, ../sass/components/_menus.scss */
+/* line 303, ../sass/components/_menus.scss */
 ul.primary li a {
   text-decoration: none;
 }
-/* line 303, ../sass/components/_menus.scss */
+/* line 307, ../sass/components/_menus.scss */
 ul.primary li:active {
   background-color: white;
 }
