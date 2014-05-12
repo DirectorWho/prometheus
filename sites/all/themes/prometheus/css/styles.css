@@ -1157,14 +1157,7 @@ footer {
  * depending on whether blocks are placed in the left or right sidebars.
  *
  */
-/* line 14, ../sass/components/_layout.scss */
-html,
-body {
-  max-width: 100%;
-  overflow: hidden;
-}
-
-/* line 22, ../sass/components/_layout.scss */
+/* line 16, ../sass/components/_layout.scss */
 header,
 #preface,
 .content-wrapper,
@@ -1175,7 +1168,7 @@ header,
   padding: 0 15px;
 }
 
-/* line 31, ../sass/components/_layout.scss */
+/* line 25, ../sass/components/_layout.scss */
 #content,
 .region-sidebar-first,
 .region-sidebar-second {
@@ -1183,44 +1176,44 @@ header,
 }
 
 @media all and (min-width: 40em) {
-  /* line 38, ../sass/components/_layout.scss */
+  /* line 32, ../sass/components/_layout.scss */
   .two-sidebars #content {
     float: left;
     padding-right: 30px;
     width: 67%;
   }
-  /* line 42, ../sass/components/_layout.scss */
+  /* line 36, ../sass/components/_layout.scss */
   .two-sidebars #content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 47, ../sass/components/_layout.scss */
+  /* line 41, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33%;
   }
-  /* line 51, ../sass/components/_layout.scss */
+  /* line 45, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 33%;
   }
 }
 @media all and (min-width: 60em) {
-  /* line 64, ../sass/components/_layout.scss */
+  /* line 58, ../sass/components/_layout.scss */
   .two-sidebars #content {
     float: left;
     margin-left: 25%;
     padding-right: 30px;
     width: 50%;
   }
-  /* line 69, ../sass/components/_layout.scss */
+  /* line 63, ../sass/components/_layout.scss */
   .two-sidebars #content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 74, ../sass/components/_layout.scss */
+  /* line 68, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-first {
     clear: none;
     float: left;
@@ -1228,26 +1221,26 @@ header,
     padding-right: 30px;
     width: 25%;
   }
-  /* line 81, ../sass/components/_layout.scss */
+  /* line 75, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 25%;
   }
 
-  /* line 89, ../sass/components/_layout.scss */
+  /* line 83, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-first #content {
     float: left;
     margin-left: 33%;
     padding-right: 30px;
     width: 67%;
   }
-  /* line 94, ../sass/components/_layout.scss */
+  /* line 88, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-first #content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 98, ../sass/components/_layout.scss */
+  /* line 92, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-first .region-sidebar-first {
     clear: none;
     float: left;
@@ -1256,19 +1249,19 @@ header,
     padding-right: 30px;
   }
 
-  /* line 109, ../sass/components/_layout.scss */
+  /* line 103, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second #content {
     float: left;
     padding-right: 30px;
     width: 67%;
   }
-  /* line 113, ../sass/components/_layout.scss */
+  /* line 107, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second #content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 117, ../sass/components/_layout.scss */
+  /* line 111, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second .region-sidebar-second {
     clear: none;
     float: left;
