@@ -27,8 +27,13 @@
   </div>
 
   <div class="preface-wrapper">
-    <div class="menu-wrapper">  
-      <?php print render($page['menu']); ?>
+    <div class="menu-wrapper">
+       <?php if($main_menu): ?>
+       <nav class="region-menu">
+            <a href="#menu" class="menu-link">Menu</a>
+        <?php print $main_menu; ?>
+     </nav>
+     <?php endif; ?>
     </div>
     <div id="preface">
       <?php print render($page['preface']); ?>
