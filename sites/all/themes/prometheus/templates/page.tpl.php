@@ -41,10 +41,6 @@
   </div>
 
   <div id="main" class="content-wrapper">
-    <div class="content-top">
-      <?php print $breadcrumb; ?>
-    </div>
-
     <div id="content" class="column" role="main">
       <?php print render($title_prefix); ?>
       <?php if ($title): ?>
