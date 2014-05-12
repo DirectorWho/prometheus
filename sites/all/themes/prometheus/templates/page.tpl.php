@@ -29,9 +29,9 @@
   <div class="preface-wrapper">
     <div class="menu-wrapper">
       <nav class="region region-menu">
-        <a href="#menu" class="menu-link">Menu</a>
-      </nav>
+      <a href="#menu" class="menu-link">Menu</a>
       <?php print render($page['menu']); ?>
+    </nav>
     </div>
     <div id="preface">
       <?php print render($page['preface']); ?>
