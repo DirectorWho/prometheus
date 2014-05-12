@@ -1804,7 +1804,7 @@ footer p {
 }
 
 /* line 180, ../sass/components/_regions.scss */
-#block-block-3 {
+#block-block-5 {
   clear: both;
   margin-bottom: 2rem;
   overflow: hidden;
@@ -2113,6 +2113,13 @@ ul.pager li a {
   width: 1px;
   overflow: hidden;
   clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* line 162, ../sass/components/_misc.scss */
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /**
