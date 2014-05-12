@@ -31,7 +31,7 @@
        <?php if($main_menu): ?>
        <nav class="region-menu">
         <a href="#menu" class="menu-link">Menu</a>
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main-menu', 'clearfix')))); ?>
+        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main-menu', 'menu')))); ?>
      </nav>
      <?php endif; ?>
     </div>
