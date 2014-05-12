@@ -35,13 +35,12 @@ ul li.leaf {
 	float: left;
   list-style: none;
   margin-bottom: 0;
-  margin-top: .475em;
 }
 
 .js .region-menu .menu {
   max-height: 0;
   overflow: hidden;
-  &.active {
+  &.toggled {
     max-height: 50em;
   }
 }
@@ -192,7 +191,7 @@ footer .region-footer p a:active {
     content: '';
   }
 
-  .region-menu .menu li.menuparent > a.active:after {
+  .region-menu .menu li.menuparent > a.toggled:after {
     content: '';
   }
 
