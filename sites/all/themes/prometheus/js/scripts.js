@@ -48,25 +48,6 @@ Drupal.behaviors.my_custom_behavior = {
           }
       }
 
-      // equal height columns
-     //  function equalHeight(group) {
-     //      if (mobile ===0) {
-     //     tallest = 0;
-     //     group.each(function() {
-     //        thisHeight = $(this).height();
-     //        if(thisHeight > tallest) {
-     //           tallest = thisHeight;
-     //        }
-     //     });
-     //     group.height(tallest);
-     //   }
-     //   else {
-     //     $(".column").css('height', 'auto');
-     //   }
-     // }
-
-    // equalHeight($(".column"));
-
       function toggleMenu() {
           // add the toggle classes
     		  var $menu = $('.region-menu .menu'),
@@ -88,7 +69,6 @@ Drupal.behaviors.my_custom_behavior = {
 
         $(window).resize(function() {
           setMobileValue();
-          //equalHeight($(".column"));
         });
 
     		});
