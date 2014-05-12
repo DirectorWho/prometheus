@@ -1282,7 +1282,7 @@ ul li.leaf {
 
 /* line 33, ../sass/components/_menus.scss */
 .region-menu .menu,
-.footer-menu.menu {
+.footer-menu .menu {
   background: #3c3c3c;
   float: left;
   list-style: none;
@@ -1301,7 +1301,7 @@ ul li.leaf {
 }
 
 /* line 49, ../sass/components/_menus.scss */
-.footer-menu.menu {
+.footer-menu .menu {
   margin-bottom: 2rem;
 }
 
@@ -1354,7 +1354,7 @@ a.menu-link {
 
 /* line 96, ../sass/components/_menus.scss */
 .region-menu .menu li a,
-.footer-menu.menu li a {
+.footer-menu .menu li a {
   color: #cfe8ef;
   font-family: "Roboto Slab", serif;
   font-weight: 100;
@@ -1364,9 +1364,9 @@ a.menu-link {
 .region-menu .menu li a:hover,
 .region-menu .menu li a:focus,
 .region-menu .menu li a:active,
-.footer-menu.menu li a:hover,
-.footer-menu.menu li a:focus,
-.footer-menu.menu li a:active,
+.footer-menu .menu li a:hover,
+.footer-menu .menu li a:focus,
+.footer-menu .menu li a:active,
 footer .region-footer p a {
   color: #96cddc;
   outline: none;
@@ -1381,7 +1381,7 @@ footer .region-footer p a:active {
 
 /* line 120, ../sass/components/_menus.scss */
 .region-menu .menu li ul,
-.footer-menu.menu li ul {
+.footer-menu .menu li ul {
   clear: both;
   list-style: none;
   left: 20px;
@@ -1395,7 +1395,7 @@ footer .region-footer p a:active {
 }
 /* line 128, ../sass/components/_menus.scss */
 .region-menu .menu li ul li,
-.footer-menu.menu li ul li {
+.footer-menu .menu li ul li {
   padding: .75rem .75rem .75rem 2rem;
   border-bottom: 1px solid #bbbbbb;
   list-style: none;
@@ -1403,7 +1403,7 @@ footer .region-footer p a:active {
 }
 /* line 133, ../sass/components/_menus.scss */
 .region-menu .menu li ul li:last-child,
-.footer-menu.menu li ul li:last-child {
+.footer-menu .menu li ul li:last-child {
   border-bottom: none;
 }
 
@@ -1432,12 +1432,12 @@ footer .region-footer p a:active {
 }
 
 /* line 157, ../sass/components/_menus.scss */
-.footer-menu.menu {
+.footer-menu .menu {
   margin-top: 0;
   width: 100%;
 }
 /* line 160, ../sass/components/_menus.scss */
-.footer-menu.menu li {
+.footer-menu .menu li {
   border-bottom: 1px solid #6f6f6f;
   display: block;
   padding: .75em 30px;
@@ -1482,11 +1482,11 @@ footer .region-footer p a:active {
   }
 
   /* line 203, ../sass/components/_menus.scss */
-  .footer-menu.menu {
+  .footer-menu .menu {
     margin-top: .75em;
   }
   /* line 205, ../sass/components/_menus.scss */
-  .footer-menu.menu li {
+  .footer-menu .menu li {
     border-bottom: 0;
     margin-left: 0;
     margin-right: 0;
@@ -1504,24 +1504,24 @@ footer .region-footer p a:active {
 
   /* line 221, ../sass/components/_menus.scss */
   .region-menu .menu li,
-  .footer-menu.menu li {
+  .footer-menu .menu li {
     border-top: none;
     padding: .5em 1em;
   }
   /* line 225, ../sass/components/_menus.scss */
   .region-menu .menu li.first,
-  .footer-menu.menu li.first {
+  .footer-menu .menu li.first {
     padding-left: 0;
   }
   /* line 228, ../sass/components/_menus.scss */
   .region-menu .menu li.last,
-  .footer-menu.menu li.last {
+  .footer-menu .menu li.last {
     border-right: none;
   }
 
   /* line 234, ../sass/components/_menus.scss */
   .region-menu .menu li,
-  .footer-menu.menu li {
+  .footer-menu .menu li {
     display: inline-block;
     font-size: 14px;
     position: relative;
