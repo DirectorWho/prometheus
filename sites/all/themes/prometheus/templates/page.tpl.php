@@ -18,9 +18,10 @@
 
             <?php if ($site_slogan): ?>
               <div class="header__site-slogan" id="site-slogan"><?php print $site_slogan; ?></div>
+                <?php endif; ?>
+              </div>
             <?php endif; ?>
-          </div>
-            <?php endif; ?>
+            <?php print render($page['branding']); ?>
       </div>
     </div>
     </header>
