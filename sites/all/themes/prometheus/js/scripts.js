@@ -69,14 +69,14 @@ $(document).ready(function() {
 
   		$menulink.click(function(e) {
   			e.preventDefault();
-  			$menulink.toggleClass('active');
-  			$menu.toggleClass('active');
+  			$menulink.toggleClass('toggled');
+  			$menu.toggleClass('toggled');
   		});
 
   		$menuTrigger.click(function(e) {
   			e.preventDefault();
   			var $this = $(this);
-  			$this.toggleClass('active').next('ul').toggleClass('active');
+  			$this.toggleClass('toggled').next('ul').toggleClass('toggled');
   		});
   }
 

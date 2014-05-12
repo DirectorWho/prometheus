@@ -11,13 +11,13 @@ ul li.leaf {
   width: 100%;
 }
 
-li a.active {
-  color: $accent;
-}
-
-li a.active:hover  {
-  color: lighten($accent, 15%);
-}
+// li a.active {
+//   color: $accent;
+// }
+//
+// li a.active:hover  {
+//   color: lighten($accent, 15%);
+// }
 
 .menu-wrapper {
   background: $dark-gray;
@@ -79,7 +79,7 @@ a.menu-link {
 	padding: 0.25em 0.5em;
 }
 
-.region-menu .menu li.menuparent > a.active:after {
+.region-menu .menu li.menuparent > a.toggled:after {
   content: "-";
 }
 
@@ -97,9 +97,6 @@ a.menu-link {
   color: $light-blue;
   font-family: $header-font-family;
   font-weight: 100;
-  &.active {
-//    color: $white;
-  }
 }
 
 .region-menu .menu li a:hover,
@@ -151,7 +148,7 @@ footer .region-footer p a:active {
   max-height: 0;
   overflow: hidden;
   @include trans-all;
-  &.active {
+  &.toggled {
     max-height: 50em;
     margin-bottom: -1.25em;
   }
@@ -166,9 +163,6 @@ footer .region-footer p a:active {
     padding: .75em 30px;
     margin-right: -30px;
     margin-left: -30px;
-  }
-  &.first {
-    //border-top: none;
   }
 }
 
