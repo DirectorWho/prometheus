@@ -75,7 +75,6 @@
   </div>
 <footer>
   <?php print render($page['footer']); ?>
-  <div class="copyright"><p>The TCW is funded by a Califirnia Community College Chancellor's grant. Copyright &copy; <?php echo(date("Y",time ())); ?> California Community College Statewide Website. All Rights Reserved.</p></div>
 </footer>
 </div>
 
