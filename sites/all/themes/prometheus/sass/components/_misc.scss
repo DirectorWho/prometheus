@@ -1,15 +1,46 @@
 // misc styles
-
-.header__logo-image {
-  float: left;
-  height: auto;
-  margin-right: 1em;
-  max-width: 60px;
+@media all and (min-width: $desk) { 
+	body.one-sidebar, body.two-sidebars {
+		background-image: url('../images/sidebar-bg.jpg');
+		background-position: 960px 0;
+		background-repeat: repeat-y;
+	}
 }
 
-.header__name-and-slogan {
-  float: left;
+@media all and (min-width: 1450px) {
+	body.two-sidebars {
+		background-position: 1120px;
+	}
 }
+
+@media all and (min-width: 1600px) {
+	
+	body.one-sidebar {
+		background-position: 1120px;
+	}
+	
+	body.two-sidebars {
+		background-position: 1275px;
+	}
+}
+
+@media all and (min-width: 1980px) {
+	
+	body.one-sidebar {
+		background-position: 1450px;
+	}
+	
+	body.two-sidebars {
+		background-position: 1450px;
+	}
+}
+
+@media all and (min-width: 2415px) {
+	body.two-sidebars {
+		background-position: 1680px;
+	}
+}
+
 
 // pager styles
 
@@ -25,7 +56,7 @@ ul.pager {
 
 ul.pager li {
   border: none;
-  font-size: $base-font-size;
+  font-size: $base-font-size * .75;
   padding: .5em 0 .5em 1em;
 }
 
@@ -118,13 +149,12 @@ ul.pager li a {
   color: $black;
   margin-bottom: $vert-spacing;
   padding: 1rem;
+  li {
+    color: $black;
+  }
 }
 
 // accessible invisibility
 .element-invisible {
   @include element-invisible;
-}
-
-.clearfix:after {
-  @include clear-it;
 }

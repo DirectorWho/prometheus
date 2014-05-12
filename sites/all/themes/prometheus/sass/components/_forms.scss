@@ -12,7 +12,7 @@ label {
 
 fieldset,
 .form-type-password-confirm {
-  border: 1px solid $gray;
+  border: 1px solid $text-color;
   margin: 0 0 $vert-spacing 0;
   padding: 1rem;
 }
@@ -33,15 +33,30 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="tel"] {
-  border: 1px solid $gray;
-  box-shadow: 0 0 2px $light-gray inset;
+  background: $white;
+  border: 1px solid $white;
   color: $black;
   font-size: $base-font-size;
   height: 2.25rem;
   margin-bottom: .5rem;
-  padding: 0 .5rem;
+  outline: none;
   position: relative;
-  width: 80%;
+  width: 100%;
+  @include border-radius(4px);
+  @include box-shadow(inset 0 0 7px #aaaaaa);
+}
+
+@media all and (min-width: $desk) {
+	input[type='text'],
+	textarea,
+	select,
+	input[type="date"],
+	input[type="email"],
+	input[type="password"],
+	input[type="search"],
+	input[type="tel"] {
+		border-color: $light-beige;
+	}
 }
 
 textarea {
@@ -57,14 +72,16 @@ input[type="submit"],
 input[type="button"],
 .comment-links a,
 .button {
-  background: $accent;
-  border: none;
+  @include background-image(linear-gradient($white, $light-beige));
+  border: 1px solid #dcd5c7;
   border-radius: .5rem;
-  color: $white;
-  font-size: $base-font-size;
+  color: $black;
+  font-family: $serif;
+//  font-size: $base-font-size;
   margin: 4px 2px;
   padding: 8px 16px; padding: .5rem 1rem;
   text-shadow: none;
+  @include trans-all;
 }
 
 button:hover,
@@ -73,11 +90,11 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 .comment-links a:hover,
 .button:hover {
-  background: lighten($accent, 15%);
   color: $white !important;
   cursor: pointer;
 }
 
+button:focus,
 input[type='text']:focus,
 textarea:focus,
 select:focus,
@@ -86,13 +103,12 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus {
-  border: 1px solid $accent;
-  box-shadow: 0 0 2px $accent inset;
+  outline: none;
 }
 
 // Drupal's form field wrapper class
 .form-item {
-  margin-bottom: $vert-spacing * 1.5;
+  margin-bottom: 0;
   overflow: hidden;
 }
 
@@ -136,9 +152,6 @@ input[type="tel"]:focus {
 .password-strength-text {
   font-size: $base-font-size * .75;
   font-weight: bold;
-//  position: absolute;
-//  right: -.5rem;
-//  top: 0;
 }
 
 .password-confirm .error,
@@ -161,4 +174,25 @@ input[type="tel"]:focus {
   margin-bottom: 1rem;
   padding: 1rem;
   width: 40%;
+}
+
+// search form
+
+.block-search input[type="search"] {
+  background-image: url(../images/search.png);
+  background-repeat: no-repeat;
+  background-position: 95% 7px;
+  color: $black;
+  font: inherit;
+  -webkit-appearance: none;
+  width: 100%;
+  @include border-radius(30px);
+}
+
+.form-type-searchfield {
+  padding-right: 5px;
+}
+
+.block-search .form-actions {
+  display: none;
 }

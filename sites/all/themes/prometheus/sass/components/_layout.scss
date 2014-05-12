@@ -7,17 +7,24 @@
  *
  */
 
-$max-width: 1100px;
-$gutter: 30px;
+$max-width: 1000px;
+$gutter: 35px;
 
 header,
-#preface,
+.preface,
 .content-wrapper,
-.region-footer {
+.region-footer,
+.region-menu {
   clear: both;
+  display: block;
   margin: 0 auto;
   max-width: $max-width;
   padding: 0 ($gutter / 2);
+  position: relative;
+}
+
+.region-menu {
+  padding: 0;
 }
 
 #content,
@@ -28,73 +35,63 @@ header,
 
 @media all and (min-width: $tab) {
 
-  .two-sidebars {
-    #content {
-      float: left;
-      padding-right: $gutter;
-      width: 67%;
-      &:after {
-        @include clear-it;
-      }
-    }
-
-    .region-sidebar-first {
-      float: left;
-      width: 33%;
-    }
-    .region-sidebar-second {
-      float: left;
-      width: 33%;
-    }
-  }
 
 }
 
 
 @media all and (min-width: $desk) {
 
-// two sidebars, one on either side of content
-.two-sidebars {
-  #content {
-    float: left;
-    margin-left: 25%;
-    padding-right: $gutter;
-    width: 50%;
-    &:after {
-      @include clear-it;
-    }
+  .region-menu{
+    padding: 0 ($gutter / 2);
   }
 
-  .region-sidebar-first {
-    clear: none;
-    float: left;
-    margin-left: -75%;
-    padding-right: $gutter;
-    width: 25%;
+  #main {
+    overflow: hidden;
   }
-  .region-sidebar-second {
-    float: left;
-    width: 25%;
-  }
-}
+
+  .two-sidebars {
+    #content {
+      float: left;
+      padding-right: $gutter;
+      width: 50%;
+      margin-bottom: 0;
+      &:after {
+        @include clear-it;
+      }
+    }
+    .region-sidebar-first {
+      float: left;
+      padding-right: $gutter;
+      width: 25%;
+      margin-bottom: 0;
+    }
+    .region-sidebar-second {
+      float: left;
+      width: 25%;
+      padding-bottom: 10000px;
+      margin-bottom: -10000px;
+    }
+	}
+
+	#content, .region-sidebar-first, .region-sidebar-second {
+		margin-bottom: 0;
+	}
 
 // one sidebar, sidebar first
-.one-sidebar.sidebar-first {
+.one-sidebar.sidebar-first.push-right {
   #content {
-    float: left;
-    margin-left: 33%;
-    padding-right: $gutter;
-    width: 67%;
-    &:after {
-      @include clear-it;
-    }
-  }
-  .region-sidebar-first {
     clear: none;
     float: left;
     margin-left: -100%;
+    padding-right: $gutter;
+    width: 67%;
+  }
+  .region-sidebar-first {
+    float: left;
+    margin-left: 67%;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
     width: 33%;
-    padding-right: 30px;
   }
 }
 
@@ -102,7 +99,7 @@ header,
 .one-sidebar.sidebar-second {
   #content {
     float: left;
-    padding-right: 30px;
+    padding-right: $gutter;
     width: 67%;
     &:after {
       @include clear-it;
