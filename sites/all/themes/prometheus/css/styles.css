@@ -1411,6 +1411,13 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
+/* line 128, ../sass/components/_misc.scss */
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 /**
  * @file
  * Print styling
