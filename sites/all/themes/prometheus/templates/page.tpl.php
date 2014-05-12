@@ -21,11 +21,14 @@
           </div>
             <?php endif; ?>
       </div>
-      <?php print render($page['menu']); ?>
+
     </header>
   </div>
 
   <div class="preface-wrapper">
+    <div class="menu-wrapper">
+      <?php print render($page['menu']); ?>
+    </div>
     <div id="preface">
       <?php print render($page['preface']); ?>
     </div>
