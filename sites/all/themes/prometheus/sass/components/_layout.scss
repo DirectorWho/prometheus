@@ -64,6 +64,8 @@ header,
       padding-right: $gutter;
       width: 25%;
       margin-bottom: 0;
+      padding-bottom: 10000px;
+      margin-bottom: -10000px;
     }
     .region-sidebar-second {
       float: left;
@@ -78,7 +80,7 @@ header,
 	}
 
 // one sidebar, sidebar first
-.one-sidebar.sidebar-first.push-right {
+.one-sidebar.sidebar-first {
   #content {
     clear: none;
     float: left;
@@ -108,6 +110,8 @@ header,
   .region-sidebar-second {
     clear: none;
     float: left;
+    padding-bottom: 10000px;
+    margin-bottom: -10000px;
     width: 33%;
   }
 }
