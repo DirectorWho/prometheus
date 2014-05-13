@@ -210,6 +210,10 @@ footer .region-footer p a:toggled {
     z-index: 1000;
   }
 
+  .region-menu .menu {
+    margin-top: 0;
+  }
+
   .region-menu .menu li.menuparent > a:after {
     content: '';
   }
