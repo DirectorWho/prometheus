@@ -33,9 +33,9 @@ header,
   margin-bottom: $vert-spacing * 1.5;
 }
 
-@media all and (min-width: $tab) {
-
-
+.region-sidebar-first,
+.region-sidebar-second {
+  position: relative;
 }
 
 
@@ -64,8 +64,6 @@ header,
       padding-right: $gutter;
       width: 25%;
       margin-bottom: 0;
-      padding-bottom: 10000px;
-      margin-bottom: -10000px;
     }
     .region-sidebar-second {
       float: left;
@@ -110,8 +108,6 @@ header,
   .region-sidebar-second {
     clear: none;
     float: left;
-    padding-bottom: 10000px;
-    margin-bottom: -10000px;
     width: 33%;
   }
 }

@@ -6,6 +6,10 @@ $legacy-support-for-ie7: false;
 // breakpoints
 $tab: 40em;
 $desk: 60em;
+$big-desk: 90.635em;
+$really-big-desk: 100em;
+$super-big-desk: 123.75em;
+$monster-desk: 150.9375em;
 
 // Font faces, stacks and sizes.
 
@@ -19,7 +23,6 @@ $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
 $courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
-$sans: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
 $serif: "Roboto Slab", serif;
 $sans-body: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
@@ -27,7 +30,7 @@ $sans-body: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "H
 $body-font: $sans-body;
 $font-monospace:   $courier;
 $body-font-weight: 300;
-$bold-font-weight: 500;
+$bold-font-weight: 600;
 $base-line-height: 1.4;
 
 $header-font-family: $serif;

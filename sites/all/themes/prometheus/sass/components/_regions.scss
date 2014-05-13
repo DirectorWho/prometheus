@@ -35,12 +35,18 @@ img.header__logo-image {
 
 .region-branding {
   position: relative;
+  .header__logo {
+	    text-align: center;
+  }
 }
 
 @media all and (min-width: $tab) {
 
   .branding-wrapper {
     padding: 1em 0;
+    .header__logo {
+	    display: inline-block;
+    }
   }
 
 }
@@ -48,7 +54,7 @@ img.header__logo-image {
 @media all and (min-width: $desk) {
 	.branding-wrapper {
 		.header__logo {
-			display: inline;
+//			display: inline;
 		}
 	}
 }
@@ -61,6 +67,7 @@ img.header__logo-image {
   @include box-shadow(0 0 7px lighten($black, 50%));
   @include clear-it;
   position: relative;
+  z-index: 1;
 }
 
 .preface {
@@ -95,7 +102,7 @@ img.header__logo-image {
     display: inline-block;
     list-style: none;
     padding: 2rem 0;
-    font-family: $sans;
+    font-family: $sans-body;
     font-size: $base-font-size * .725;
   }
 }
@@ -177,7 +184,7 @@ footer {
 }
 
 // disclaimer blockquote
-#block-block-5 {
+#block-block-3 {
   clear: both;
   margin-bottom: $vert-spacing;
   overflow: hidden;

@@ -10,7 +10,7 @@
 
 function prometheus_preprocess_html(&$variables, $hook) {
 
-  drupal_add_css('http://fonts.googleapis.com/css?family=Roboto:300,400,500', array('type' => 'external', 'weight' => 0,));
+  drupal_add_css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600, 300italic|Roboto+Slab:100', array('type' => 'external', 'weight' => 0,));
   drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/vertiscroll.min.js');
   drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/jquery.mixitup.js');
   drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/scripts.js');

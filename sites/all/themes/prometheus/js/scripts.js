@@ -36,6 +36,29 @@ Drupal.behaviors.my_custom_behavior = {
 
       $('body').addClass('js');
 
+        // equal height columns
+  function equalHeight() {
+      if (mobile ===0) {
+     tallest = 0;
+     target = $('.column');
+     target.each(function() {
+        thisHeight = target.outerHeight();
+        if(thisHeight > tallest) {
+           tallest = thisHeight;
+           if (tallest < $('.view-school-search .view-data').height()) {
+             tallest = $('.view-school-search .view-data').height() + 50;
+           }
+        }
+     });
+     target.height(tallest);
+   }
+   else {
+     target.css('height', 'auto');
+   }
+ }
+
+  window.setTimeout(equalHeight, 50);
+
       // toggle menu
 
       // the toggle menu doesn't allow the first element to act as a link - it's instead a toggle.
@@ -69,6 +92,7 @@ Drupal.behaviors.my_custom_behavior = {
 
         $(window).resize(function() {
           setMobileValue();
+          equalHeight();
         });
 
     		});
