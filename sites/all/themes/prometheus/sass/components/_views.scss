@@ -1,7 +1,7 @@
 // views styles
 
 .not-front .view {
-  padding: 20px 30px;
+  padding: 20px 0;
 }
 
 .view {
@@ -16,7 +16,7 @@
 	.item-list {
 		padding-top: .25em;
 	}
-	
+
 	p {
 		margin-bottom: 1em;
 	}
@@ -137,14 +137,14 @@
 @media all and (min-width: $tab) {
 
   .view-school-search {
-  	.views-column { 
+  	.views-column {
 //	    padding: 0 1em 1em 0;
 	    width: 50%;
 	  }
 	  .col-1 {
 	  	padding-right: 1em;
 	  }
-	  
+
 	  .col-2 {
 		  padding-right: 0;
 		  padding-left: 1em;

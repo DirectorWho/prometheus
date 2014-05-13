@@ -663,7 +663,7 @@ nav {
 /* Component (SMACSS module) rules */
 /* line 3, ../sass/components/_views.scss */
 .not-front .view {
-  padding: 20px 30px;
+  padding: 20px 0;
 }
 
 /* line 10, ../sass/components/_views.scss */
