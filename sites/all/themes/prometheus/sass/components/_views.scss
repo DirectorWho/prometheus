@@ -9,9 +9,6 @@
 		background-position: top left;
 		padding-top: 1em;
 	}
-	.view h2 {
-		background: none;
-	}
 	.item-list {
 		padding-top: .25em;
 	}
@@ -19,14 +16,6 @@
 	p {
 		margin-bottom: 1em;
 	}
-}
-
-.view .row {
-  border-bottom: 1px solid lighten($base-color, 15%);
-}
-
-.view .row.last {
-  border-bottom: none;
 }
 
 // school search view

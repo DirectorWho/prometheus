@@ -6,7 +6,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: $header-line-height;
   margin-top: 0;
   margin-bottom: $header-bottom-margin;
-
+  
   a,
 	a:link,
 	a:visited,
@@ -64,12 +64,12 @@ h6, h6 a {
 
 h1#page-title,
 .region-sidebar-second h2,
-.one-sidebar .region-sidebar-first h2 {
-
+one.sidebar .region-sidebar-first h2 {
+	
 	background-image: url('../images/shortcut-dark.png');
 	background-repeat: no-repeat;
 	background-position: right center;
-
+	
 	&:before {
 		content: " ";
 		display: block;
@@ -88,11 +88,8 @@ h1#page-title,
 }
 
 .region-sidebar-second h2,
-.one-sidebar .region-sidebar-first h2 {
+one.sidebar .region-sidebar-first h2 {
 	background-position: 95% center;
-  &.view h2:before {
-    background: none;
-  }
 }
 
 @media all and (min-width: $tab) {
@@ -101,7 +98,7 @@ h1#page-title,
     font-size: $base-font-size * .925;
     &.two-sidebars {
       font-size: $base-font-size * .825;
-
+      
       h2, h2 a {
         font-size: $h2-font-size * .925;
       }

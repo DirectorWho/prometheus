@@ -40,11 +40,13 @@ Drupal.behaviors.my_custom_behavior = {
         functionStatus = 1;
         addMobileMenuItem();
         toggleMenu();
+        equalHeightColumns();
       }
       else if (mobile === 0 && functionStatus == 1)  {
         //turn 'off' so that it will run again if resized to mobile
         functionStatus = 0;
         removeMobileMenuItem();
+        equalHeightColumns();
         // unbind click events from toglleMenu function
         $('.menu-link').unbind();
         $('.menuparent > a').unbind();
@@ -81,28 +83,32 @@ Drupal.behaviors.my_custom_behavior = {
       });
     }
 
-    // equal height columns
-    function equalHeight() {
-      if (mobile === 0) {
-         tallest = 0;
-         target = $('.column');
-         target.each(function() {
-          thisHeight = target.outerHeight();
-          if(thisHeight > tallest) {
-             tallest = thisHeight;
-             if (tallest < $('.view-school-search .view-data').height()) {
-               tallest = $('.view-school-search .view-data').height() + 100;
-             }
-          }
-       });
-       target.height(tallest);
-     }
-     else {
-       target.css('height', 'auto');
-     }
-   }
+function equalHeightColumns() {
+  if (mobile === 0) {
+    var columnHeight = 0;
+    var contentHeight = $('#content').outerHeight();
+    var sidebarFirstHeight = $('.region-sidebar-first').outerHeight();
+    var sidebarSecondHeight = $('.region-sidebar-second').outerHeight();
+    if ((contentHeight > sidebarFirstHeight) && (contentHeight > sidebarSecondHeight)) {
+      columnHeight = contentHeight;
+    }
+    else if ((sidebarFirstHeight > contentHeight) && (sidebarFirstHeight > sidebarSecondHeight)) {
+      columnHeight = sidebarFirstHeight;
+    }
+    else if ((sidebarSecondHeight > contentHeight) && (sidebarSecondHeight > sidebarFirstHeight)) {
+      columnHeight = sidebarSecondHeight;
+    }
+    if (columnHeight < $('.view-school-search .view-data').height()) {
+     columnHeight = $('.view-school-search .view-data').height() + 50;
+    }
+    $('.column').height(columnHeight);
+  }
+  else {
+    $('.column').css('height', 'auto');
+  }
+}
 
-    window.setTimeout(equalHeight, 50);
+  window.setTimeout(equalHeightColumns, 75);
 
     function toggleMenu() {
         // add the toggle classes
@@ -125,7 +131,6 @@ Drupal.behaviors.my_custom_behavior = {
 
       $(window).resize(function() {
         setMobileValue();
-        equalHeight();
         fireMobileFunctions();
       });
 
