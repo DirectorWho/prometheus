@@ -1122,3 +1122,8 @@ margin: 10px 0;
 textarea.text-full {
   min-height: 400px;
 }
+
+.views-displays .secondary .action-list input.form-submit,
+.views-displays .secondary .action-list input.form-submit:hover {
+  color: #444;
+}

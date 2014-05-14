@@ -671,25 +671,29 @@ nav {
   padding-top: 1em;
 }
 /* line 12, ../sass/components/_views.scss */
+.view .view h2 {
+  background: none;
+}
+/* line 15, ../sass/components/_views.scss */
 .view .item-list {
   padding-top: .25em;
 }
-/* line 16, ../sass/components/_views.scss */
+/* line 19, ../sass/components/_views.scss */
 .view p {
   margin-bottom: 1em;
 }
 
-/* line 21, ../sass/components/_views.scss */
+/* line 24, ../sass/components/_views.scss */
 .view .row {
   border-bottom: 1px solid white;
 }
 
-/* line 25, ../sass/components/_views.scss */
+/* line 28, ../sass/components/_views.scss */
 .view .row.last {
   border-bottom: none;
 }
 
-/* line 32, ../sass/components/_views.scss */
+/* line 35, ../sass/components/_views.scss */
 .scrollable {
   border: 1px solid white;
   background-color: white;
@@ -699,26 +703,26 @@ nav {
   overflow: scroll;
 }
 
-/* line 41, ../sass/components/_views.scss */
+/* line 44, ../sass/components/_views.scss */
 .scrollarea {
   background: #efefef !important;
   padding-right: 0 !important;
   width: 10px !important;
 }
-/* line 45, ../sass/components/_views.scss */
+/* line 48, ../sass/components/_views.scss */
 .scrollarea .scrollbar {
   background: #cccccc !important;
   border-radius: 0 !important;
   width: 10px !important;
 }
 
-/* line 53, ../sass/components/_views.scss */
+/* line 56, ../sass/components/_views.scss */
 .view-school-search .view-data {
   min-height: 15em;
   overflow: hidden;
   padding: 1em 0em 0 0em;
 }
-/* line 57, ../sass/components/_views.scss */
+/* line 60, ../sass/components/_views.scss */
 .view-school-search .view-data:before {
   content: " ";
   display: block;
@@ -731,17 +735,17 @@ nav {
   background-repeat: repeat-x;
   background-position: top left;
 }
-/* line 70, ../sass/components/_views.scss */
+/* line 73, ../sass/components/_views.scss */
 .view-school-search .views-row {
   overflow: hidden;
 }
-/* line 73, ../sass/components/_views.scss */
+/* line 76, ../sass/components/_views.scss */
 .view-school-search .views-column {
   float: left;
   padding: 0 0em 1em 0;
   width: 100%;
 }
-/* line 78, ../sass/components/_views.scss */
+/* line 81, ../sass/components/_views.scss */
 .view-school-search h3 {
   border: 1px solid #cccccc;
   height: 4.5em;
@@ -769,7 +773,7 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 102, ../sass/components/_views.scss */
+/* line 105, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter {
   background: none;
   border-bottom: 1px solid #cccccc;
@@ -781,40 +785,40 @@ nav {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 109, ../sass/components/_views.scss */
+/* line 112, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter:hover {
   background: #cccccc;
 }
-/* line 114, ../sass/components/_views.scss */
+/* line 117, ../sass/components/_views.scss */
 .view-school-search .filter.active {
   background: #050483;
   color: white;
 }
-/* line 117, ../sass/components/_views.scss */
+/* line 120, ../sass/components/_views.scss */
 .view-school-search .filter.active:hover {
   background: #050483;
 }
-/* line 121, ../sass/components/_views.scss */
+/* line 124, ../sass/components/_views.scss */
 .view-school-search .view-item {
   background: white;
 }
 
-/* line 127, ../sass/components/_views.scss */
+/* line 130, ../sass/components/_views.scss */
 .js .mix,
 .mix.no-result {
   display: none;
 }
 
 @media all and (min-width: 40em) {
-  /* line 134, ../sass/components/_views.scss */
+  /* line 137, ../sass/components/_views.scss */
   .view-school-search .views-column {
     width: 50%;
   }
-  /* line 138, ../sass/components/_views.scss */
+  /* line 141, ../sass/components/_views.scss */
   .view-school-search .col-1 {
     padding-right: 1em;
   }
-  /* line 142, ../sass/components/_views.scss */
+  /* line 145, ../sass/components/_views.scss */
   .view-school-search .col-2 {
     padding-right: 0;
     padding-left: 1em;
@@ -1512,58 +1516,64 @@ one.sidebar .region-sidebar-first h2:before {
   background-position: top left;
 }
 
+/* line 91, ../sass/components/_typography.scss */
+.region-sidebar-second h2,
+one.sidebar .region-sidebar-first h2 {
+  background-position: 95% center;
+}
+
 @media all and (min-width: 40em) {
-  /* line 92, ../sass/components/_typography.scss */
+  /* line 97, ../sass/components/_typography.scss */
   body {
     font-size: 18.5px;
   }
-  /* line 94, ../sass/components/_typography.scss */
+  /* line 99, ../sass/components/_typography.scss */
   body.two-sidebars {
     font-size: 16.5px;
   }
-  /* line 97, ../sass/components/_typography.scss */
+  /* line 102, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 27.75px;
   }
-  /* line 101, ../sass/components/_typography.scss */
+  /* line 106, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 24.235px;
   }
-  /* line 105, ../sass/components/_typography.scss */
+  /* line 110, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 18.5px;
   }
-  /* line 109, ../sass/components/_typography.scss */
+  /* line 114, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 15.355px;
   }
-  /* line 113, ../sass/components/_typography.scss */
+  /* line 118, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 12.395px;
   }
 }
 @media all and (min-width: 60em) {
-  /* line 123, ../sass/components/_typography.scss */
+  /* line 128, ../sass/components/_typography.scss */
   body {
     font-size: 16.5px;
   }
-  /* line 127, ../sass/components/_typography.scss */
+  /* line 132, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 24.75px;
   }
-  /* line 131, ../sass/components/_typography.scss */
+  /* line 136, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 21.615px;
   }
-  /* line 135, ../sass/components/_typography.scss */
+  /* line 140, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 16.5px;
   }
-  /* line 139, ../sass/components/_typography.scss */
+  /* line 144, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 13.695px;
   }
-  /* line 143, ../sass/components/_typography.scss */
+  /* line 148, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 11.055px;
   }
@@ -2071,20 +2081,21 @@ h3.tech-support-button {
   -webkit-box-shadow: 2px 2px 4px #a2a2a2;
   -moz-box-shadow: 2px 2px 4px #a2a2a2;
   box-shadow: 2px 2px 4px #a2a2a2;
+  margin-bottom: 1em;
 }
-/* line 117, ../sass/components/_regions.scss */
+/* line 118, ../sass/components/_regions.scss */
 h3.tech-support-button a {
   display: block;
   width: 100%;
-  color: #cfe8ef;
+  color: white;
   font-size: .75em;
   padding: .5rem 1rem;
 }
-/* line 123, ../sass/components/_regions.scss */
+/* line 124, ../sass/components/_regions.scss */
 h3.tech-support-button a:hover {
   color: white;
 }
-/* line 127, ../sass/components/_regions.scss */
+/* line 128, ../sass/components/_regions.scss */
 h3.tech-support-button:hover {
   background-color: #0806cd;
   -webkit-transition: all .3s;
@@ -2093,66 +2104,66 @@ h3.tech-support-button:hover {
   transition: all .3s;
 }
 
-/* line 135, ../sass/components/_regions.scss */
+/* line 136, ../sass/components/_regions.scss */
 .region-sidebar-first {
   padding-top: 15px;
 }
 
 @media all and (min-width: 60em) {
-  /* line 141, ../sass/components/_regions.scss */
+  /* line 142, ../sass/components/_regions.scss */
   .region-sidebar-first,
   .region-sidebar-second {
     padding: 30px;
   }
 
-  /* line 146, ../sass/components/_regions.scss */
+  /* line 147, ../sass/components/_regions.scss */
   .one-sidebar .region-sidebar-first,
   .region-sidebar-second {
     background-color: #eee6d6;
     border-left: 1px solid white;
   }
 
-  /* line 150, ../sass/components/_regions.scss */
+  /* line 151, ../sass/components/_regions.scss */
   #content {
     padding-bottom: 30px;
   }
 }
-/* line 160, ../sass/components/_regions.scss */
+/* line 161, ../sass/components/_regions.scss */
 footer {
   background: #3c3c3c;
   clear: both;
   overflow: hidden;
 }
-/* line 166, ../sass/components/_regions.scss */
+/* line 167, ../sass/components/_regions.scss */
 footer p,
 footer li,
 footer h4 {
   color: #cfe8ef;
 }
-/* line 169, ../sass/components/_regions.scss */
+/* line 170, ../sass/components/_regions.scss */
 footer p {
   font-size: 15px;
   margin-bottom: 0;
 }
 
-/* line 175, ../sass/components/_regions.scss */
+/* line 176, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 179, ../sass/components/_regions.scss */
+/* line 180, ../sass/components/_regions.scss */
 .copyright {
   clear: both;
   overflow: hidden;
   padding-bottom: 2rem;
 }
-/* line 183, ../sass/components/_regions.scss */
+/* line 184, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
 }
 
-/* line 190, ../sass/components/_regions.scss */
+/* line 191, ../sass/components/_regions.scss */
 #block-block-3 {
   clear: both;
   margin-bottom: 2rem;
@@ -2160,19 +2171,19 @@ footer p {
 }
 
 @media all and (min-width: 40em) {
-  /* line 199, ../sass/components/_regions.scss */
+  /* line 200, ../sass/components/_regions.scss */
   .disclaimer-left,
   .disclaimer-right {
     float: left;
     width: 50%;
   }
 
-  /* line 204, ../sass/components/_regions.scss */
+  /* line 205, ../sass/components/_regions.scss */
   .disclaimer-left {
     padding-right: 17px;
   }
 
-  /* line 208, ../sass/components/_regions.scss */
+  /* line 209, ../sass/components/_regions.scss */
   .disclaimer-right {
     padding-left: 17px;
   }

@@ -2,6 +2,7 @@
 
   <div class="header-wrapper">
     <header class="header" id="header" role="banner">
+      <a href="#" id="sponsor">Sponsored by: <span></span></a>
       <div class="branding-wrapper">
       <div class="region region-branding">
         <?php if ($logo): ?>
