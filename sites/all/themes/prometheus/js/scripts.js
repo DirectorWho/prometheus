@@ -83,15 +83,15 @@ Drupal.behaviors.my_custom_behavior = {
 
     // equal height columns
     function equalHeight() {
-        if (mobile ===0) {
-       tallest = 0;
-       target = $('.column');
-       target.each(function() {
+      if (mobile === 0) {
+         tallest = 0;
+         target = $('.column');
+         target.each(function() {
           thisHeight = target.outerHeight();
           if(thisHeight > tallest) {
              tallest = thisHeight;
              if (tallest < $('.view-school-search .view-data').height()) {
-               tallest = $('.view-school-search .view-data').height() + 50;
+               tallest = $('.view-school-search .view-data').height() + 100;
              }
           }
        });
