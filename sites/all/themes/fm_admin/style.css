@@ -1029,7 +1029,8 @@ div.add-or-remove-shortcuts {
 .page-node-edit .panel-pane,
 .page-node-add .panel-pane,
 .admin-panel,
-.ctools-collapsible-container {
+.page-node-edit  .ctools-collapsible-container,
+.page-node-add  .ctools-collapsible-container {
   background: #eee;
   margin-bottom: 27px;
   padding: 15px;
