@@ -1010,7 +1010,8 @@ div.add-or-remove-shortcuts {
   border: 1px solid #ccc;
 }
 
-.ctools-collapsible-container .ctools-toggle {
+.page-node-add .ctools-collapsible-container .ctools-toggle,
+.page-node-edit .ctools-collapsible-container .ctools-toggle {
   height: 31px;
   background-position: 7px 20px;
 }
