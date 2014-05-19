@@ -1005,7 +1005,8 @@ div.add-or-remove-shortcuts {
 .page-node-add textarea,
 .page-node-add .panel-pane,
 .admin-panel,
-.ctools-collapsible-container {
+.page-node-add .ctools-collapsible-container,
+.page-node-edit .ctools-collapsible-container {
   border: 1px solid #ccc;
 }
 
