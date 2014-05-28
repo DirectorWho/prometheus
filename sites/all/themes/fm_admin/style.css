@@ -1013,11 +1013,12 @@ div.add-or-remove-shortcuts {
 }
 
 .page-node-add .ctools-collapsible-container:last-child,
+.page-node-edit .ctools-collapsible-container:last-child,
 .pane-node-form-buttons {
   border-bottom: 1px solid #ccc !important;
 }
 
-.page-node-add .ctools-collapsible-container:first-child {
+.page-node-add .panel-pane:first-child {
   border-top: 1px solid #ccc !important;
 }
 
