@@ -8,9 +8,8 @@ Drupal.behaviors.my_custom_behavior = {
 
     // Get value of campus type select list and toggle field visibility
 
-    var currentValue = $( "#edit-field-campus-type-und option:selected" ).text();
-
     $("#edit-field-campus-type-und").change(function() {
+      var currentValue = $( "#edit-field-campus-type-und option:selected" ).text();
       alert( currentValue );
     });
 
