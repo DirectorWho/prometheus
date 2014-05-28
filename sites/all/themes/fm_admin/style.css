@@ -1011,7 +1011,8 @@ div.add-or-remove-shortcuts {
   border-bottom: 1px solid transparent;
 }
 
-.menu-options-field {
+.page-node-add .ctools-collapsible-container:last-child,
+.pane-node-form-buttons {
   border-bottom: 1px solid #ccc;
 }
 
