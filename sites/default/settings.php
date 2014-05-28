@@ -217,9 +217,9 @@ $databases = array (
     array (
       'database' => 'pantheon',
       'username' => 'pantheon',
-      'password' => 'b7b022eda0ea4969b7a86b3e70514a60',
+      'password' => 'df0b95e40cbc4768a67195a8f11af095',
       'host' => 'dbserver.dev.9778f897-53a9-4ccf-9b34-5b3d4c58d51f.drush.in',
-      'port' => '13169',
+      'port' => '10963',
       'driver' => 'mysql',
       'prefix' => '',
     ),
