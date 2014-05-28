@@ -1008,6 +1008,11 @@ div.add-or-remove-shortcuts {
 .page-node-add .ctools-collapsible-container,
 .page-node-edit .ctools-collapsible-container {
   border: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
+}
+
+.menu-options-field {
+  border-bottom: 1px solid #ccc;
 }
 
 .page-node-add .ctools-collapsible-container .ctools-toggle,
@@ -1034,8 +1039,8 @@ div.add-or-remove-shortcuts {
 .page-node-edit  .ctools-collapsible-container,
 .page-node-add  .ctools-collapsible-container {
   background: #eee;
-  margin-bottom: 27px;
-  padding: 15px;
+  margin-bottom: 0;
+  padding: 0 15px;
 }
 
 .form-textarea-wrapper textarea {
@@ -1144,4 +1149,8 @@ textarea.text-full {
 
 .imagefield-focus.focus-box {
   min-width: 350px;
+}
+
+.panel-2col .panel-separator {
+  margin: 0;
 }
