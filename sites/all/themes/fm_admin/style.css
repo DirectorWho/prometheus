@@ -1013,7 +1013,7 @@ div.add-or-remove-shortcuts {
 
 .page-node-add .ctools-collapsible-container:last-child,
 .pane-node-form-buttons {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc !important;
 }
 
 .page-node-add .ctools-collapsible-container .ctools-toggle,
