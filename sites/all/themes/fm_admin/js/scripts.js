@@ -10,7 +10,12 @@ Drupal.behaviors.my_custom_behavior = {
 
     $("#edit-field-campus-type-und").change(function() {
       var currentValue = $( "#edit-field-campus-type-und option:selected" ).text();
-      alert( currentValue );
+      if (currentValue != "OOS" || currentValue != "- None -") {
+        $(".conditional").css("display", "block");
+      }
+      else {
+        $(".conditional").css("display", "none");
+      }
     });
 
   });
