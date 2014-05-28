@@ -11,7 +11,7 @@ Drupal.behaviors.my_custom_behavior = {
     $("#edit-field-campus-type-und").change(function() {
       var currentValue = $( "#edit-field-campus-type-und option:selected" ).text();
       alert(currentValue);
-      if (currentValue == "CSU" || currentValue != "UC") {
+      if (currentValue == "CSU" || currentValue == "UC") {
         $(".conditional").css("display", "block");
       }
       else if (currentValue == "OOS" || currentValue == "- None -") {
