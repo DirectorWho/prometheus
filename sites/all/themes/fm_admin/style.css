@@ -1009,11 +1009,28 @@ div.add-or-remove-shortcuts {
 .page-node-edit .ctools-collapsible-container {
   border: 1px solid #ccc;
   border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
 }
 
 .page-node-add .ctools-collapsible-container:last-child,
 .pane-node-form-buttons {
   border-bottom: 1px solid #ccc !important;
+}
+
+.page-node-add .ctools-collapsible-container:first-child {
+  border-top: 1px solid #ccc !important;
+}
+
+.page-node-add .ctools-collapsible-container,
+.page-node-edit .ctools-collapsible-container,
+.pane-node-form-buttons {
+  border: 1px solid #ccc !important;
+}
+
+.page-node-add .ctools-collapsible-container ,
+.page-node-edit .ctools-collapsible-container,
+.pane-node-form-buttons {
+ margin-top: 15px;
 }
 
 .page-node-add .ctools-collapsible-container .ctools-toggle,
