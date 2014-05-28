@@ -10,10 +10,10 @@ Drupal.behaviors.my_custom_behavior = {
 
     $("#edit-field-campus-type-und").change(function() {
       var currentValue = $( "#edit-field-campus-type-und option:selected" ).text();
-      if (currentValue != "OOS" || currentValue != "- None -") {
+      if (currentValue == "CSU" || currentValue != "UC") {
         $(".conditional").css("display", "block");
       }
-      else {
+      else if (currentValue == "OOS" || currentValue == "- None -") {
         $(".conditional").css("display", "none");
       }
     });
