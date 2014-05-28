@@ -1014,7 +1014,9 @@ div.add-or-remove-shortcuts {
 
 .page-node-add .ctools-collapsible-container:last-child,
 .page-node-edit .ctools-collapsible-container:last-child,
-.pane-node-form-buttons {
+.pane-node-form-buttons,
+.pane-node-field-campus-contact-phone,
+.pane-node-field-notes {
   border-bottom: 1px solid #ccc !important;
 }
 
@@ -1172,4 +1174,11 @@ textarea.text-full {
 
 .panel-2col .panel-separator {
   margin: 0;
+}
+
+/*  On campus node add/edit, hide fields that are condition.
+    Change visbility in JS based on form selection  */
+
+.campus-add-edit .conditional {
+  display: none;
 }
