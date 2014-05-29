@@ -1,0 +1,52 @@
+<?php
+
+/**
+ * @file
+ * Simple panels content type for displaying an uploaded image and linking it to a provided url/path
+ */
+/**
+ * Implements hook_ctools_plugin_directory().
+ */
+function panels_image_link_ctools_plugin_directory($module, $plugin) {
+  if ( ( $module == 'ctools' || $module == 'panels' ) && !empty( $plugin ) ) {
+    return 'plugins/' . $plugin;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function panels_image_link_theme($existing, $type, $theme, $path) {
+  return array(
+    'panels_image_link' => array(
+      'variables' => array(
+        'path'       => NULL,
+        'target_url' => NULL,
+        'caption'    => NULL,
+      ),
+    )
+  );
+}
+
+/**
+ * Theme callback for rendering an Panels image link.
+ */
+function theme_panels_image_link(&$variables) {
+  $image_vars = array(
+    'path'       => $variables['path'],
+    'alt'        => NULL,
+    'title'      => NULL,
+    'attributes' => array(),
+  );
+  $image = theme_image($image_vars);
+  if ( isset( $variables['target_url'] ) && !empty( $variables['target_url'] ) ) {
+    $content = l($image, $variables['target_url'], array( 'html' => TRUE, ));
+  }
+  else {
+    $content = $image;
+  }
+  if ( isset( $variables['caption'] ) && !empty( $variables['caption'] ) ) {
+    $content .= '<div class="panels-image-link-caption">' . filter_xss_admin($variables['caption']) . '</div>';
+  }
+  return $content;
+}
