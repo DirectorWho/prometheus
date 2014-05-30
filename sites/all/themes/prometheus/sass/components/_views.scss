@@ -26,6 +26,17 @@
 	}
 }
 
+// front feature
+
+.view-front-feature img {
+	display: block;
+	height: auto;
+	width: 100%;
+	.preface-text {
+		background: $light-beige;
+	}
+}
+
 // Newsfeeds
 
 .view-newsfeeds {
