@@ -38,8 +38,17 @@ h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
   @include element-invisible;
 }
 
+#site-slogan {
+  font-size: .75em;
+  font-style: italic;
+// color: $accent;
+}
+
 h1.page-title {
   margin-bottom: .5rem; margin-bottom: 8px;
+  a {
+	  font-size: 1em;
+  }
 }
 
 h2, h2 a {
@@ -63,13 +72,12 @@ h6, h6 a {
 }
 
 h1#page-title,
-.region-sidebar-second h2,
-one.sidebar .region-sidebar-first h2 {
-
+.one-sidebar .region-sidebar-second h2,
+.two-sidebars .region-sidebar-second h2,
+.one-sidebar .region-sidebar-first h2 {
 	background-image: url('../images/shortcut-dark.png');
 	background-repeat: no-repeat;
 	background-position: right center;
-
 	&:before {
 		content: " ";
 		display: block;
@@ -82,7 +90,7 @@ one.sidebar .region-sidebar-first h2 {
 		background-position: top left;
 	}
 
-		font-size: 1.25em;
+		font-size: 1em;
 		margin-bottom: 0;
 		padding: .25em 0;
 }
@@ -90,6 +98,21 @@ one.sidebar .region-sidebar-first h2 {
 .region-sidebar-second h2,
 .one-sidebar .region-sidebar-first h2 {
 	background-position: 95% center;
+	a {
+		position: relative;
+		font-size: 1em;
+		display: block;
+		span {
+			position: absolute;
+			top: -1px;
+			right: 0;
+			font-size: .8em;
+			padding-right: 20px;
+			background-image: url('../images/shortcut-dark.png');
+			background-repeat: no-repeat;
+			background-position: right center;
+		}
+	}
 }
 
 .region-sidebar-first .view h2:before,
