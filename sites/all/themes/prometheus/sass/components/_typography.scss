@@ -94,6 +94,15 @@ h1#page-title,
 		padding: .25em 0;
 }
 
+h1#page-title a,
+.one-sidebar .region-sidebar-second h2 a,
+.two-sidebars .region-sidebar-second h2 a,
+.one-sidebar .region-sidebar-first h2 a {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
 h1#page-title a span,
 .one-sidebar .region-sidebar-second h2 a span,
 .two-sidebars .region-sidebar-second h2 a span,

@@ -1552,6 +1552,16 @@ h1#page-title:before,
 }
 
 /* line 100, ../sass/components/_typography.scss */
+h1#page-title a,
+.one-sidebar .region-sidebar-second h2 a,
+.two-sidebars .region-sidebar-second h2 a,
+.one-sidebar .region-sidebar-first h2 a {
+  display: block;
+  position: relative;
+  width: 100%;
+}
+
+/* line 109, ../sass/components/_typography.scss */
 h1#page-title a span,
 .one-sidebar .region-sidebar-second h2 a span,
 .two-sidebars .region-sidebar-second h2 a span,
@@ -1566,19 +1576,19 @@ h1#page-title a span,
   background-position: right center;
 }
 
-/* line 112, ../sass/components/_typography.scss */
+/* line 121, ../sass/components/_typography.scss */
 .region-sidebar-second h2,
 .one-sidebar .region-sidebar-first h2 {
   background-position: 95% center;
 }
-/* line 114, ../sass/components/_typography.scss */
+/* line 123, ../sass/components/_typography.scss */
 .region-sidebar-second h2 a,
 .one-sidebar .region-sidebar-first h2 a {
   position: relative;
   font-size: 1em;
   display: block;
 }
-/* line 118, ../sass/components/_typography.scss */
+/* line 127, ../sass/components/_typography.scss */
 .region-sidebar-second h2 a span,
 .one-sidebar .region-sidebar-first h2 a span {
   position: absolute;
@@ -1591,64 +1601,64 @@ h1#page-title a span,
   background-position: right center;
 }
 
-/* line 132, ../sass/components/_typography.scss */
+/* line 141, ../sass/components/_typography.scss */
 .region-sidebar-first .view h2:before,
 .region-sidebar-second .view h2:before {
   background: none;
 }
 
 @media all and (min-width: 40em) {
-  /* line 138, ../sass/components/_typography.scss */
+  /* line 147, ../sass/components/_typography.scss */
   body {
     font-size: 18.5px;
   }
-  /* line 140, ../sass/components/_typography.scss */
+  /* line 149, ../sass/components/_typography.scss */
   body.two-sidebars {
     font-size: 16.5px;
   }
-  /* line 143, ../sass/components/_typography.scss */
+  /* line 152, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 27.75px;
   }
-  /* line 147, ../sass/components/_typography.scss */
+  /* line 156, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 24.235px;
   }
-  /* line 151, ../sass/components/_typography.scss */
+  /* line 160, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 18.5px;
   }
-  /* line 155, ../sass/components/_typography.scss */
+  /* line 164, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 15.355px;
   }
-  /* line 159, ../sass/components/_typography.scss */
+  /* line 168, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 12.395px;
   }
 }
 @media all and (min-width: 60em) {
-  /* line 169, ../sass/components/_typography.scss */
+  /* line 178, ../sass/components/_typography.scss */
   body {
     font-size: 16.5px;
   }
-  /* line 173, ../sass/components/_typography.scss */
+  /* line 182, ../sass/components/_typography.scss */
   body.two-sidebars h2, body.two-sidebars h2 a {
     font-size: 24.75px;
   }
-  /* line 177, ../sass/components/_typography.scss */
+  /* line 186, ../sass/components/_typography.scss */
   body.two-sidebars h3, body.two-sidebars h3 a, body.two-sidebars h2.block__title, body.two-sidebars h2.pane-title {
     font-size: 21.615px;
   }
-  /* line 181, ../sass/components/_typography.scss */
+  /* line 190, ../sass/components/_typography.scss */
   body.two-sidebars h4, body.two-sidebars h4 a {
     font-size: 16.5px;
   }
-  /* line 185, ../sass/components/_typography.scss */
+  /* line 194, ../sass/components/_typography.scss */
   body.two-sidebars h5, body.two-sidebars h5 a {
     font-size: 13.695px;
   }
-  /* line 189, ../sass/components/_typography.scss */
+  /* line 198, ../sass/components/_typography.scss */
   body.two-sidebars h6, body.two-sidebars h6 a {
     font-size: 11.055px;
   }
