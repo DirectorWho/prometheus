@@ -19,24 +19,25 @@ abstract class MailhandlerCommands {
   /**
    * Parse commands from email body.
    *
-   * @param array $message
-   *   Array of message info including headers.
+   * @param $object
+   *   Node object of the node being built for submission.
    */
   public function parse(&$message, $source, $client) {
+    return;
   }
 
   /**
    * Process parsed commands by applying / manipulating the node object.
    *
-   * @param object $message
-   *   Array of message info including headers.
+   * @param $object
+   *   Node object of the node being built for submission.
    */
   abstract public function process(&$message, $source);
 
   /**
    * Return mapping sources in the same manner as a Feeds Parser.
    *
-   * @return array
+   * @return
    *   Array containing mapping sources in standard Feeds Parser format.
    */
   public function getMappingSources($config) {
@@ -47,11 +48,13 @@ abstract class MailhandlerCommands {
    * Build configuration form.
    */
   public function configForm(&$form, &$form_state, $config) {
+    return;
   }
 
   /**
    * Build source form.
    */
   public function sourceForm(&$form, $source_config) {
+    return;
   }
 }

@@ -4,20 +4,16 @@
  * MailhandlerFiltersComments class.
  */
 
-/**
- * Filter to return comments.
- */
 class MailhandlerFiltersComments extends MailhandlerFilters {
   /**
    * Whether or not to fetch message, based on headers.
    *
-   * @param array $header
+   * @param $header
    *   Message headers
-   *
-   * @return bool
+   * @return
    *   TRUE if comment, FALSE otherwise
    */
-  public function fetch($header) {
+  function fetch($header) {
     return isset($header->in_reply_to);
   }
 }

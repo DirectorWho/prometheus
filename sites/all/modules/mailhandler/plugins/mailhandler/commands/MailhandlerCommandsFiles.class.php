@@ -4,15 +4,12 @@
  * MailhandlerCommandsFiles class.
  */
 
-/**
- * Provides file attachments.
- */
 class MailhandlerCommandsFiles extends MailhandlerCommands {
 
   /**
    * Parse attachments from message mimeparts.
    */
-  public function process(&$message, $source) {
+  function process(&$message, $source) {
     $message['attachments'] = array();
 
     foreach ($message['mimeparts'] as $attachment) {
@@ -36,14 +33,11 @@ class MailhandlerCommandsFiles extends MailhandlerCommands {
     unset($message['mimeparts']);
   }
 
-  /**
-   * Implements getMappingSources().
-   */
-  public function getMappingSources($config) {
+  function getMappingSources($config) {
     $sources = array();
     $sources['attachments'] = array(
-      'title' => t('Attachments'),
-      'description' => t('Files attached to message.'),
+        'title' => t('Attachments'),
+        'description' => t('Files attached to message.'),
     );
     return $sources;
   }

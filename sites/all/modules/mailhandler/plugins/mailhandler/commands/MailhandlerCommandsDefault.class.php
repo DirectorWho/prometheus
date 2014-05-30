@@ -4,35 +4,32 @@
  * MailhandlerCommandsDefault class.
  */
 
-/**
- * Provides default commands.
- */
 class MailhandlerCommandsDefault extends MailhandlerCommands {
 
   /**
    * Parse commands from email body.
    *
-   * @param array $message
+   * @param $message
    *   Message including body fields.
-   * @param object $source
+   * @param $source
    *   Source config.
    */
   public function parse(&$message, $source, $client) {
+    $config = $source->importer->getConfig();
     // Prepend the default commands.
     // User-added commands will override the default commands.
     $source_config = $source->getConfigFor($client);
-    $authid = $message['authenticated_uid'];
     if ($source_config['default_commands']) {
       $message['body_text'] = trim($source_config['default_commands']) . "\n" . $message['body_text'];
     }
-    $commands = $this->getCommands($message['body_text'], $client, $source, $authid);
+    $commands = $this->getCommands($message['body_text']);
     $this->commands = $commands;
     foreach ($commands as $key => $value) {
       $message['body_html'] = str_replace($key . ': ' . $value, '', $message['body_html']);
       $message['body_html'] = preg_replace('/<br[^>\r\n]*>/', '', $message['body_html'], 1);
     }
     if ($message['authenticated_uid'] == 0) {
-      $commands = $this->getCommands($source_config['commands_failed_auth'], $client, $source, $authid);
+      $commands = $this->getCommands($source_config['commands_failed_auth']);
       foreach ($commands as $key => $value) {
         if (isset($this->commands[$key])) {
           $this->commands[$key] = $value;
@@ -44,7 +41,7 @@ class MailhandlerCommandsDefault extends MailhandlerCommands {
   /**
    * Parse and process commands.
    */
-  public function process(&$message, $source) {
+  function process(&$message, $source) {
     if (!empty($this->commands)) {
       foreach ($this->commands as $key => $value) {
         if (drupal_substr($value, 0, 1) == '[' && drupal_substr($value, -1, 1) == ']') {
@@ -53,7 +50,7 @@ class MailhandlerCommandsDefault extends MailhandlerCommands {
           $value = explode(',', $value);
         }
         $key = str_replace(' ', '_', $key);
-        if (!empty($key) && empty($message[$key])) {
+        if (!empty($key)) {
           $message[$key] = $value;
         }
       }
@@ -90,10 +87,7 @@ class MailhandlerCommandsDefault extends MailhandlerCommands {
     );
   }
 
-  /**
-   * Implements getMappingSources().
-   */
-  public function getMappingSources($config) {
+  function getMappingSources($config) {
     $sources = array();
     $sources['body_text'] = array(
       'name' => t('Body (Text)'),
@@ -114,16 +108,7 @@ class MailhandlerCommandsDefault extends MailhandlerCommands {
     return $sources;
   }
 
-  /**
-   * Implements getCommands().
-   */
-  public function getCommands(&$string, $client = NULL, $source = NULL, $authid = NULL) {
-    if ($source) {
-      $config = $source->importer->getConfig();
-    }
-    if ($client) {
-      $source_config = $source->getConfigFor($client);
-    }
+  function getCommands(&$string) {
     $commands = array();
     $endcommands = NULL;
     // Collect the commands and locate signature.
@@ -133,23 +118,10 @@ class MailhandlerCommandsDefault extends MailhandlerCommands {
       if (count($matches) == 3) {
         $key = trim($matches[1]);
         $value = trim($matches[2]);
-        if (isset($config)) {
-          if (!(strpos($config['parser']['config']['available_commands'], $key) === FALSE)) {
-            $commands[$key] = $value;
-          }
-        }
-        elseif (isset($source_config)) {
-          if (!(strpos($config['parser']['source_config']['commands_failed_auth'], $key) === FALSE)) {
-            $commands[$key] = $value;
-          }
-        }
+        $commands[$key] = $value;
       }
-      elseif (!empty($commands)) {
-        $endcommands = count($commands);
-        break;
-      }
-      elseif ($i == 0) {
-        $endcommands = 0;
+      elseif (!empty($commands) || $i == 0) {
+        $endcommands = $i;
         break;
       }
     }

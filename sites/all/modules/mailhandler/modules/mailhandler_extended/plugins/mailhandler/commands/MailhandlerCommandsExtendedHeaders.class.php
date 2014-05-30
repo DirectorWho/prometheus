@@ -4,9 +4,6 @@
  * MailhandlerCommandsExtendedHeaders class.
  */
 
-/**
- * Provides extended headers from messages.
- */
 class MailhandlerCommandsExtendedHeaders extends MailhandlerCommandsHeaders {
 
   /**
@@ -21,10 +18,7 @@ class MailhandlerCommandsExtendedHeaders extends MailhandlerCommandsHeaders {
     );
   }
 
-  /**
-   * Implements getMappingSources().
-   */
-  public function getMappingSources($config) {
+  function getMappingSources($config) {
     $sources = array();
     $extended_headers = explode("\n", $config['extended_headers']);
     foreach ($extended_headers as $header) {

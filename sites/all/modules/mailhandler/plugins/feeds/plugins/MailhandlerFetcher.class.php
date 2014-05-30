@@ -9,23 +9,23 @@
  * Definition of the import batch object needed by MailhandlerFetcher.
  */
 class MailhandlerFetcherResult extends FeedsFetcherResult {
-  protected $mailbox_name;
+  protected $mailbox;
   protected $filter;
 
   /**
    * Constructor.
    */
-  public function __construct($mailbox_name, $filter) {
-    parent::__construct('');
-    $this->mailbox_name = $mailbox_name;
+  public function __construct($mailbox, $filter) {
+    $this->mailbox = $mailbox;
     $this->filter = $filter;
+    parent::__construct('');
   }
 
   /**
    * Implementation of FeedsImportBatch::getRaw();
    */
   public function getRaw() {
-    $mailbox = mailhandler_mailbox_load($this->mailbox_name);
+    $mailbox = mailhandler_mailbox_load($this->mailbox);
     if ($class = mailhandler_plugin_load_class('mailhandler', $mailbox->settings['retrieve'], 'retrieve', 'handler')) {
       if ($messages = $class->retrieve($mailbox, $this->filter)) {
         return array('messages' => $messages, 'mailbox' => $mailbox);
@@ -34,9 +34,6 @@ class MailhandlerFetcherResult extends FeedsFetcherResult {
   }
 }
 
-/**
- * Implementation of FeedsFetcher.
- */
 class MailhandlerFetcher extends FeedsFetcher {
 
   /**
@@ -44,7 +41,7 @@ class MailhandlerFetcher extends FeedsFetcher {
    */
   public function fetch(FeedsSource $source) {
     $source_config = $source->getConfigFor($this);
-    return new MailhandlerFetcherResult($source_config['source'], $this->config['filter']);
+    return new MailhandlerFetcherResult($source_config['mailbox'], $this->config['filter']);
   }
 
   /**
@@ -52,11 +49,11 @@ class MailhandlerFetcher extends FeedsFetcher {
    */
   public function sourceForm($source_config) {
     $form = array();
-    $form['source'] = array(
+    $form['mailbox'] = array(
       '#type' => 'select',
       '#title' => t('Mailbox'),
       '#description' => t('Select a mailbox to use'),
-      '#default_value' => isset($source_config['source']) ? $source_config['source'] : '',
+      '#default_value' => isset($source_config['mailbox']) ? $source_config['mailbox'] : '',
       '#options' => _mailhandler_build_options(mailhandler_mailbox_load_all(FALSE), 'admin_title'),
     );
     return $form;
@@ -67,7 +64,7 @@ class MailhandlerFetcher extends FeedsFetcher {
    */
   public function sourceDefaults() {
     return array(
-      'source' => '',
+      'mailbox' => '',
     );
   }
 

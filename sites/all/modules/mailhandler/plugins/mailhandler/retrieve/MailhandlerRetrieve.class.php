@@ -12,12 +12,13 @@ abstract class MailhandlerRetrieve {
   /**
    * Connect to mailbox and run message retrieval.
    *
-   * @param array $mailbox
+   * @param $mailbox
    *   Array of mailbox configuration.
-   * @param string $filter_name
+   * @param $filter_name
    *   Mailhandler filter to restrict what messages are retrieved.
    */
   public function retrieve($mailbox, $filter_name = 'MailhandlerFilters') {
+    return;
   }
 
   /**
@@ -27,9 +28,7 @@ abstract class MailhandlerRetrieve {
     return array();
   }
 
-  /**
-   * Purge given message.
-   */
   public function purge_message($mailbox, $message) {
+    return;
   }
 }

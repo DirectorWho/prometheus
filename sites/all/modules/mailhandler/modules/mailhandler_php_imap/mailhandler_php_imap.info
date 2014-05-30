@@ -4,11 +4,13 @@ core = 7.x
 dependencies[] = "mailhandler"
 package = "Mailhandler"
 
+files[] = mailhandler_php_imap.install
+files[] = mailhandler_php_imap.module
 files[] = plugins/mailhandler/retrieve/MailhandlerPhpImapRetrieve.class.php
 
-; Information added by Drupal.org packaging script on 2014-02-05
-version = "7.x-2.9+23-dev"
+; Information added by drupal.org packaging script on 2013-08-29
+version = "7.x-2.8"
 core = "7.x"
 project = "mailhandler"
-datestamp = "1391564017"
+datestamp = "1377818797"
 
