@@ -8,10 +8,12 @@ Drupal.behaviors.my_custom_behavior = {
 
     // mix it up plugin
     $(function(){
+      alert('hit');
       $('.view-school-search').mixItUp();
     });
     //vertiscroll plugin
     $(function(){
+      alert('hit');
        $('.scrollable').vertiscroll();
      });
 
