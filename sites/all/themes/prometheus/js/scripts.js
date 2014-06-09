@@ -162,18 +162,13 @@ THE SOFTWARE.
 
       // end vertiscroll
 
-      // mix it up plugin
+      // call mixitup and vertiscroll
       $(function(){
-        alert('hit mix it up');
+        alert('hit both');
         $('.view-school-search').mixItUp();
+        $('.scrollable').vertiscroll();
       });
-      //vertiscroll plugin
-      $(function(){
-        alert('hit vertiscroll');
 
-       });
-
-       $('.scrollable').vertiscroll();
 
     // end custom jQuery
 }
