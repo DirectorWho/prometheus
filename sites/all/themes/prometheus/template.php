@@ -95,6 +95,7 @@ function prometheus_preprocess_page(&$vars) {
   if (request_uri() == '/school-search') {
     drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/vertiscroll.min.js');
     //drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/jquery.mixitup.js');
+    libraries_load('mixitup');
   }
 }
 
