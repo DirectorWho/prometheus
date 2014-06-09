@@ -1,0 +1,6 @@
+; $Id$
+name = MixItUp Library
+description = A custom module to add the MixItUp jQuery plugin as a library.
+package = WDG
+core = 7.x
+files[] = mixitup_lbrary.module
