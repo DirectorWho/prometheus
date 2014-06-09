@@ -94,7 +94,7 @@ function prometheus_preprocess_page(&$vars) {
   // add MixitUp and Vertiscroll plugins to specific path - this is where the view is
   if (request_uri() == '/school-search') {
     drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/vertiscroll.min.js');
-    drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/jquery.mixitup.js');
+    drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/mixitup-1.5.js');
   }
 }
 
