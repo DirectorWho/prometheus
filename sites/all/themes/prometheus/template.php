@@ -11,8 +11,6 @@
 function prometheus_preprocess_html(&$variables, $hook) {
 
   drupal_add_css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600, 300italic|Roboto+Slab:100', array('type' => 'external', 'weight' => 0,));
-  drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/vertiscroll.min.js');
-  drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/jquery.mixitup.js');
   drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/scripts.js');
 
   // get rid of .no-sidebars class that Drupal adds
@@ -92,6 +90,12 @@ function prometheus_preprocess_page(&$vars) {
   }
   //remove messages
   $variables['show_messages'] = FALSE;
+
+  // add MixitUp and Vertiscroll plugins to specific path - this is where the view is
+  if (request_uri() == '/school-search') {
+    drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/vertiscroll.min.js');
+    drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/jquery.mixitup.js');
+  }
 }
 
 
