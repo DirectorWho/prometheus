@@ -164,7 +164,6 @@ THE SOFTWARE.
 
       // call mixitup and vertiscroll
       $(function(){
-        alert('hit both');
         $('.view-school-search').mixItUp();
         $('.scrollable').vertiscroll();
       });
