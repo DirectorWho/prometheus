@@ -92,7 +92,7 @@ function prometheus_preprocess_page(&$vars) {
   $variables['show_messages'] = FALSE;
 
   // add MixitUp and Vertiscroll plugins to specific path - this is where the view is
-  if (request_uri() == '/school-search') {
+  if (request_uri() == '/school-search' || request_uri() == '/school-search-test') {
     drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/vertiscroll.min.js');
     //drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/jquery.mixitup.js');
     libraries_load('mixitup');
