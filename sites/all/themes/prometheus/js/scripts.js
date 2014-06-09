@@ -168,12 +168,12 @@ THE SOFTWARE.
         $('.view-school-search').mixItUp();
       });
       //vertiscroll plugin
-      $(function vScroll (){
+      $(function(){
         alert('hit vertiscroll');
-         $('.scrollable').vertiscroll();
+
        });
 
-       vScroll();
+       $('.scrollable').vertiscroll();
 
     // end custom jQuery
 }
