@@ -210,6 +210,7 @@
  *   );
  * @endcode
  */
+
 $databases = array (
   'default' =>
   array (
@@ -225,6 +226,21 @@ $databases = array (
     ),
   ),
 );
+
+// $databases = array (
+//   'default' =>
+//   array (
+//     'default' =>
+//     array (
+//       'database' => 'ccc-drupal',
+//       'username' => 'root',
+//       'password' => 'root',
+//       'host' => 'localhost',
+//       'driver' => 'mysql',
+//       'prefix' => '',
+//     ),
+//   ),
+// );
 
 /**
  * Access control for update.php script.
