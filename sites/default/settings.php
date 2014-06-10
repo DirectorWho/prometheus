@@ -211,36 +211,36 @@
  * @endcode
  */
 
-$databases = array (
-  'default' =>
-  array (
-    'default' =>
-    array (
-      'database' => 'pantheon',
-      'username' => 'pantheon',
-      'password' => 'f6577ad1ec1644cfaa51264e4967dbe6',
-      'host' => 'dbserver.dev.9778f897-53a9-4ccf-9b34-5b3d4c58d51f.drush.in',
-      'port' => '11871',
-      'driver' => 'mysql',
-      'prefix' => '',
-    ),
-  ),
-);
-
 // $databases = array (
 //   'default' =>
 //   array (
 //     'default' =>
 //     array (
-//       'database' => 'ccc-drupal',
-//       'username' => 'root',
-//       'password' => 'root',
-//       'host' => 'localhost',
+//       'database' => 'pantheon',
+//       'username' => 'pantheon',
+//       'password' => 'f6577ad1ec1644cfaa51264e4967dbe6',
+//       'host' => 'dbserver.dev.9778f897-53a9-4ccf-9b34-5b3d4c58d51f.drush.in',
+//       'port' => '11871',
 //       'driver' => 'mysql',
 //       'prefix' => '',
 //     ),
 //   ),
 // );
+
+$databases = array (
+  'default' =>
+  array (
+    'default' =>
+    array (
+      'database' => 'ccc-drupal',
+      'username' => 'root',
+      'password' => 'root',
+      'host' => 'localhost',
+      'driver' => 'mysql',
+      'prefix' => '',
+    ),
+  ),
+);
 
 /**
  * Access control for update.php script.
