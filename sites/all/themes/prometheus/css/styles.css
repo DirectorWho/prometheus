@@ -1365,6 +1365,11 @@ input[type="tel"]:focus {
   display: none;
 }
 
+/* line 225, ../sass/components/_forms.scss */
+.listserv-form {
+  margin-bottom: 2rem;
+}
+
 /* line 3, ../sass/components/_tables.scss */
 table {
   background-color: transparent;
