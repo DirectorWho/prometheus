@@ -833,18 +833,19 @@ nav {
 }
 
 @media all and (min-width: 40em) {
-  /* line 158, ../sass/components/_views.scss */
+  /* line 157, ../sass/components/_views.scss */
   .view-school-search .views-column {
     width: 50%;
   }
-  /* line 162, ../sass/components/_views.scss */
-  .view-school-search .col-1 {
-    padding-right: 1em;
+
+  /* line 161, ../sass/components/_views.scss */
+  .mix:nth-child(odd) {
+    padding-right: .5rem;
   }
-  /* line 166, ../sass/components/_views.scss */
-  .view-school-search .col-2 {
-    padding-right: 0;
-    padding-left: 1em;
+
+  /* line 165, ../sass/components/_views.scss */
+  .mix:nth-child(even) {
+    padding-left: .5rem;
   }
 }
 /* line 3, ../sass/components/_blocks.scss */

@@ -154,18 +154,15 @@
 
 @media all and (min-width: $tab) {
 
-  .view-school-search {
-  	.views-column {
-//	    padding: 0 1em 1em 0;
+  .view-school-search .views-column {
 	    width: 50%;
 	  }
-	  .col-1 {
-	  	padding-right: 1em;
-	  }
 
-	  .col-2 {
-		  padding-right: 0;
-		  padding-left: 1em;
-	  }
-  }
+  .mix:nth-child(odd) {
+			padding-right: .5rem;
+	}
+		
+	.mix:nth-child(even) {
+		padding-left: .5rem;
+	}
 }
