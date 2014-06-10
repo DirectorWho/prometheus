@@ -121,29 +121,6 @@ img.header__logo-image {
   }
 }
 
-h3.tech-support-button {
-  background-color: $accent;
-  background-image: url('../images/shortcut-light.png');
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
- 	@include border-radius(4px);
- 	@include box-shadow (2px 2px 4px lighten($black, 50%));
- 	margin-bottom: 1em;
-  a {
-  	display: block;
-    width: 100%;
-    color: $white;
-    font-size: .75em;
-		padding: .5rem 1rem;
-    &:hover {
-		  color: $white;
-    }
-	  }
-  &:hover  {
-	  background-color: lighten($accent, 15%);
-	  @include trans-all;
-  }
-}
 
 // Sidebar regions
 
@@ -183,7 +160,7 @@ footer {
   }
   p {
     font-size: $base-font-size * .75;
-    margin-bottom: 0;
+    // margin-bottom: 0;
     }
 }
 
@@ -191,12 +168,16 @@ footer {
   padding: 10px 0;
 }
 
+.disclaimer-left {
+	margin-top: 2rem;
+}
+
 .copyright {
   clear: both;
   overflow: hidden;
   padding-bottom: $vert-spacing;
+  text-align: center;
   p {
-    float: left;
     font-size: $base-font-size * .625;
   }
 }
@@ -214,6 +195,7 @@ footer {
   .disclaimer-right {
     float: left;
     width: 50%;
+    margin-top: 1em;
   }
 
   .disclaimer-left {

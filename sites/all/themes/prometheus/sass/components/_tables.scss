@@ -11,7 +11,7 @@ table {
 
 table th,
 table td {
-  padding: .75em;
+  padding: 1.5em 1.5em 1.5em 0em;
   line-height: $base-line-height;
   text-align: left;
   vertical-align: top;
@@ -24,6 +24,19 @@ table th {
 
 tbody {
   border-top: 0;
+  tr {
+		background-image: url('../images/lh-line.png');
+		background-repeat: repeat-x;
+		background-position: top left;
+  	&:first-child {
+	  	background: none;
+  	}
+  	p {
+	  	&:last-child {
+		  	margin-bottom: 0;
+	  	}
+  	}
+  }
 }
 
 table thead th {
@@ -32,10 +45,10 @@ table thead th {
 
 table tbody > tr:nth-child(odd) > td,
 table tbody > tr:nth-child(odd) > th {
-  background-color: $accent;
+  background-color: transparent;
 }
 
 table tbody > tr:nth-child(even) > td,
 table tbody > tr:nth-child(even) > th {
-  background-color: lighten($accent, 7%);
+  background-color: transparent;
 }

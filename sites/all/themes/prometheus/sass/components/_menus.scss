@@ -179,9 +179,9 @@ footer .region-footer p a:toggled {
 		background-repeat: repeat-x;
 		background-position: bottom left;
     display: block;
-    padding: .75em 30px;
-    margin-right: -30px;
-    margin-left: -30px;
+    padding: .75em 0px;
+//    margin-right: -30px;
+//    margin-left: -30px;
   }
   li.last {
 	  background-image: none;
@@ -206,6 +206,12 @@ footer .region-footer p a:toggled {
 
 		}
 	}
+	
+	.region-menu .menu,
+	.region-footer .menu {
+		text-align: center;
+	}
+	
   .js .region-menu .menu,
   .js .region-menu .menu li ul {
     max-height: none;

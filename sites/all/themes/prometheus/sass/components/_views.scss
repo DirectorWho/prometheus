@@ -1,13 +1,18 @@
 // views styles
 
 .view {
-	.odd,
-	.even,
+	.row,
 	.item-list {
 		background-image: url('../images/lh-line.png');
 		background-repeat: repeat-x;
 		background-position: top left;
 		padding-top: 1em;
+	}
+	
+	.row {
+		&:first-child {
+			background: none;
+		}
 	}
 	.item-list {
 		padding-top: .25em;
@@ -40,14 +45,6 @@
 
 // Newsfeeds
 
-.view-newsfeeds {
-	.row {
-		background-image: none;
-		&.first {
-			background-image: url('../images/lh-line.png');
-		}
-	}
-}
 
 // school search view
 
