@@ -2698,12 +2698,17 @@ ul.pager li a {
   border: 2px solid #9ece9e;
 }
 /* line 169, ../sass/components/_misc.scss */
+.messages.status {
+  background: #c4dfe9;
+  border: 2px solid #8cc1d4;
+}
+/* line 173, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 179, ../sass/components/_misc.scss */
+/* line 183, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -2712,7 +2717,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 183, ../sass/components/_misc.scss */
+/* line 187, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -2720,7 +2725,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 189, ../sass/components/_misc.scss */
+/* line 193, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;
@@ -2729,26 +2734,26 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 193, ../sass/components/_misc.scss */
+/* line 197, ../sass/components/_misc.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* line 200, ../sass/components/_misc.scss */
+/* line 204, ../sass/components/_misc.scss */
 footer .region-footer a {
   color: #cfe8ef;
 }
-/* line 202, ../sass/components/_misc.scss */
+/* line 206, ../sass/components/_misc.scss */
 footer .region-footer a:hover {
   color: #83c3d6;
 }
-/* line 207, ../sass/components/_misc.scss */
+/* line 211, ../sass/components/_misc.scss */
 footer .region-footer p a {
   color: #83c3d6;
 }
-/* line 209, ../sass/components/_misc.scss */
+/* line 213, ../sass/components/_misc.scss */
 footer .region-footer p a:hover {
   color: #3d9bb6;
 }
