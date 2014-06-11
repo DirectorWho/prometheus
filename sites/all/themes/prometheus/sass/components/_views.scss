@@ -45,6 +45,11 @@
 
 // Announcements taxonomy view page
 
+.view-taxonomy-term-page label,
+.view-announcement-categories label {
+  margin-bottom: 0;
+}
+
 .view-taxonomy-term-page .row,
 .view-taxonomy-term-page .row:first-child,
 .view-announcement-categories .row,
