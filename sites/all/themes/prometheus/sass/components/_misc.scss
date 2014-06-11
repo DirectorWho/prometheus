@@ -150,6 +150,8 @@ ul.pager li a {
 // messages
 
 .messages {
+	padding: 1em;
+	margin-bottom: 1em;
   &.error {
     background: $error;
     border: 2px solid #ce9e9e;
