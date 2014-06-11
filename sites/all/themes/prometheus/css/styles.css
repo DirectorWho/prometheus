@@ -709,13 +709,17 @@ nav {
   background: #f4f2ed;
 }
 
-/* line 48, ../sass/components/_views.scss */
-.view-taxonomy-term-page .row {
+/* line 49, ../sass/components/_views.scss */
+.view-taxonomy-term-page .row,
+.view-taxonomy-term-page .row:first-child {
+  background-image: url("../images/lh-line.png");
+  background-repeat: repeat-x;
+  background-position: left bottom;
   padding: 0 0 1em 0;
   margin-bottom: 1em;
 }
 
-/* line 57, ../sass/components/_views.scss */
+/* line 61, ../sass/components/_views.scss */
 .scrollable {
   border: 1px solid white;
   background-color: white;
@@ -725,26 +729,26 @@ nav {
   overflow: scroll;
 }
 
-/* line 66, ../sass/components/_views.scss */
+/* line 70, ../sass/components/_views.scss */
 .scrollarea {
   background: #efefef !important;
   padding-right: 0 !important;
   width: 10px !important;
 }
-/* line 70, ../sass/components/_views.scss */
+/* line 74, ../sass/components/_views.scss */
 .scrollarea .scrollbar {
   background: #cccccc !important;
   border-radius: 0 !important;
   width: 10px !important;
 }
 
-/* line 78, ../sass/components/_views.scss */
+/* line 82, ../sass/components/_views.scss */
 .view-school-search .view-data {
   min-height: 15em;
   overflow: hidden;
   padding: 1em 0em 0 0em;
 }
-/* line 82, ../sass/components/_views.scss */
+/* line 86, ../sass/components/_views.scss */
 .view-school-search .view-data:before {
   content: " ";
   display: block;
@@ -757,17 +761,17 @@ nav {
   background-repeat: repeat-x;
   background-position: top left;
 }
-/* line 95, ../sass/components/_views.scss */
+/* line 99, ../sass/components/_views.scss */
 .view-school-search .views-row {
   overflow: hidden;
 }
-/* line 98, ../sass/components/_views.scss */
+/* line 102, ../sass/components/_views.scss */
 .view-school-search .views-column {
   float: left;
   padding: 0 0em 1em 0;
   width: 100%;
 }
-/* line 103, ../sass/components/_views.scss */
+/* line 107, ../sass/components/_views.scss */
 .view-school-search h3 {
   background: white;
   border: 1px solid #cccccc;
@@ -796,12 +800,12 @@ nav {
   -o-border-radius: 4px;
   border-radius: 4px;
 }
-/* line 126, ../sass/components/_views.scss */
+/* line 130, ../sass/components/_views.scss */
 .view-school-search h3 a {
   font-size: 1.5em;
   font-size: 1.5rem;
 }
-/* line 132, ../sass/components/_views.scss */
+/* line 136, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter {
   background: none;
   border-bottom: 1px solid #cccccc;
@@ -813,42 +817,42 @@ nav {
   -o-transition: all .3s;
   transition: all .3s;
 }
-/* line 139, ../sass/components/_views.scss */
+/* line 143, ../sass/components/_views.scss */
 .view-school-search .filter-buttons .filter:hover {
   background: #cccccc;
 }
-/* line 144, ../sass/components/_views.scss */
+/* line 148, ../sass/components/_views.scss */
 .view-school-search .filter.active {
   background: #292b77;
   color: white;
 }
-/* line 147, ../sass/components/_views.scss */
+/* line 151, ../sass/components/_views.scss */
 .view-school-search .filter.active:hover {
   background: #292b77;
 }
-/* line 151, ../sass/components/_views.scss */
+/* line 155, ../sass/components/_views.scss */
 .view-school-search .view-item {
   background: white;
 }
 
-/* line 157, ../sass/components/_views.scss */
+/* line 161, ../sass/components/_views.scss */
 .js .mix,
 .mix.no-result {
   display: none;
 }
 
 @media all and (min-width: 40em) {
-  /* line 163, ../sass/components/_views.scss */
+  /* line 167, ../sass/components/_views.scss */
   .view-school-search .views-column {
     width: 50%;
   }
 
-  /* line 167, ../sass/components/_views.scss */
+  /* line 171, ../sass/components/_views.scss */
   .mix:nth-child(odd) {
     padding-right: .5rem;
   }
 
-  /* line 171, ../sass/components/_views.scss */
+  /* line 175, ../sass/components/_views.scss */
   .mix:nth-child(even) {
     padding-left: .5rem;
   }
