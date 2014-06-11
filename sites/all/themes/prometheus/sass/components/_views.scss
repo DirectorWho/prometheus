@@ -46,7 +46,9 @@
 // Announcements taxonomy view page
 
 .view-taxonomy-term-page .row,
-.view-taxonomy-term-page .row:first-child {
+.view-taxonomy-term-page .row:first-child,
+.view-announcement-categories .row,
+.view-announcement-categories .row:first-child {
   background-image: url('../images/lh-line.png');
   background-repeat: repeat-x;
   background-position: left bottom;
