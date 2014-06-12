@@ -1,7 +1,7 @@
 /* FORM STYLES */
 
 label {
-  display: inline-block;
+  display: block;
   font-weight: bold;
   margin-bottom: .5rem;
 }
@@ -33,47 +33,15 @@ input[type="email"],
 input[type="password"],
 input[type="search"],
 input[type="tel"] {
-  background: $white;
-  border: 1px solid $white;
+  border: 1px solid $gray;
+  box-shadow: 0 0 2px $gray inset;
   color: $black;
-  font-size: $base-font-size * .825;
-  height: 2.5rem;
+  font-size: $base-font-size;
+  height: 2.25rem;
   margin-bottom: .5rem;
-  outline: none;
+  padding: 0 .5rem;
   position: relative;
-  width: 100%;
-	padding: 10px;
-  @include border-radius(4px);
-  @include box-shadow(inset 0 0 7px #aaaaaa);
-	@include input-placeholder {
-		font-style: italic;
-		font-weight: 100;
-		font-size: .8em;
-		font-family: $sans-body;
-	}
-  &:hover {
-	  color: $accent !important;
-  }
-}
-
-@media all and (min-width: $desk) {
-	input[type='text'],
-	textarea,
-	select,
-	input[type="date"],
-	input[type="email"],
-	input[type="password"],
-	input[type="search"],
-	input[type="tel"] {
-		border-color: $light-beige;
-		padding: 10px;
-		@include input-placeholder {
-			font-style: italic;
-			font-weight: 100;
-			font-size: .8em;
-			font-family: $sans-body;
-		}
-	}
+  width: 80%;
 }
 
 textarea {
@@ -89,19 +57,15 @@ input[type="submit"],
 input[type="button"],
 .comment-links a,
 .button {
-  @include background-image(linear-gradient($white, $light-beige));
-  border: 1px solid #dcd5c7;
+  background: $accent;
+  border: 2px solid lighten($accent, 15%);
   border-radius: .5rem;
-  color: $black;
-  font-family: $serif;
-//  font-size: $base-font-size;
+  color: $white;
+  font-size: $base-font-size;
   margin: 4px 2px;
   padding: 8px 16px; padding: .5rem 1rem;
   text-shadow: none;
   @include trans-all;
-   &:hover {
-		background: $accent;
-  }
 }
 
 button:hover,
@@ -110,11 +74,11 @@ input[type="submit"]:hover,
 input[type="button"]:hover,
 .comment-links a:hover,
 .button:hover {
+  background: lighten($accent, 10%);
   color: $white !important;
   cursor: pointer;
 }
 
-button:focus,
 input[type='text']:focus,
 textarea:focus,
 select:focus,
@@ -123,12 +87,13 @@ input[type="email"]:focus,
 input[type="password"]:focus,
 input[type="search"]:focus,
 input[type="tel"]:focus {
-  outline: none;
+  border: 1px solid $accent;
+  box-shadow: 0 0 2px $accent inset;
 }
 
 // Drupal's form field wrapper class
 .form-item {
-  margin-bottom: 0;
+  margin-bottom: $vert-spacing * 1.5;
   overflow: hidden;
 }
 
@@ -194,34 +159,4 @@ input[type="tel"]:focus {
   margin-bottom: 1rem;
   padding: 1rem;
   width: 40%;
-}
-
-// search form
-
-.block-search input[type="search"] {
-  background-image: url(../images/search-icon.png);
-  background-repeat: no-repeat;
-  background-position: 92% 5px;
-  padding: 5px;
-  @include box-sizing(border-box);
-  @include background-size(20px 23px);
-  color: $black;
-  font: inherit;
-  -webkit-appearance: none;
-  width: 100%;
-  @include border-radius(30px);
-}
-
-.form-type-searchfield {
-  padding-right: 5px;
-}
-
-.block-search .form-actions {
-  display: none;
-}
-
-// listserv form
-
-.listserv-form {
-  margin-bottom: $vert-spacing;
 }

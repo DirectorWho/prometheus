@@ -6,17 +6,10 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  overflow-x: hidden;
-}
-
 body {
   color: $text-color;
-  font-size: $base-font-size * .925;
+  font-size: $base-font-size * .85;
   font-family: $sans-body;
-  background-color: $light-beige;
-
 }
 
 a,
@@ -35,13 +28,13 @@ a img, a, img {
   border-color: none !important;
 }
 
+figure {
+  margin: 0;
+}
+
 img {
   max-width: 100%;
   height: auto;
-}
-
-figure {
-  margin: 0;
 }
 
 a:hover,
@@ -94,8 +87,4 @@ dt {
 dd {
   font-weight: $body-font-weight;
   margin: 0;
-}
-
-nav {
-  display: block;
 }

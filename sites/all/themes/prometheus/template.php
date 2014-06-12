@@ -5,12 +5,13 @@
  *
  * Complete documentation for this file is available online.
  * @see https://drupal.org/node/1728096
+ * Special thanks to all the Drupal devs I have learned from and that have inspired the code below...
  */
 
 
 function prometheus_preprocess_html(&$variables, $hook) {
 
-  drupal_add_css('http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,600, 300italic|Roboto+Slab:300', array('type' => 'external', 'weight' => 0,));
+  drupal_add_css('http://fonts.googleapis.com/css?family=Roboto:300,400,500', array('type' => 'external', 'weight' => 0,));
   drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/scripts.js');
 
   // get rid of .no-sidebars class that Drupal adds
@@ -60,21 +61,8 @@ function prometheus_css_alter(&$css) {
   $css = array_diff_key($css, $exclude);
 }
 
-// function prometheus_form_alter(&$form, &$form_state, $form_id) {
-//   switch ($form_id) {
-//     case 'user_pass':
-//         print '<pre>';print_r($form); print '</pre>';
-//         $form['name']['#title'] = 'Please type your username/email quickly.';
-//         $form['actions']['submit']['#value'] = 'Email it to me!';
-//       break;
-//   }
-// }
-
 /**
-* Add page template suggestions based on the aliased path. For instance, if the current
-* page has an alias of about/history/early, we'll have templates of:
-* page-about-history-early.tpl.php, page-about-history.tpl.php, page-about.tpl.php
-* Whichever is found first is the one that will be used.
+* Add page template suggestions based on the path alias.
 */
 
 function prometheus_preprocess_page(&$vars) {
@@ -91,32 +79,15 @@ function prometheus_preprocess_page(&$vars) {
   //remove messages
   $variables['show_messages'] = FALSE;
 
-  // add MixitUp and Vertiscroll plugins to specific path - this is where the view is
-  if (request_uri() == '/school-search' || request_uri() == '/school-search-test') {
-    drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/vertiscroll.min.js');
-    libraries_load('mixitup');
-  }
+
 }
 
-
-// breadcrumbs
-
-// function fm_breadcrumb($variables) {
-
-//   if (count($variables['breadcrumb']) > 0) {
-//     $lastitem = sizeof($variables['breadcrumb']);
-//     $title = drupal_get_title();
-//     $crumbs = '<ul class="breadcrumb">';
-//     $a=1;
-//     foreach($variables['breadcrumb'] as $value) {
-//         if ($a!=$lastitem){
-//          $crumbs .= '<li class="breadcrumb-'.$a.'">'. $value . ' ' . '</li>' . '<li class="breadcrumb-sep">'. '&frasl;' . ' ' . '</li>';
-//          $a++;
-//         }
-
-//           else {
-//             $crumbs .= '<li class="breadcrumb-last">' . $value . '</li>';          }
-//     }
-//     $crumbs .= '</ul>';
-//   return $crumbs;
-// }
+function prometheus_page_alter(&$page) {
+  // force the footer to render even if empty because region template have copyright info
+    if ( !isset($page["footer"]) || empty($page["footer"])) {
+        $page["footer"] = array(
+            '#region' => 'footer',
+            '#weight' => '-10',
+            '#theme_wrappers' => array('region'));
+    }
+}

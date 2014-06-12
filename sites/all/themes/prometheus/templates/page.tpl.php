@@ -2,7 +2,6 @@
 
   <div class="header-wrapper">
     <header class="header" id="header" role="banner">
-      <a href="#" id="sponsor">Sponsored by: <span></span></a>
       <div class="branding-wrapper">
       <div class="region region-branding">
         <?php if ($logo): ?>
@@ -12,7 +11,7 @@
         <?php if ($site_name || $site_slogan): ?>
           <div class="header__name-and-slogan" id="name-and-slogan">
             <?php if ($site_name): ?>
-              <h1 class="header__site-name" id="site-name">
+              <h1 class="site-name">
                 <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" class="header__site-link" rel="home"><?php print $site_name; ?></a>
               </h1>
             <?php endif; ?>
@@ -25,18 +24,18 @@
             <?php print render($page['branding']); ?>
       </div>
     </div>
-    </header>
-  </div>
-
-  <div class="preface-wrapper">
     <div class="menu-wrapper">
        <?php if($main_menu): ?>
        <nav class="region-menu">
         <a href="#menu" class="menu-link">Menu</a>
-        <?php print theme('links__system_main_menu', array('links' => $main_menu, 'attributes' => array('class' => array('main-menu', 'menu')))); ?>
+        <?php print(render(menu_tree('main-menu'))); ?>
      </nav>
      <?php endif; ?>
     </div>
+    </header>
+  </div>
+
+  <div class="preface-wrapper">
     <div id="preface">
       <?php print render($page['preface']); ?>
     </div>

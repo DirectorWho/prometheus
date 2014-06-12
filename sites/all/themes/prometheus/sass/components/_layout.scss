@@ -7,24 +7,23 @@
  *
  */
 
-$max-width: 1100px;
+$max-width: 1000px;
 $gutter: 35px;
 
 header,
 .preface,
 .content-wrapper,
-.region-footer,
-.region-menu {
+footer {
   clear: both;
-  display: block;
   margin: 0 auto;
   max-width: $max-width;
   padding: 0 ($gutter / 2);
-  position: relative;
 }
 
+.region-branding,
 .region-menu {
-  padding: 0;
+  float: left;
+  width: 100%;
 }
 
 #content,
@@ -33,104 +32,83 @@ header,
   margin-bottom: $vert-spacing * 1.5;
 }
 
-.region-sidebar-first,
-.region-sidebar-second {
-  position: relative;
-}
-
-.front .preface {
-  max-width: 100%;
-  min-height: 410px;
-
-  .preface-text {
-	  background-color: $off-white;
-	  height: auto;
-	  p {
-		  margin-bottom: 20px;
-	  }
-  }
-}
-
-
-@media all and (min-width: $desk) {
-	
-	header {
-		max-width: 95%;
-	}
-
-  .region-menu{
-    padding: 0 ($gutter / 2);
-  }
-  
-	.preface {
-		.preface-text {
-			min-height: 65px;
-			
-		}
-	}
-  // #main {
-  //   overflow: hidden;
-  // }
+@media all and (min-width: $tab) {
 
   .two-sidebars {
     #content {
       float: left;
       padding-right: $gutter;
-      width: 50%;
-      margin-bottom: 0;
+      width: 67%;
       &:after {
         @include clear-it;
       }
     }
+
     .region-sidebar-first {
       float: left;
-      padding-right: $gutter;
-      width: 25%;
-      margin-bottom: 0;
+      width: 33%;
     }
     .region-sidebar-second {
       float: left;
-      width: 25%;
-      &:before {
-        content: '';
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        z-index: -1;
-        left: 100%;
-        background-color: $beige;
-        width: 9999px;
-      }
+      width: 33%;
     }
-	}
+  }
 
-	#content, .region-sidebar-first, .region-sidebar-second {
-		margin-bottom: 0;
-	}
+}
+
+
+@media all and (min-width: $desk) {
+
+  .region-branding {
+    width: 50%;
+  }
+
+  .region-menu {
+    width: 50%;
+  }
+
+// two sidebars, one on either side of content
+.two-sidebars {
+  #content {
+    float: left;
+    margin-left: 25%;
+    padding-right: $gutter;
+    width: 50%;
+    &:after {
+      @include clear-it;
+    }
+  }
+
+  .region-sidebar-first {
+    clear: none;
+    float: left;
+    margin-left: -75%;
+    padding-right: $gutter;
+    width: 25%;
+  }
+  .region-sidebar-second {
+    float: left;
+    width: 25%;
+  }
+}
 
 // one sidebar, sidebar first
 .one-sidebar.sidebar-first {
   #content {
+    float: left;
+    margin-left: 33%;
+    padding-right: $gutter;
+    width: 67%;
+    &:after {
+      @include clear-it;
+    }
+  }
+  .region-sidebar-first {
     clear: none;
     float: left;
     margin-left: -100%;
-    padding-right: $gutter;
-    width: 67%;
-  }
-  .region-sidebar-first {
-    float: left;
-    margin-left: 67%;
     width: 33%;
-    &:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      z-index: -1;
-      left: 100%;
-      background-color: $beige;
-      width: 9999px;
-    }
+    padding-right: 30px;
   }
 }
 
@@ -138,7 +116,7 @@ header,
 .one-sidebar.sidebar-second {
   #content {
     float: left;
-    padding-right: $gutter;
+    padding-right: 30px;
     width: 67%;
     &:after {
       @include clear-it;
@@ -148,16 +126,6 @@ header,
     clear: none;
     float: left;
     width: 33%;
-    :after {
-      bottom: 0;
-      content: "";
-      position: absolute;
-      top: 0;
-      width: 9999px;
-      left: 100%;
-      background: $beige;
-      z-index: -1;
-    }
   }
 }
 

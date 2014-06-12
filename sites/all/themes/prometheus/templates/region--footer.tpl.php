@@ -28,9 +28,7 @@
  * @ingroup themeable
  */
 ?>
-<?php if ($content): ?>
   <div class="<?php print $classes; ?>">
     <?php print $content; ?>
-    <div class="copyright"><p>The TCW is funded by a California Community College Chancellor's grant. Copyright &copy; <?php echo(date("Y",time ())); ?> California Community College Statewide Website. All Rights Reserved.</p></div>
+    <div class="copyright"><p>Copyright &copy; <?php echo(date("Y",time ())); ?> Your Company, Inc. All Rights Reserved.</p></div>
   </div>
-<?php endif; ?>

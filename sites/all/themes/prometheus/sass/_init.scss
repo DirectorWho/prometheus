@@ -6,10 +6,6 @@ $legacy-support-for-ie7: false;
 // breakpoints
 $tab: 40em;
 $desk: 60em;
-$big-desk: 90.635em;
-$really-big-desk: 100em;
-$super-big-desk: 123.75em;
-$monster-desk: 150.9375em;
 
 // Font faces, stacks and sizes.
 
@@ -23,17 +19,17 @@ $h5-font-size: 0.83 * $base-font-size;
 $h6-font-size: 0.67 * $base-font-size;
 
 $courier: "Courier New", "DejaVu Sans Mono", monospace, sans-serif;
-$serif: "Roboto Slab", serif;
-$sans-body: "Source Sans Pro", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
+$sans: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans-body: "Roboto", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
 
 // Variables for fonts.
 $body-font: $sans-body;
 $font-monospace:   $courier;
 $body-font-weight: 300;
-$bold-font-weight: 600;
+$bold-font-weight: 500;
 $base-line-height: 1.4;
 
-$header-font-family: $serif;
+$header-font-family: $sans;
 $header-font-weight: 300;
 $header-font-style: normal;
 $header-line-height: 110%;
@@ -44,28 +40,18 @@ $header-bottom-margin: .5em;
 // Colors, etc.
 //
 $base-color: #fff;
-$text-color: #2a2a2a;
-$white: #fff;
+$text-color: #444;
+$white: #fefefe;
 $light-gray: #efefef;
-$gray: #ccc;
-$dark-gray: #3c3c3c;
-$accent: #292b77;
+$gray: #ddd;
+$dark-gray: #bbb;
+$link-color: #237ad9;
+$accent: #237ad9;
 $black: #222;
 $error: #f5dfdf;
 $warning: #f8fad5;
 $info: #dfeff5;
-$status: #c4dfe9;
 $success: #e8f5df;
-
-//
-// Theme Colors
-//
-
-$off-white: #fbf9f5;
-$beige: #eee6d6;
-$light-beige: #f4f2ed;
-$light-blue: #cfe8ef;
-$dark-gold: #88753e;
 
 // The amount lists, blockquotes and comments are indented.
 $indent-amount: 30px;

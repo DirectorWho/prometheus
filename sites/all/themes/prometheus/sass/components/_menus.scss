@@ -11,33 +11,13 @@ ul li.leaf {
   width: 100%;
 }
 
-// li a.toggled {
-//   color: $accent;
-// }
-//
-// li a.toggled:hover  {
-//   color: lighten($accent, 15%);
-// }
-
-.menu-wrapper {
-  background: $dark-gray;
-	height: 2.75em;
-	position: relative;
-	z-index: 5;
-  ul {
-    line-height: 1;
+.region-menu {
+  text-align: left;
+  .menu {
+    float: left;
+    list-style: none;
+    margin-bottom: 0;
   }
-  border-top: 3px solid $dark-gold;
-  border-bottom: 3px solid $dark-gold;
-}
-
-.region-menu .menu,
-.footer-menu .menu {
-  background: $dark-gray;
-	float: left;
-  list-style: none;
-  margin-bottom: 0;
-  margin-top: .475em;
 }
 
 .js .region-menu .menu {
@@ -48,30 +28,26 @@ ul li.leaf {
   }
 }
 
-.footer-menu .menu {
-  margin-bottom: $vert-spacing;
-}
-
 // multi-toggle styles
 
 a.menu-link {
-  background: url('../images/menu-icon.svg') no-repeat scroll 20px .9em transparent;
-  color: $light-blue;
+  background: url('../images/menu-icon.svg') no-repeat scroll 10px .9em $accent;
+  color: $white !important;
   display: block;
   float: left;
-  padding: .475em 0 0 45px;
+  padding: .5em .5em .5em 40px;
 }
 
 .region-menu .menu {
+  background: $light-gray;
   clear: both;
   width: 100%;
   ul {
-    background: $dark-gray;
     clear: both;
   }
 }
 
-.region-menu .menu li.menuparent > a:after {
+.region-menu .menu li.expanded > a:after {
 	content: '+';
 	position: absolute;
 	top: -10px;
@@ -81,56 +57,44 @@ a.menu-link {
 	padding: 0.25em 0.5em;
 }
 
-.region-menu .menu li.menuparent > a.toggled:after {
+.region-menu .menu li.expanded > a.toggled:after {
   content: "-";
   top: -13px;
   right: 2px;
 }
 
 .region-menu .menu li {
-//  border-top: 1px solid lighten($dark-gray, 30%);
-	background-image: url('../images/dh-line.png');
-	background-repeat: repeat-x;
-	background-position: top left;
+  clear: both;
+  display: block;
   padding: .75em 20px;
 }
 
-.region-menu .menu li.menuparent {
+.region-menu .menu li.expanded {
   padding-bottom: 1.25em;
 }
 
 .region-menu .menu li a,
-.footer-menu .menu li a,
 a.menu-link {
-  color: $light-blue;
+  color: $link-color;
   font-family: $header-font-family;
-  &.toggled {
-   color: $light-blue;
-  }
-  &:hover {
-	  color: darken($light-blue, 15%);
-  }
+  font-weight: 100;
 }
 
 .region-menu .menu li a:hover,
 .region-menu .menu li a:focus,
-.region-menu .menu li a:toggled,
-.footer-menu .menu li a:hover,
-.footer-menu .menu li a:focus,
-.footer-menu .menu li a:toggled,
-footer .region-footer p a {
-  color: darken($light-blue, 15%);
+.region-menu .menu li a.toggled {
+  color: darken($link-color, 15%);
   outline: none;
 }
 
 footer .region-footer p a:hover,
 footer .region-footer p a:focus,
-footer .region-footer p a:toggled {
-	  color: darken($light-blue, 30%);
+footer .region-footer p a.toggled {
+	  color: darken($link-color, 30%);
 }
 
-.region-menu .menu li ul,
-.footer-menu .menu li ul  {
+.region-menu .menu li ul  {
+  background: $gray;
   clear: both;
   list-style: none;
   left: 20px;
@@ -140,10 +104,6 @@ footer .region-footer p a:toggled {
   @include trans-all;
   li {
     padding: .75rem .75rem .75rem 2rem;
-//    border-bottom: 1px solid lighten($black, 60%);
-		background-image: url('../images/dh-line.png');
-		background-repeat: repeat-x;
-		background-position: top left;
     list-style: none;
     width: 200%;
     &:last-child {
@@ -153,11 +113,11 @@ footer .region-footer p a:toggled {
 }
 
 .region-menu .menu li ul {
-  background: lighten($black, 20%);
   margin: .5em -20px -1em -100px;
+  max-height: 50em;
   padding-left: 80px;
   padding-right: 150px;
-  max-height: 50em;
+  width: 150%;
 }
 
 .js .region-menu .menu li ul {
@@ -166,96 +126,51 @@ footer .region-footer p a:toggled {
   @include trans-all;
   &.toggled {
     max-height: 50em;
-    margin-bottom: -1.25em;
-  }
-}
-
-.footer-menu .menu {
-  margin-top: 0;
-  width: 100%;
-  li {
-//    border-bottom: 1px solid lighten($black, 30%);
-		background-image: url('../images/dh-line.png');
-		background-repeat: repeat-x;
-		background-position: bottom left;
-    display: block;
-    padding: .75em 0px;
-//    margin-right: -30px;
-//    margin-left: -30px;
-  }
-  li.last {
-	  background-image: none;
-  }
-  &.first {
-    //border-top: none;
+    margin-bottom: 0;
   }
 }
 
 
 @media all and (min-width: $desk) {
 
-  .menu-wrapper {
-    height: 3.15em;
-    max-height: 35px;
-  }
-
-	#main-menu {
-		margin-top: 1px;
-		text-align: center;
-		li {
-
-		}
+	.region-menu {
+		text-align: right;
 	}
-	
-	.region-menu .menu,
-	.region-footer .menu {
-		text-align: center;
-	}
-	
+
   .js .region-menu .menu,
   .js .region-menu .menu li ul {
+    background-color: $white;
     max-height: none;
     overflow: visible;
     z-index: 1000;
   }
 
-  .region-menu .menu {
-    margin-top: 0;
-  }
-
-  .region-menu .menu li.menuparent > a:after {
-    content: '';
-  }
-
-  .region-menu .menu li.menuparent > a.toggled:after {
-    content: '';
-  }
-
-  .footer-menu .menu {
-    margin-top: .75em;
-    li {
-      border-bottom: 0;
-      margin-left: 0;
-      margin-right: 0;
+    .region-menu .menu {
+      margin-top: 0;
     }
-  }
 
-  .region-menu .menu li.menuparent > a:after {
+  .region-menu .menu li.expanded > a:after {
     content: '';
   }
 
-  .region-menu .menu li.menuparent {
+  .region-menu .menu li.expanded > a.toggled:after {
+    content: '';
+  }
+
+  .region-menu .menu li.expanded > a:after {
+    content: '';
+  }
+
+  .region-menu .menu li.expanded {
     padding-bottom: .5em;
   }
 
-  .region-menu .menu li,
-  .footer-menu .menu li  {
-//    border-right: 1px solid lighten($dark-gray, 30%);
-		background-image: url('../images/dv-line.png');
-		background-repeat: no-repeat;
-		background-position: right center;
+  .region-menu .menu li  {
     border-top: none;
     padding: .5em 1em;
+  }
+
+  .region-menu > ul li  {
     &.first {
       padding-left: 0;
     }
@@ -264,20 +179,11 @@ footer .region-footer p a:toggled {
     }
   }
 
-  .region-menu .menu li li,
-  .footer-menu .menu li li,
-  .region-menu .menu li.last,
-  .footer-menu .menu li.last   {
-	  background-image: none;
-  }
-
-
-  .region-menu .menu li,
-  .footer-menu .menu li {
+  .region-menu .menu li {
     display: inline-block;
     font-size: $base-font-size * .7;
     position: relative;
-    font-weight: 100;
+    font-weight: 300;
   }
 
   a.menu-link {
@@ -289,14 +195,13 @@ footer .region-footer p a:toggled {
   }
 
   .menu li:hover > ul {
-    border-top: 3px solid $dark-gold;
     display: block;
   }
 
   .region-menu .menu li ul {
-    background: $dark-gray;
+    border: 1px solid $light-gray;
 		position: absolute;
-		top: 1.5em;
+		top: 1.75em;
 		left: 7em;
 		width: 12em;
 		text-align: left;
@@ -317,15 +222,15 @@ footer .region-footer p a:toggled {
 } //end media query
 
 
-.sidebars .menu li {
-  border-bottom: 1px solid lighten($gray, 15%);
+.region-sidebar-first .menu li,
+.region-sidebar-second .menu li  {
+  border-bottom: 1px solid $light-gray;
   margin-bottom: .5em;
   padding-bottom: .5em;
   padding-top: 0;
-}
-
-.sidebars .menu li.last {
-  border: none;
+  &.last {
+    border: none;
+  }
 }
 
 // node edit menu styles

@@ -1,54 +1,27 @@
 h1, h2, h3, h4, h5, h6 {
   clear: both;
-  color: $text-color;
+  color: $black;
   font-family: $header-font-family;
   font-weight: $header-font-weight;
   line-height: $header-line-height;
   margin-top: 0;
   margin-bottom: $header-bottom-margin;
-
-  a,
-	a:link,
-	a:visited,
-	a.active {
-	   color: $text-color;
-  }
-  a:hover {
-	  color: lighten($accent, 15%);
-  }
 }
 
-h1 {
-  font-size: $h1-font-size;
-  font-weight: 300;
+h1, h1 a {
+  font-size: $h1-font-size * .85;
 }
 
 h1.site-name, h1.site-name a, h2.site-name, h2.site-name a {
-  color: $text-color;
-  font-size: 1.5em; font-size: 1.5rem;
+  color: $black;
+  font-size: 40px; font-size: 2.5rem;
   line-height: 110%;
   margin: 0;
   text-transform: uppercase;
 }
 
-.header__site-name {
-  margin: 0;
-  font-size: .12em; font-size: .75em;
-  line-height: 110%;
-  @include element-invisible;
-}
-
-#site-slogan {
-  font-size: .75em;
-  font-style: italic;
-// color: $accent;
-}
-
 h1.page-title {
   margin-bottom: .5rem; margin-bottom: 8px;
-  a {
-	  font-size: 1em;
-  }
 }
 
 h2, h2 a {
@@ -71,127 +44,15 @@ h6, h6 a {
   font-size: $h6-font-size;
 }
 
-h1#page-title,
-.one-sidebar .region-sidebar-second h2,
-.two-sidebars .region-sidebar-second h2,
-.one-sidebar .region-sidebar-first h2 {
-	background-image: url('../images/shortcut-dark.png');
-	background-repeat: no-repeat;
-	background-position: right center;
-	&:before {
-		content: " ";
-		display: block;
-		position: relative;
-		top: -5px;
-		height: 2px;
-		width: 100%;
-		background-image: url('../images/lh-line.png');
-		background-repeat: repeat-x;
-		background-position: top left;
-	}
-		font-size: 1em;
-		margin-bottom: 0;
-		padding: .25em 0;
-}
-
-h1#page-title {
-	background: none;
-	&:after {
-		content: " ";
-		display: block;
-		position: relative;
-		top: 5px;
-		height: 2px;
-		width: 100%;
-		margin-bottom: 1em;
-		background-image: url('../images/lh-line.png');
-		background-repeat: repeat-x;
-		background-position: top left;
-	}
-}
-
-h1#page-title a,
-.one-sidebar .region-sidebar-second h2 a,
-.two-sidebars .region-sidebar-second h2 a,
-.one-sidebar .region-sidebar-first h2 a {
-  display: block;
-  position: relative;
-  width: 100%;
-}
-
-h1#page-title a span,
-.one-sidebar .region-sidebar-second h2 a span,
-.two-sidebars .region-sidebar-second h2 a span,
-.one-sidebar .region-sidebar-first h2 a span {
-  position: absolute;
-  top: -1px;
-  right: 0;
-  font-size: .8em;
-  padding-right: 20px;
-  text-transform: uppercase;
-  background-image: url("../images/shortcut-dark.png");
-  background-repeat: no-repeat;
-  background-position: right center;
-}
-
-.region-sidebar-second h2,
-.one-sidebar .region-sidebar-first h2 {
-	background-position: 95% center;
-	a {
-		position: relative;
-		font-size: 1em;
-		display: block;
-		span {
-			position: absolute;
-			top: -1px;
-			right: 0;
-			font-size: .8em;
-			padding-right: 20px;
-			background-image: url('../images/shortcut-dark.png');
-			background-repeat: no-repeat;
-			background-position: right center;
-		}
-	}
-}
-
-.region-sidebar-first .view h2:before,
-.region-sidebar-second .view h2:before {
-  background: none;
-}
-
-
-h3.tech-support-button {
-  background-color: $accent;
-  background-image: url('../images/shortcut-light.png');
-  background-repeat: no-repeat;
-  background-position: 95% 50%;
- 	@include border-radius(4px);
- 	@include box-shadow (2px 2px 4px lighten($black, 50%));
- 	margin-top: -.75em;
- 	margin-bottom: 1em;
-  a {
-  	display: block;
-    width: 100%;
-    color: $white;
-    font-size: .75em;
-    font-weight: bold;
-		padding: .5rem 1rem;
-    &:hover {
-		  color: $white;
-    }
-	  }
-  &:hover  {
-	  background-color: lighten($accent, 15%);
-	  @include trans-all;
-  }
-}
-
 @media all and (min-width: $tab) {
+
+  h1, h1 a {
+    font-size: $h1-font-size;
+  }
 
   body {
     font-size: $base-font-size * .925;
     &.two-sidebars {
-      font-size: $base-font-size * .825;
 
       h2, h2 a {
         font-size: $h2-font-size * .925;
@@ -243,6 +104,9 @@ h3.tech-support-button {
         font-size: $h6-font-size * .825;
       }
 
+    }
+    &.no-sidebars {
+      font-size: $base-font-size;
     }
   }
 }
