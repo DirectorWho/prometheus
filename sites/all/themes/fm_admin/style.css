@@ -1008,6 +1008,32 @@ div.add-or-remove-shortcuts {
 .page-node-add .ctools-collapsible-container,
 .page-node-edit .ctools-collapsible-container {
   border: 1px solid #ccc;
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+}
+
+.page-node-add .ctools-collapsible-container:last-child,
+.page-node-edit .ctools-collapsible-container:last-child,
+.pane-node-form-buttons,
+.pane-node-field-campus-contact-phone,
+.pane-node-field-notes {
+  border-bottom: 1px solid #ccc !important;
+}
+
+.page-node-add .panel-pane:first-child {
+  border-top: 1px solid #ccc !important;
+}
+
+.page-node-add .ctools-collapsible-container,
+.page-node-edit .ctools-collapsible-container,
+.pane-node-form-buttons {
+  border: 1px solid #ccc !important;
+}
+
+.page-node-add .ctools-collapsible-container ,
+.page-node-edit .ctools-collapsible-container,
+.pane-node-form-buttons {
+ margin-top: 15px;
 }
 
 .page-node-add .ctools-collapsible-container .ctools-toggle,
@@ -1034,9 +1060,8 @@ div.add-or-remove-shortcuts {
 .page-node-edit  .ctools-collapsible-container,
 .page-node-add  .ctools-collapsible-container {
   background: #eee;
-  margin-bottom: 27px;
-  overflow: hidden;
-  padding: 15px;
+  margin-bottom: 0;
+  padding: 0 15px;
 }
 
 .form-textarea-wrapper textarea {
@@ -1147,6 +1172,12 @@ textarea.text-full {
   min-width: 350px;
 }
 
-.form-submit.insert-button {
-  margin-bottom: 1em;
+/* admin menu */
+
+#admin-menu {
+  font-size: 15px;
+}
+
+#admin-menu li.admin-menu-account > a {
+  background: #237ad9;
 }
