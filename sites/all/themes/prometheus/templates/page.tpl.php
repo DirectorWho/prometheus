@@ -25,12 +25,13 @@
       </div>
     </div>
     <div class="menu-wrapper">
-       <?php if($main_menu): ?>
-       <nav class="region-menu">
-        <a href="#menu" class="menu-link">Menu</a>
-        <?php print(render(menu_tree('main-menu'))); ?>
-     </nav>
-     <?php endif; ?>
+       <?php if ($main_menu || $secondary_menu): ?>
+    <nav id="navigation" class="menu <?php if (!empty($main_menu)) {print "with-primary";}
+      if (!empty($secondary_menu)) {print " with-secondary";} ?>">
+      <?php print theme('links', array('links' => $main_menu, 'attributes' => array('id' => 'primary', 'class' => array('links', 'clearfix', 'main-menu')))); ?>
+      <?php print theme('links', array('links' => $secondary_menu, 'attributes' => array('id' => 'secondary', 'class' => array('links', 'clearfix', 'sub-menu')))); ?>
+    </nav> <!-- /navigation -->
+  <?php endif; ?>
     </div>
     </header>
   </div>

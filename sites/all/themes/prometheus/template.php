@@ -90,4 +90,15 @@ function prometheus_page_alter(&$page) {
             '#weight' => '-10',
             '#theme_wrappers' => array('region'));
     }
+      // get rid of main content block wrapper
+    if (!empty($page['content']['system_main'])) {
+      $page['content']['system_main']['#theme_wrappers'] = array_diff($page['content']['system_main']['#theme_wrappers'], array('block'));
+    }
+}
+
+// Gets rid of separator div in panels layouts
+function prometheus_panels_default_style_render_region($variables) {
+  $output = '';
+  $output .= implode('', $variables['panes']);
+  return $output;
 }

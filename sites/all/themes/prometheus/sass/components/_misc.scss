@@ -1,5 +1,14 @@
 // misc styles
 
+// admin menu
+
+#admin-menu {
+  font-size: $base-font-size * .75;
+}
+
+#admin-menu li.admin-menu-account > a {
+  background: $accent;
+}
 
 
 // pager styles
