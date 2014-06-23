@@ -28,8 +28,8 @@
        <?php if($main_menu): ?>
        <nav class="region-menu">
         <a href="#menu" class="menu-link">Menu</a>
-        <?php print(render(menu_tree('main-menu'))); ?>
-     </nav>
+        <?php print drupal_render(menu_tree_output(menu_tree_all_data('main-menu'))); ?>
+      </nav>
      <?php endif; ?>
     </div>
     </header>

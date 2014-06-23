@@ -62,25 +62,58 @@ function prometheus_css_alter(&$css) {
 }
 
 /**
-* Add page template suggestions based on the path alias.
+*  The three functions below are adapted from https://gist.github.com/henrijs/6225177
+*  Drupal menus can be tough to work with. What this does is add a 'data-menu-parent' attribute to the
+*  li that is read in the subsequent function and assigned to a variable and then in the last function assigned
+*  as a class to assist in styling the menus. PITA! But it works.
 */
 
-function prometheus_preprocess_page(&$vars) {
-  if (module_exists('path')) {
-    $alias = drupal_get_path_alias(str_replace('/edit','',$_GET['q']));
-    if ($alias != $_GET['q']) {
-      $template_filename = 'page';
-      foreach (explode('/', $alias) as $path_part) {
-        $template_filename = $template_filename . '-' . $path_part;
-        $vars['template_files'][] = $template_filename;
-      }
-    }
+function prometheus_menu_link(&$variables) {
+  $element = $variables['element'];
+  $sub_menu = '';
+
+  $element['#attributes']['data-menu-parent'] = $element['#original_link']['menu_name'] . '-' .         $element['#original_link']['depth'];
+
+  if ($element['#below']) {
+    $sub_menu = drupal_render($element['#below']);
   }
-  //remove messages
-  $variables['show_messages'] = FALSE;
 
-
+  $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+  return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
+
+function prometheus_preprocess_menu_tree(&$variables) {
+  $tree = new DOMDocument();
+  @$tree->loadHTML($variables['tree']);
+  $links = $tree->getElementsByTagname('li');
+  $parent = '';
+
+  foreach ($links as $link) {
+    $parent = $link->getAttribute('data-menu-parent');
+    break;
+  }
+
+  $variables['menu_parent'] = $parent;
+}
+
+function prometheus_menu_tree(&$variables) {
+  return '<ul class="menu ' . $variables['menu_parent'] . '">' . $variables['tree'] . '</ul>';
+}
+
+// function prometheus_menu_tree__main_menu($variables){
+//   return '<ul class="your-custom-class" id="your-custom-id">' . $variables['tree'] . '</ul>';
+// }
+
+// function prometheus_menu_link__main_menu($variables) {
+//   $element = $variables['element'];
+//   $sub_menu = '';
+//   if ($element['#below']) {
+//     $sub_menu = drupal_render($element['#below']);
+//   }
+//   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
+//   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
+// }
+
 
 function prometheus_page_alter(&$page) {
   // force the footer to render even if empty because region template have copyright info

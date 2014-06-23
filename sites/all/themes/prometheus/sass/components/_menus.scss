@@ -26,6 +26,9 @@ ul li.leaf {
   &.toggled {
     max-height: 50em;
   }
+  &.main-menu-2 {
+    width: 200%;
+  }
 }
 
 // multi-toggle styles
@@ -112,7 +115,7 @@ footer .region-footer p a.toggled {
   }
 }
 
-.region-menu .menu li ul {
+.main-menu-2 {
   margin: .5em -20px -1em -100px;
   max-height: 50em;
   padding-left: 80px;
@@ -120,7 +123,7 @@ footer .region-footer p a.toggled {
   width: 150%;
 }
 
-.js .region-menu .menu li ul {
+.js .main-menu-2{
   max-height: 0;
   overflow: hidden;
   @include trans-all;
@@ -137,8 +140,7 @@ footer .region-footer p a.toggled {
 		text-align: right;
 	}
 
-  .js .region-menu .menu,
-  .js .region-menu .menu li ul {
+  .js .region-menu .menu {
     background-color: $white;
     max-height: none;
     overflow: visible;
@@ -198,10 +200,10 @@ footer .region-footer p a.toggled {
     display: block;
   }
 
-  .region-menu .menu li ul {
+  .js .region-menu .main-menu-2  {
     border: 1px solid $light-gray;
 		position: absolute;
-		top: 1.75em;
+		top: 2em;
 		left: 7em;
 		width: 12em;
 		text-align: left;
@@ -251,7 +253,7 @@ ul.primary {
 
       text-decoration: none;
     }
-    &:toggled {
+    &.toggled {
       background-color: $white;
     }
   }

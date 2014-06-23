@@ -20,11 +20,6 @@ regions[sidebar_second] = Second sidebar
 regions[footer]         = Footer
 regions[bottom]         = Page bottom
 
-; Via Zen - "Various page elements output by the theme can be toggled on and off. The
-; 'features' control which of these check boxes display on the
-; admin/appearance config page. This is useful for suppressing check boxes
-; for elements not used by your sub-theme. To suppress a check box, omit the
-; entry for it below."
 
 features[] = logo
 features[] = name
