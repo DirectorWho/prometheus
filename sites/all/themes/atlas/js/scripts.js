@@ -1,6 +1,6 @@
 /**
  * @file
- * JavaScript file for the theme.
+ * JavaScript file for the Atlas
  *
  */
 
@@ -11,25 +11,9 @@
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
-    // User profile form - set password indicator color based on content value
+  // start custom
 
-      jQuery( ".password-field" ).one("keypress", function () {
-        setInterval(function () {
-        var str = jQuery( ".password-strength-text" ).text();
-            if (str == "Weak") {
-                  jQuery( ".password-strength .password-indicator div" ).css('background', '#f76558');
-          }
-          else if (str == "Fair") {
-              jQuery( ".password-strength .password-indicator div" ).css('background', '#f7d354');
-          }
-          else  jQuery( ".password-strength .password-indicator div" ).css('background', '#b0dd91');
-    }, 300);
-
-      });
-
-      // start custom
-
-      $(document).ready(function() {
+  $(document).ready(function() {
 
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
   // moble to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized
@@ -62,7 +46,6 @@ Drupal.behaviors.my_custom_behavior = {
       //turn 'off' so that it will run again if resized to mobile
       functionStatus = 0;
       removeMobileMenuItem();
-      equalHeightColumns();
       // unbind click events from toglleMenu function
       $('.menu-link').unbind();
       $('.expanded > a').unbind();
@@ -73,7 +56,7 @@ Drupal.behaviors.my_custom_behavior = {
 
   fireMobileFunctions();
 
-  $('body').addClass('js');
+  $('body').removeClass('js');
 
   // toggle menu
 
@@ -98,33 +81,6 @@ Drupal.behaviors.my_custom_behavior = {
        }
     });
   }
-
-function equalHeightColumns() {
-  if (mobile === 0) {
-    var columnHeight = 0;
-    var contentHeight = $('#content').outerHeight();
-    var sidebarFirstHeight = $('.region-sidebar-first').outerHeight();
-    var sidebarSecondHeight = $('.region-sidebar-second').outerHeight();
-    if ((contentHeight > sidebarFirstHeight) && (contentHeight > sidebarSecondHeight)) {
-      columnHeight = contentHeight;
-    }
-    else if ((sidebarFirstHeight > contentHeight) && (sidebarFirstHeight > sidebarSecondHeight)) {
-      columnHeight = sidebarFirstHeight;
-    }
-    else if ((sidebarSecondHeight > contentHeight) && (sidebarSecondHeight > sidebarFirstHeight)) {
-      columnHeight = sidebarSecondHeight;
-    }
-    if (columnHeight < $('.view-school-search .view-data').height()) {
-     columnHeight = $('.view-school-search .view-data').height() + 50;
-    }
-    $('.column').height(columnHeight);
-  }
-  else {
-    $('.column').css('height', 'auto');
-  }
-}
-
-  window.setTimeout(equalHeightColumns, 75);
 
   function toggleMenu() {
       // add the toggle classes

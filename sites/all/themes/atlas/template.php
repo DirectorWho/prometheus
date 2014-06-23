@@ -9,10 +9,10 @@
  */
 
 
-function prometheus_preprocess_html(&$variables, $hook) {
+function atlas_preprocess_html(&$variables, $hook) {
 
   drupal_add_css('http://fonts.googleapis.com/css?family=Roboto:300,400,500', array('type' => 'external', 'weight' => 0,));
-  drupal_add_js(drupal_get_path('theme', 'prometheus') .'/js/scripts.js');
+  drupal_add_js(drupal_get_path('theme', 'atlas') .'/js/scripts.js');
 
   // get rid of .no-sidebars class that Drupal adds
   //$variables['classes_array'] = array_diff($variables['classes_array'], array(
@@ -20,7 +20,7 @@ function prometheus_preprocess_html(&$variables, $hook) {
   //));
 }
 
-function prometheus_css_alter(&$css) {
+function atlas_css_alter(&$css) {
   // Remove Drupal core css
   $exclude = array(
     'modules/aggregator/aggregator.css' => FALSE,
@@ -68,7 +68,7 @@ function prometheus_css_alter(&$css) {
 *  as a class to assist in styling the menus. PITA! But it works.
 */
 
-function prometheus_menu_link(&$variables) {
+function atlas_menu_link(&$variables) {
   $element = $variables['element'];
   $sub_menu = '';
 
@@ -82,7 +82,7 @@ function prometheus_menu_link(&$variables) {
   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
 }
 
-function prometheus_preprocess_menu_tree(&$variables) {
+function atlas_preprocess_menu_tree(&$variables) {
   $tree = new DOMDocument();
   @$tree->loadHTML($variables['tree']);
   $links = $tree->getElementsByTagname('li');
@@ -96,15 +96,15 @@ function prometheus_preprocess_menu_tree(&$variables) {
   $variables['menu_parent'] = $parent;
 }
 
-function prometheus_menu_tree(&$variables) {
+function atlas_menu_tree(&$variables) {
   return '<ul class="menu ' . $variables['menu_parent'] . '">' . $variables['tree'] . '</ul>';
 }
 
-// function prometheus_menu_tree__main_menu($variables){
+// function atlas_menu_tree__main_menu($variables){
 //   return '<ul class="your-custom-class" id="your-custom-id">' . $variables['tree'] . '</ul>';
 // }
 
-// function prometheus_menu_link__main_menu($variables) {
+// function atlas_menu_link__main_menu($variables) {
 //   $element = $variables['element'];
 //   $sub_menu = '';
 //   if ($element['#below']) {
@@ -115,7 +115,7 @@ function prometheus_menu_tree(&$variables) {
 // }
 
 
-function prometheus_page_alter(&$page) {
+function atlas_page_alter(&$page) {
   // force the footer to render even if empty because region template have copyright info
     if ( !isset($page["footer"]) || empty($page["footer"])) {
         $page["footer"] = array(
@@ -130,7 +130,7 @@ function prometheus_page_alter(&$page) {
 }
 
 // Gets rid of separator div in panels layouts
-function prometheus_panels_default_style_render_region($variables) {
+function atlas_panels_default_style_render_region($variables) {
   $output = '';
   $output .= implode('', $variables['panes']);
   return $output;
