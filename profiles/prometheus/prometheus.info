@@ -13,10 +13,6 @@ dependencies[] = ctools
 dependencies[] = page_manager
 ; Clean markup
 dependencies[] = clean_markup
-; Context
-dependencies[] = context
-dependencies[] = context_layouts
-dependencies[] = context_ui
 ; Core
 dependencies[] = block
 dependencies[] = comment
@@ -55,6 +51,8 @@ dependencies[] = date_popup
 dependencies[] = date_views
 ; Development
 dependencies[] = profiler_builder
+; Features extra
+dependencies[] = fe_block
 ; Fields
 dependencies[] = filefield_sources
 dependencies[] = select_or_other
@@ -71,7 +69,6 @@ dependencies[] = html5_tools
 dependencies[] = imagestyleflush
 dependencies[] = imce
 dependencies[] = imce_mkdir
-dependencies[] = video_embed_field
 ; Node export
 dependencies[] = node_export
 dependencies[] = node_export_features
@@ -102,6 +99,7 @@ dependencies[] = styleguide
 dependencies[] = taxonomy_display
 dependencies[] = taxonomy_title
 dependencies[] = token
+dependencies[] = users_export
 ; Panels
 dependencies[] = panels
 ; Panels style plugins
@@ -121,6 +119,7 @@ dependencies[] = taxonomy_menu
 dependencies[] = commentsblock
 ; UUID
 dependencies[] = uuid
+dependencies[] = uuid_path
 ; User interface
 dependencies[] = imce_wysiwyg
 dependencies[] = jquery_update
@@ -139,7 +138,9 @@ dependencies[] = xmlsitemap
 dependencies[] = xmlsitemap_node
 ; Features
 dependencies[] = features
+dependencies[] = prometheus_block_settings
 dependencies[] = prometheus_breakpoints_and_image_styles
+dependencies[] = prometheus_menus
 dependencies[] = prometheus_page_manager_layouts
 dependencies[] = prometheus_sample_content_dependencies
 dependencies[] = prometheus_views
@@ -198,7 +199,6 @@ variables[comment_subject_field_article] = 1
 variables[comment_subject_field_page] = 1
 variables[contact_default_status] = 1
 variables[context_block_rebuild_needed] = true
-variables[context_reaction_block_all_regions] = 1
 variables[context_status][about_the_author_placement] = true
 variables[context_status][categories_menu_placement] = true
 variables[context_status][sample_text_block_placement] = true
@@ -707,7 +707,7 @@ variables[pathauto_user_pattern] = 'users/[user:name]'
 variables[path_alias_whitelist][node] = true
 variables[path_alias_whitelist][taxonomy] = true
 variables[path_alias_whitelist][user] = true
-variables[site_frontpage] = 'node/60'
+variables[site_frontpage] = 'node/84'
 variables[superfish_arrow_1] = 1
 variables[superfish_delay_1] = '300'
 variables[superfish_depth_1] = '-1'
@@ -790,7 +790,7 @@ variables[views_field_rewrite_elements][footer] = 'Footer'
 variables[views_field_rewrite_elements][header] = 'Header'
 variables[views_field_rewrite_elements][menu] = 'Menu'
 variables[views_field_rewrite_elements][nav] = 'Nav'
-variables[xmlsitemap_generated_last] = 1402428206
+variables[xmlsitemap_generated_last] = 1403555879
 variables[xmlsitemap_regenerate_needed] = true
 variables[xmlsitemap_settings_node_article][status] = '1'
 variables[xmlsitemap_settings_node_article][priority] = '0.5'

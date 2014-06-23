@@ -13,9 +13,6 @@ projects[ctools][subdir] = "contrib"
 projects[clean_markup][version] = "2.3"
 projects[clean_markup][subdir] = "contrib"
 
-projects[context][version] = "3.1"
-projects[context][subdir] = "contrib"
-
 projects[custom_breadcrumbs][version] = "2.0-alpha3"
 projects[custom_breadcrumbs][subdir] = "contrib"
 
@@ -27,6 +24,9 @@ projects[profiler_builder][subdir] = "contrib"
 
 projects[features][version] = "2.0"
 projects[features][subdir] = "contrib"
+
+projects[features_extra][version] = "1.0-beta1"
+projects[features_extra][subdir] = "contrib"
 
 projects[filefield_sources][version] = "1.9"
 projects[filefield_sources][subdir] = "contrib"
@@ -54,9 +54,6 @@ projects[imce][subdir] = "contrib"
 
 projects[imce_mkdir][version] = "1.0"
 projects[imce_mkdir][subdir] = "contrib"
-
-projects[video_embed_field][version] = "2.0-beta5"
-projects[video_embed_field][subdir] = "contrib"
 
 projects[node_export][version] = "3.0-rc3"
 projects[node_export][subdir] = "contrib"
@@ -135,6 +132,9 @@ projects[taxonomy_title][subdir] = "contrib"
 
 projects[token][version] = "1.5"
 projects[token][subdir] = "contrib"
+
+projects[users_export][version] = "1.1"
+projects[users_export][subdir] = "contrib"
 
 projects[panels][version] = "3.3"
 projects[panels][subdir] = "contrib"

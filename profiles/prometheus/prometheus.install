@@ -118,7 +118,9 @@ function prometheus_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
+    'prometheus_block_settings',
     'prometheus_breakpoints_and_image_styles',
+    'prometheus_menus',
     'prometheus_page_manager_layouts',
     'prometheus_sample_content_dependencies',
     'prometheus_views'

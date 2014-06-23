@@ -27,7 +27,7 @@ function prometheus_menus_menu_default_menu_links() {
     'module' => 'system',
     'hidden' => 0,
     'external' => 0,
-    'has_children' => 0,
+    'has_children' => 1,
     'expanded' => 1,
     'weight' => -49,
     'customized' => 1,
@@ -66,6 +66,25 @@ function prometheus_menus_menu_default_menu_links() {
     'expanded' => 0,
     'weight' => -50,
     'customized' => 1,
+  );
+  // Exported menu link: main-menu_view-sample-styles:node/89
+  $menu_links['main-menu_view-sample-styles:node/89'] = array(
+    'menu_name' => 'main-menu',
+    'link_path' => 'node/89',
+    'router_path' => 'node/%',
+    'link_title' => 'View Sample Styles',
+    'options' => array(
+      'attributes' => array(),
+      'identifier' => 'main-menu_view-sample-styles:node/89',
+    ),
+    'module' => 'menu',
+    'hidden' => 0,
+    'external' => 0,
+    'has_children' => 0,
+    'expanded' => 0,
+    'weight' => -50,
+    'customized' => 1,
+    'parent_identifier' => 'main-menu_blog:blog',
   );
   // Exported menu link: menu-categories_category-1:taxonomy/term/2
   $menu_links['menu-categories_category-1:taxonomy/term/2'] = array(
@@ -156,6 +175,7 @@ function prometheus_menus_menu_default_menu_links() {
   t('Category 4');
   t('Contact');
   t('Home');
+  t('View Sample Styles');
 
 
   return $menu_links;

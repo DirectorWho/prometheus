@@ -10,6 +10,7 @@ features[menu_custom][] = menu-categories
 features[menu_links][] = main-menu_blog:blog
 features[menu_links][] = main-menu_contact:contact
 features[menu_links][] = main-menu_home:<front>
+features[menu_links][] = main-menu_view-sample-styles:node/89
 features[menu_links][] = menu-categories_category-1:taxonomy/term/2
 features[menu_links][] = menu-categories_category-2:taxonomy/term/3
 features[menu_links][] = menu-categories_category-3:taxonomy/term/4

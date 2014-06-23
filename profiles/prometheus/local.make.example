@@ -8,8 +8,14 @@ includes[] = "drupal-org.make"
 
 ; +++++ TODO modules without versions +++++
 
+projects[prometheus_block_settings][version] = "" ; TODO add version
+projects[prometheus_block_settings][subdir] = "custom"
+
 projects[prometheus_breakpoints_and_image_styles][version] = "" ; TODO add version
 projects[prometheus_breakpoints_and_image_styles][subdir] = "custom"
+
+projects[prometheus_menus][version] = "" ; TODO add version
+projects[prometheus_menus][subdir] = "custom"
 
 projects[prometheus_page_manager_layouts][version] = "" ; TODO add version
 projects[prometheus_page_manager_layouts][subdir] = "custom"
