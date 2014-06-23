@@ -1,0 +1,9 @@
+name = Prometheus Menus
+description = Menus included with the Prometheus installation profile.
+core = 7.x
+package = Features
+dependencies[] = features
+dependencies[] = menu
+features[features_api][] = api:2
+features[menu_custom][] = main-menu
+features[menu_custom][] = menu-categories

@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Prometheus Strongarm Variable Settings feature.
- */
-
-include_once 'prometheus_strongarm_variable_settings.features.inc';
