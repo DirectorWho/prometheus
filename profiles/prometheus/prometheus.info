@@ -142,7 +142,7 @@ dependencies[] = prometheus_block_settings
 dependencies[] = prometheus_breakpoints_and_image_styles
 dependencies[] = prometheus_menus
 dependencies[] = prometheus_page_manager_layouts
-dependencies[] = prometheus_sample_content_dependencies
+dependencies[] = prometheus_sample_content_and_dependencies
 dependencies[] = prometheus_views
 
 ; ----------
@@ -707,7 +707,7 @@ variables[pathauto_user_pattern] = 'users/[user:name]'
 variables[path_alias_whitelist][node] = true
 variables[path_alias_whitelist][taxonomy] = true
 variables[path_alias_whitelist][user] = true
-variables[site_frontpage] = 'node/84'
+variables[site_frontpage] = 'node/90'
 variables[superfish_arrow_1] = 1
 variables[superfish_delay_1] = '300'
 variables[superfish_depth_1] = '-1'

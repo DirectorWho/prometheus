@@ -20,8 +20,8 @@ projects[prometheus_menus][subdir] = "custom"
 projects[prometheus_page_manager_layouts][version] = "" ; TODO add version
 projects[prometheus_page_manager_layouts][subdir] = "custom"
 
-projects[prometheus_sample_content_dependencies][version] = "" ; TODO add version
-projects[prometheus_sample_content_dependencies][subdir] = "custom"
+projects[prometheus_sample_content_and_dependencies][version] = "" ; TODO add version
+projects[prometheus_sample_content_and_dependencies][subdir] = "custom"
 
 projects[prometheus_views][version] = "" ; TODO add version
 projects[prometheus_views][subdir] = "custom"
