@@ -14,6 +14,9 @@ function prometheus_breakpoints_and_image_styles_ctools_plugin_api($module = NUL
   if ($module == "breakpoints" && $api == "default_breakpoints") {
     return array("version" => "1");
   }
+  if ($module == "picture" && $api == "default_picture_mapping") {
+    return array("version" => "1");
+  }
 }
 
 /**

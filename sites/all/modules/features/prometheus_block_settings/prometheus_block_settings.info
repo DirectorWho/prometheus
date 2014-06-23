@@ -1,0 +1,10 @@
+name = Prometheus Block Settings
+description = Block settings for the Prometheus installation profile.
+core = 7.x
+package = Features
+dependencies[] = fe_block
+dependencies[] = menu
+features[fe_block_boxes][] = prometheus_intro
+features[fe_block_settings][] = block-prometheus_intro
+features[fe_block_settings][] = menu-menu-categories
+features[features_api][] = api:2
