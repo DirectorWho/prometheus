@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the Prometheus Block Settings feature.
  */
+
+include_once 'prometheus_block_settings.features.inc';

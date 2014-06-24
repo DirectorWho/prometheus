@@ -32,6 +32,26 @@ function prometheus_block_settings_default_fe_block_settings() {
     'visibility' => 1,
   );
 
+  $export['block-prometheus_sample_block'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'machine_name' => 'prometheus_sample_block',
+    'module' => 'block',
+    'node_types' => array(),
+    'pages' => 'blog/diam-facilisi-meus-olim',
+    'roles' => array(),
+    'themes' => array(
+      'atlas' => array(
+        'region' => 'sidebar_first',
+        'status' => 1,
+        'theme' => 'atlas',
+        'weight' => 0,
+      ),
+    ),
+    'title' => 'Pellentesque in Ipsum',
+    'visibility' => 1,
+  );
+
   $export['menu-menu-categories'] = array(
     'cache' => -1,
     'custom' => 0,
@@ -51,6 +71,26 @@ tags/*',
     ),
     'title' => '',
     'visibility' => 1,
+  );
+
+  $export['menu_block-1'] = array(
+    'cache' => -1,
+    'custom' => 0,
+    'delta' => 1,
+    'module' => 'menu_block',
+    'node_types' => array(),
+    'pages' => '',
+    'roles' => array(),
+    'themes' => array(
+      'atlas' => array(
+        'region' => 'menu',
+        'status' => 1,
+        'theme' => 'atlas',
+        'weight' => 0,
+      ),
+    ),
+    'title' => '<none>',
+    'visibility' => 0,
   );
 
   return $export;

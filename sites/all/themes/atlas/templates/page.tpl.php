@@ -26,10 +26,10 @@
     </div>
     <div class="menu-wrapper">
        <?php if($main_menu): ?>
-       <nav class="region-menu">
+       <div class="region-menu">
         <a href="#menu" class="menu-link">Menu</a>
-        <?php print drupal_render(menu_tree_output(menu_tree_all_data('main-menu'))); ?>
-      </nav>
+        <?php print render($page['menu']); ?>
+      </div>
      <?php endif; ?>
     </div>
     </header>

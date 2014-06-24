@@ -106,6 +106,9 @@ projects[libraries][subdir] = "contrib"
 projects[menu_attributes][version] = "1.0-rc2"
 projects[menu_attributes][subdir] = "contrib"
 
+projects[menu_block][version] = "2.4"
+projects[menu_block][subdir] = "contrib"
+
 projects[module_filter][version] = "1.8"
 projects[module_filter][subdir] = "contrib"
 
@@ -192,13 +195,6 @@ projects[views_responsive_grid][subdir] = "contrib"
 
 projects[xmlsitemap][version] = "2.0-rc2"
 projects[xmlsitemap][subdir] = "contrib"
-
-; +++++ Themes +++++
-
-; basic
-projects[basic][type] = "theme"
-projects[basic][version] = "4.0-beta2"
-projects[basic][subdir] = "contrib"
 
 ; +++++ Libraries +++++
 

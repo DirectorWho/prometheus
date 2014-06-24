@@ -100,21 +100,6 @@ function atlas_menu_tree(&$variables) {
   return '<ul class="menu ' . $variables['menu_parent'] . '">' . $variables['tree'] . '</ul>';
 }
 
-// function atlas_menu_tree__main_menu($variables){
-//   return '<ul class="your-custom-class" id="your-custom-id">' . $variables['tree'] . '</ul>';
-// }
-
-// function atlas_menu_link__main_menu($variables) {
-//   $element = $variables['element'];
-//   $sub_menu = '';
-//   if ($element['#below']) {
-//     $sub_menu = drupal_render($element['#below']);
-//   }
-//   $output = l($element['#title'], $element['#href'], $element['#localized_options']);
-//   return '<li' . drupal_attributes($element['#attributes']) . '>' . $output . $sub_menu . "</li>\n";
-// }
-
-
 function atlas_page_alter(&$page) {
   // force the footer to render even if empty because region template have copyright info
     if ( !isset($page["footer"]) || empty($page["footer"])) {

@@ -20,5 +20,14 @@ function prometheus_block_settings_default_fe_block_boxes() {
 
   $export['prometheus_intro'] = $fe_block_boxes;
 
+  $fe_block_boxes = new stdClass();
+  $fe_block_boxes->info = 'Sample block content';
+  $fe_block_boxes->format = 'full_html';
+  $fe_block_boxes->machine_name = 'prometheus_sample_block';
+  $fe_block_boxes->body = '<p>Praesent sapien massa, convallis a pellentesque nec, egestas non nisi. Pellentesque in ipsum id orci porta dapibus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada.</p>
+';
+
+  $export['prometheus_sample_block'] = $fe_block_boxes;
+
   return $export;
 }

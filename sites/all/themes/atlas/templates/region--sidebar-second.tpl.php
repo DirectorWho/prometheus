@@ -29,7 +29,7 @@
  */
 ?>
 <?php if ($content): ?>
- <div class="column <?php print $classes; ?>">
+ <div class="column aside <?php print $classes; ?>">
     <?php print $content; ?>
   </div>
 <?php endif; ?>

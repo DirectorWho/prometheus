@@ -28,8 +28,5 @@
  * @ingroup themeable
  */
 ?>
-<?php if ($content): ?>
- <div class="column aside <?php print $classes; ?>">
-    <?php print $content; ?>
-  </div>
-<?php endif; ?>
+
+<?php print $content; ?>
