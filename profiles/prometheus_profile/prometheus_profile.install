@@ -80,16 +80,6 @@ function prometheus_profile_install() {
       'pages' => '',
       'cache' => -1,
     ),
-      array(
-      'module' => 'menu_block',
-      'delta' => '1',
-      'theme' => $default_theme,
-      'status' => 1,
-      'weight' => 0,
-      'region' => 'menu',
-      'pages' => '',
-      'cache' => -1,
-    ),
   );
   // drop system / user blocks to ensure correct building
   db_delete('block')->condition('module', 'system')->execute();
@@ -128,11 +118,12 @@ function prometheus_profile_install() {
   menu_rebuild();
   // revert features to ensure they are all installed
   $features = array(
+    'prometheus_boxes_context',
     'prometheus_breakpoints_and_image_styles',
     'prometheus_menus',
     'prometheus_page_manager_layouts',
     'prometheus_sample_content_dependencies',
-    'prometheus_site_variables',
+    'prometheus_variables',
     'prometheus_views'
   );
   features_revert($features);

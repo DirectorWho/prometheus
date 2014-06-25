@@ -13,6 +13,9 @@ dependencies[] = ctools
 dependencies[] = page_manager
 ; Clean markup
 dependencies[] = clean_markup
+; Context
+dependencies[] = context
+dependencies[] = context_ui
 ; Core
 dependencies[] = block
 dependencies[] = comment
@@ -69,14 +72,12 @@ dependencies[] = html5_tools
 dependencies[] = imagestyleflush
 dependencies[] = imce
 dependencies[] = imce_mkdir
-; Node export
-dependencies[] = node_export
-dependencies[] = node_export_features
 ; Other
 dependencies[] = adaptive_image
 dependencies[] = advuser
 dependencies[] = backup_migrate
 dependencies[] = better_formats
+dependencies[] = boxes
 dependencies[] = breakpoints
 dependencies[] = diff
 dependencies[] = disable_messages
@@ -139,11 +140,12 @@ dependencies[] = xmlsitemap
 dependencies[] = xmlsitemap_node
 ; Features
 dependencies[] = features
+dependencies[] = prometheus_boxes_context
 dependencies[] = prometheus_breakpoints_and_image_styles
 dependencies[] = prometheus_menus
+dependencies[] = prometheus_variables
 dependencies[] = prometheus_page_manager_layouts
 dependencies[] = prometheus_sample_content_dependencies
-dependencies[] = prometheus_site_variables
 dependencies[] = prometheus_views
 dependencies[] = uuid_features
 
@@ -771,6 +773,15 @@ variables[user_picture_file_size] = '800'
 variables[user_picture_path] = 'pictures'
 variables[user_picture_style] = 'thumbnail'
 variables[user_register] = '0'
+variables[uuid_features_entity_node][article] = 'article'
+variables[uuid_features_entity_node][page] = 'page'
+variables[uuid_features_entity_taxonomy_term][tags] = 'tags'
+variables[uuid_features_file_mode] = 'inline'
+variables[uuid_features_file_node][article] = 'article'
+variables[uuid_features_file_node][page] = 'page'
+variables[uuid_features_file_supported_fields] = 'file, image'
+variables[uuid_features_file_taxonomy_term][tags] = 'tags'
+variables[uuid_features_vocabulary_terms] = 1
 variables[variable_module_list][custom_breadcrumbs][0] = 'custom_breadcrumb_home'
 variables[views_defaults][taxonomy_term] = true
 variables[views_defaults][semantic_demo] = true
@@ -797,10 +808,8 @@ variables[views_field_rewrite_elements][footer] = 'Footer'
 variables[views_field_rewrite_elements][header] = 'Header'
 variables[views_field_rewrite_elements][menu] = 'Menu'
 variables[views_field_rewrite_elements][nav] = 'Nav'
-variables[xmlsitemap_generated_last] = 1403567064
-variables[xmlsitemap_regenerate_needed] = true
+variables[xmlsitemap_generated_last] = 1403658326
 variables[xmlsitemap_settings_node_article][status] = '1'
 variables[xmlsitemap_settings_node_article][priority] = '0.5'
 variables[xmlsitemap_settings_node_page][status] = '0'
 variables[xmlsitemap_settings_node_page][priority] = '0.5'
-

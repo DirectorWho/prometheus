@@ -67,31 +67,11 @@ function prometheus_menus_menu_default_menu_links() {
     'weight' => -50,
     'customized' => 1,
   );
-  // Exported menu link: main-menu_view-sample-styles:node/95
-  $menu_links['main-menu_view-sample-styles:node/95'] = array(
-    'menu_name' => 'main-menu',
-    'link_path' => 'node/95',
-    'router_path' => 'node/%',
-    'link_title' => 'View Sample Styles',
-    'options' => array(
-      'attributes' => array(),
-      'identifier' => 'main-menu_view-sample-styles:node/95',
-    ),
-    'module' => 'menu',
-    'hidden' => 0,
-    'external' => 0,
-    'has_children' => 0,
-    'expanded' => 0,
-    'weight' => -50,
-    'customized' => 1,
-    'parent_identifier' => 'main-menu_blog:blog',
-  );
   // Translatables
   // Included for use with string extractors like potx.
   t('Blog');
   t('Contact');
   t('Home');
-  t('View Sample Styles');
 
 
   return $menu_links;

@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the Prometheus Site Variables feature.
- */
-
-include_once 'prometheus_site_variables.features.inc';

@@ -56,7 +56,7 @@ Drupal.behaviors.my_custom_behavior = {
 
   fireMobileFunctions();
 
-  $('body').removeClass('js');
+  $('body').addClass('js');
 
   // toggle menu
 
