@@ -35,7 +35,7 @@ Drupal.behaviors.my_custom_behavior = {
 
   // determine if width is 'mobile' and if function has already been run
   function fireMobileFunctions() {
-    if (mobile === 1 && functionStatus == 0) {
+    if (mobile === 1 && functionStatus === 0) {
       // turn this 'on' so that it doesn't run multiple times during resize
       functionStatus = 1;
       addMobileMenuItem();
@@ -89,11 +89,11 @@ Drupal.behaviors.my_custom_behavior = {
   	  $menulink = $('.menu-link'),
   	  $menuTrigger = $('.expanded > a');
 
-  		$menulink.click(function(e) {
-  			e.preventDefault();
-  			$menulink.toggleClass('toggled');
-  			$menu.toggleClass('toggled');
-  		});
+      $menulink.click(function(e) {
+        e.preventDefault();
+        $menulink.toggleClass('toggled');
+        $menu.toggleClass('toggled');
+      });
 
   		$menuTrigger.click(function(e) {
   			e.preventDefault();
@@ -110,9 +110,7 @@ Drupal.behaviors.my_custom_behavior = {
 		});
 
     function is_touch_device() {
-     return (('ontouchstart' in window)
-          || (navigator.MaxTouchPoints > 0)
-          || (navigator.msMaxTouchPoints > 0));
+     return (('ontouchstart' in window) || (navigator.MaxTouchPoints > 0) || (navigator.msMaxTouchPoints > 0));
     }
     // remove add classes as needed
     if (is_touch_device()) {
