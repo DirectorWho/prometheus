@@ -56,6 +56,7 @@ Drupal.behaviors.my_custom_behavior = {
 
   fireMobileFunctions();
 
+  $('body').removeClass('no-js');
   $('body').addClass('js');
 
   // toggle menu
@@ -84,7 +85,7 @@ Drupal.behaviors.my_custom_behavior = {
 
   function toggleMenu() {
       // add the toggle classes
-		  var $menu = $('.region-menu > .menu'),
+		  var $menu = $('.menu-block-1 > .main-menu-1'),
   	  $menulink = $('.menu-link'),
   	  $menuTrigger = $('.expanded > a');
 
