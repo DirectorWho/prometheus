@@ -147,6 +147,7 @@ dependencies[] = prometheus_variables
 dependencies[] = prometheus_page_manager_layouts
 dependencies[] = prometheus_sample_content_dependencies
 dependencies[] = prometheus_views
+dependencies[] = prometheus_roles_permissions
 dependencies[] = uuid_features
 
 ; ----------

@@ -36,18 +36,13 @@ function prometheus_views_views_default_views() {
   $handler->display->display_options['relationships']['uid']['id'] = 'uid';
   $handler->display->display_options['relationships']['uid']['table'] = 'users';
   $handler->display->display_options['relationships']['uid']['field'] = 'uid';
-  /* Field: User: Profile image */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_profile_image']['id'] = 'field_profile_image';
   $handler->display->display_options['fields']['field_profile_image']['table'] = 'field_data_field_profile_image';
   $handler->display->display_options['fields']['field_profile_image']['field'] = 'field_profile_image';
   $handler->display->display_options['fields']['field_profile_image']['label'] = '';
   $handler->display->display_options['fields']['field_profile_image']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_profile_image']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_profile_image']['settings'] = array(
-    'image_style' => '',
-    'image_link' => '',
-  );
-  /* Field: User: Bio */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['field_bio']['id'] = 'field_bio';
   $handler->display->display_options['fields']['field_bio']['table'] = 'field_data_field_bio';
   $handler->display->display_options['fields']['field_bio']['field'] = 'field_bio';
@@ -245,8 +240,24 @@ function prometheus_views_views_default_views() {
   $handler->display->display_options['pager']['options']['id'] = '0';
   $handler->display->display_options['pager']['options']['tags']['previous'] = '‹‹';
   $handler->display->display_options['pager']['options']['tags']['next'] = '››';
-  $handler->display->display_options['style_plugin'] = 'default';
-  $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
+  $handler->display->display_options['style_options']['row']['class'] = 'row';
+  $handler->display->display_options['row_plugin'] = 'semanticviews_fields';
+  $handler->display->display_options['row_options']['skip_blank'] = 0;
+  $handler->display->display_options['row_options']['semantic_html'] = array(
+    'field_image' => array(
+      'element_type' => '',
+      'class' => '',
+    ),
+    'title' => array(
+      'element_type' => 'h2',
+      'class' => '',
+    ),
+    'body' => array(
+      'element_type' => 'p',
+      'class' => '',
+    ),
+  );
   /* Field: Content: Image */
   $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
