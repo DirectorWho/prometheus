@@ -3,8 +3,8 @@
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
-/* normalize.css v3.0.0 | MIT License | git.io/normalize */
-/* normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 /* line 20, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 article,
 aside,
@@ -42,7 +42,7 @@ template {
   display: none;
 }
 
-/* normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
 /* line 11, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 html {
   font-family: sans-serif;
@@ -55,7 +55,7 @@ body {
   margin: 0;
 }
 
-/* normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a {
   background: transparent;
@@ -67,7 +67,7 @@ a:hover {
   outline: 0;
 }
 
-/* normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
@@ -120,7 +120,7 @@ sub {
   bottom: -0.25em;
 }
 
-/* normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 img {
   border: 0;
@@ -131,7 +131,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 figure {
   margin: 1em 40px;
@@ -158,7 +158,7 @@ samp {
   font-size: 1em;
 }
 
-/* normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
 /* line 19, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 input,
@@ -258,7 +258,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 table {
   border-collapse: collapse;
@@ -271,8 +271,8 @@ th {
   padding: 0;
 }
 
-/* normalize.css v3.0.0 | MIT License | git.io/normalize */
-/* normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 /* line 20, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
 article,
 aside,
@@ -310,7 +310,7 @@ template {
   display: none;
 }
 
-/* normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Base | MIT License | git.io/normalize */
 /* line 11, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_base.scss */
 html {
   font-family: sans-serif;
@@ -323,7 +323,7 @@ body {
   margin: 0;
 }
 
-/* normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Links | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_links.scss */
 a {
   background: transparent;
@@ -335,7 +335,7 @@ a:hover {
   outline: 0;
 }
 
-/* normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Typography | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_typography.scss */
 abbr[title] {
   border-bottom: 1px dotted;
@@ -388,7 +388,7 @@ sub {
   bottom: -0.25em;
 }
 
-/* normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Embedded Content | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_embeds.scss */
 img {
   border: 0;
@@ -399,7 +399,7 @@ svg:not(:root) {
   overflow: hidden;
 }
 
-/* normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Figures | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_groups.scss */
 figure {
   margin: 1em 40px;
@@ -426,7 +426,7 @@ samp {
   font-size: 1em;
 }
 
-/* normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Forms | MIT License | git.io/normalize */
 /* line 19, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_forms.scss */
 button,
 input,
@@ -526,7 +526,7 @@ optgroup {
   font-weight: bold;
 }
 
-/* normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
+/*! normalize.css v3.0.0 | Tables | MIT License | git.io/normalize */
 /* line 9, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_tables.scss */
 table {
   border-collapse: collapse;
@@ -1356,36 +1356,36 @@ img.header__logo-image {
   padding: 1rem 0;
   position: relative;
 }
-
-/* line 29, ../sass/components/_regions.scss */
-.region-menu {
-  padding: 1rem 0;
-}
-
-@media all and (min-width: 60em) {
-  /* line 35, ../sass/components/_regions.scss */
+@media (min-width: 60em) {
+  /* line 22, ../sass/components/_regions.scss */
   .region-branding {
     margin-bottom: 2rem;
   }
 }
-/* line 48, ../sass/components/_regions.scss */
+
+/* line 32, ../sass/components/_regions.scss */
+.region-menu {
+  padding: 1rem 0;
+}
+
+/* line 43, ../sass/components/_regions.scss */
 #content {
   background: white;
   overflow: hidden;
 }
 
-/* line 53, ../sass/components/_regions.scss */
+/* line 48, ../sass/components/_regions.scss */
 #content .messages {
   margin-bottom: 1rem;
   padding: 20px;
 }
-/* line 56, ../sass/components/_regions.scss */
+/* line 51, ../sass/components/_regions.scss */
 #content .messages.status {
   background: #dfeff5;
   border: 1px solid #91c8dd;
 }
 
-/* line 63, ../sass/components/_regions.scss */
+/* line 58, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -1394,21 +1394,21 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 77, ../sass/components/_regions.scss */
+/* line 72, ../sass/components/_regions.scss */
 footer {
   clear: both;
 }
 
-/* line 81, ../sass/components/_regions.scss */
+/* line 76, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 85, ../sass/components/_regions.scss */
+/* line 80, ../sass/components/_regions.scss */
 .copyright {
   padding-bottom: 10px;
 }
-/* line 87, ../sass/components/_regions.scss */
+/* line 82, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
