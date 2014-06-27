@@ -1,6 +1,6 @@
 /**
  * @file
- * JavaScript file for the Atlas
+ * JavaScript file for Atlas
  *
  */
 
@@ -16,11 +16,12 @@ Drupal.behaviors.my_custom_behavior = {
   $(document).ready(function() {
 
   //set up variable for mobile. set this to keep track of width so functions are run only on transition from
-  // moble to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized
+  // mobile to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized
   var mobile = 0;
   // keeps track if function has been run
   var functionStatus = 0;
 
+  // todo - instead of browser width, this should be based on property at given media query
   function setMobileValue() {
     var viewport = $(window).width();
     if (viewport < 970) {
@@ -56,7 +57,7 @@ Drupal.behaviors.my_custom_behavior = {
 
   fireMobileFunctions();
 
-  $('body').removeClass('no-js');
+  // add a class to indicate js enabled on client
   $('body').addClass('js');
 
   // toggle menu

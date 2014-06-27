@@ -1,9 +1,6 @@
 /**
  * @file
  * Styles are organized using the SMACSS technique. @see http://smacss.com/book/
- *
- * When you turn on CSS aggregation at admin/config/development/performance, all
- * of these @include files will be combined into a single file.
  */
 /* Import Sass mixins, variables, Compass modules, etc. */
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
@@ -274,7 +271,6 @@ th {
   padding: 0;
 }
 
-/* HTML element (SMACSS base) rules */
 /* normalize.css v3.0.0 | MIT License | git.io/normalize */
 /* normalize.css v3.0.0 | HTML5 Display Definitions | MIT License | git.io/normalize */
 /* line 20, ../../../../../../../../.rvm/gems/ruby-2.0.0-p247/gems/compass-normalize-1.5/stylesheets/normalize/_html5.scss */
@@ -653,7 +649,6 @@ dd {
   margin: 0;
 }
 
-/* Component (SMACSS module) rules */
 /* line 3, ../sass/components/_views.scss */
 .view .row {
   border-bottom: 1px solid white;
