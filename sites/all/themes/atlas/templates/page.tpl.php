@@ -52,7 +52,6 @@
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
-      <?php print $feed_icons; ?>
 
       <?php
         // Render the sidebars to see if there's anything in them.
@@ -64,6 +63,7 @@
           <?php print $sidebar_first; ?>
           <?php print $sidebar_second; ?>
       <?php endif; ?>
+      <?php print $feed_icons; ?>
     </div>
   </div>
 <footer class="grid-container">

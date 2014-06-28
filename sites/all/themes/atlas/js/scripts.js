@@ -7,7 +7,7 @@
 (function ($, Drupal, window, document, undefined) {
 
 
-// To understand behaviors, see https://drupal.org/node/756722#behaviors
+// To learn about behaviors, see https://drupal.org/node/756722#behaviors
 Drupal.behaviors.my_custom_behavior = {
   attach: function(context, settings) {
 
@@ -51,7 +51,7 @@ Drupal.behaviors.my_custom_behavior = {
       $('.menu-link').unbind();
       $('.expanded > a').unbind();
       //remove toggled class
-      $('a').removeClass('toggled');
+      $('a, ul').removeClass('toggled');
     }
   }
 
@@ -77,16 +77,16 @@ Drupal.behaviors.my_custom_behavior = {
   function removeMobileMenuItem() {
     $("li.expanded").each(function() {
        var menuParent = $(this).children('a').text();
-       var firstChildItem = $(this).find("ul li:first-child a").text();
+       var firstChildItem = $(this).find(".main-menu-2 li:first-child a").text();
        if (menuParent == firstChildItem){
-       $(this).find("ul li:first-child").remove();
+       $(this).find(".main-menu-2 li:first-child").remove();
        }
     });
   }
 
   function toggleMenu() {
       // add the toggle classes
-		  var $menu = $('.menu-block-1 > .main-menu-1'),
+		  var $menu = $('.main-menu-1'),
   	  $menulink = $('.menu-link'),
   	  $menuTrigger = $('.expanded > a');
 

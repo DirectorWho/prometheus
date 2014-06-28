@@ -26,7 +26,11 @@ img.header__logo-image {
 .region-branding {
   float: left;
   overflow: hidden;
+  padding-bottom: 2rem;
   position: relative;
+  @include breakpoint($desk) {
+    padding-bottom: 0;
+  }
 }
 
 // preface region
