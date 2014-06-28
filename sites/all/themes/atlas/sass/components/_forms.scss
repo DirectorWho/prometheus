@@ -41,7 +41,6 @@ input[type="tel"] {
   margin-bottom: .5rem;
   padding: 0 .5rem;
   position: relative;
-  width: 80%;
 }
 
 textarea {
@@ -93,7 +92,7 @@ input[type="tel"]:focus {
 
 // Drupal's form field wrapper class
 .form-item {
-  margin-bottom: $vert-spacing * 1.5;
+  margin-bottom: 1.5rem;
   overflow: hidden;
 }
 

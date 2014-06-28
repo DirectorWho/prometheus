@@ -725,10 +725,9 @@ input[type="tel"] {
   margin-bottom: .5rem;
   padding: 0 .5rem;
   position: relative;
-  width: 80%;
 }
 
-/* line 47, ../sass/components/_forms.scss */
+/* line 46, ../sass/components/_forms.scss */
 textarea {
   display: block;
   box-sizing: border-box;
@@ -737,7 +736,7 @@ textarea {
   width: 100%;
 }
 
-/* line 59, ../sass/components/_forms.scss */
+/* line 58, ../sass/components/_forms.scss */
 button, input[type="reset"],
 input[type="submit"],
 input[type="button"],
@@ -758,7 +757,7 @@ input[type="button"],
   transition: all .3s;
 }
 
-/* line 76, ../sass/components/_forms.scss */
+/* line 75, ../sass/components/_forms.scss */
 button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
@@ -770,7 +769,7 @@ input[type="button"]:hover,
   cursor: pointer;
 }
 
-/* line 89, ../sass/components/_forms.scss */
+/* line 88, ../sass/components/_forms.scss */
 input[type='text']:focus,
 textarea:focus,
 select:focus,
@@ -783,13 +782,13 @@ input[type="tel"]:focus {
   box-shadow: 0 0 2px #237ad9 inset;
 }
 
-/* line 95, ../sass/components/_forms.scss */
+/* line 94, ../sass/components/_forms.scss */
 .form-item {
-  margin-bottom: 3rem;
+  margin-bottom: 1.5rem;
   overflow: hidden;
 }
 
-/* line 103, ../sass/components/_forms.scss */
+/* line 102, ../sass/components/_forms.scss */
 .form-item-pass-pass1,
 .form-item-pass-pass2 {
   overflow: visible;
@@ -797,25 +796,25 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 109, ../sass/components/_forms.scss */
+/* line 108, ../sass/components/_forms.scss */
 .page-user input.password-confirm {
   margin-top: 0;
 }
 
-/* line 114, ../sass/components/_forms.scss */
+/* line 113, ../sass/components/_forms.scss */
 .form-type-password-confirm {
   padding-bottom: 3rem;
   position: relative;
 }
 
-/* line 120, ../sass/components/_forms.scss */
+/* line 119, ../sass/components/_forms.scss */
 .password-strength,
 .password-confirm {
   display: block;
   margin-bottom: .5rem;
   padding: .5rem 0;
 }
-/* line 126, ../sass/components/_forms.scss */
+/* line 125, ../sass/components/_forms.scss */
 .password-strength .password-indicator div,
 .password-confirm .password-indicator div {
   background: #f76558;
@@ -823,35 +822,35 @@ input[type="tel"]:focus {
   width: 0;
 }
 
-/* line 133, ../sass/components/_forms.scss */
+/* line 132, ../sass/components/_forms.scss */
 .password-strength-title {
   margin-bottom: .5rem;
 }
 
-/* line 137, ../sass/components/_forms.scss */
+/* line 136, ../sass/components/_forms.scss */
 .password-strength-text {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 143, ../sass/components/_forms.scss */
+/* line 142, ../sass/components/_forms.scss */
 .password-confirm .error,
 .password-confirm .ok {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 148, ../sass/components/_forms.scss */
+/* line 147, ../sass/components/_forms.scss */
 .password-strength-text {
   margin-top: .5rem;
 }
 
-/* line 152, ../sass/components/_forms.scss */
+/* line 151, ../sass/components/_forms.scss */
 .password-confirm .error {
   margin-top: .3rem;
 }
 
-/* line 156, ../sass/components/_forms.scss */
+/* line 155, ../sass/components/_forms.scss */
 .password-suggestions {
   background: #efefef;
   border: 1px solid #dddddd;
@@ -1237,9 +1236,10 @@ footer .region-footer p a.toggled {
   /* line 179, ../sass/components/_menus.scss */
   .menu-block-1 > ul li.last {
     border-right: none;
+    padding-right: 0;
   }
 
-  /* line 184, ../sass/components/_menus.scss */
+  /* line 185, ../sass/components/_menus.scss */
   .menu-block-1 .menu li {
     display: inline-block;
     font-size: 14px;
@@ -1247,22 +1247,22 @@ footer .region-footer p a.toggled {
     font-weight: 300;
   }
 
-  /* line 191, ../sass/components/_menus.scss */
+  /* line 192, ../sass/components/_menus.scss */
   a.menu-link {
     display: none;
   }
 
-  /* line 195, ../sass/components/_menus.scss */
+  /* line 196, ../sass/components/_menus.scss */
   .menu ul {
     display: none;
   }
 
-  /* line 199, ../sass/components/_menus.scss */
+  /* line 200, ../sass/components/_menus.scss */
   .menu li:hover > ul {
     display: block;
   }
 
-  /* line 203, ../sass/components/_menus.scss */
+  /* line 204, ../sass/components/_menus.scss */
   .js .menu-block-1 .main-menu-2 {
     border: 1px solid #efefef;
     position: absolute;
@@ -1271,7 +1271,7 @@ footer .region-footer p a.toggled {
     width: 12em;
     text-align: left;
   }
-  /* line 210, ../sass/components/_menus.scss */
+  /* line 211, ../sass/components/_menus.scss */
   .js .menu-block-1 .main-menu-2 li {
     border-right: none;
     display: inline-block;
@@ -1281,12 +1281,12 @@ footer .region-footer p a.toggled {
     position: relative;
     width: 15.2em;
   }
-  /* line 218, ../sass/components/_menus.scss */
+  /* line 219, ../sass/components/_menus.scss */
   .js .menu-block-1 .main-menu-2 li a {
     display: block;
   }
 }
-/* line 228, ../sass/components/_menus.scss */
+/* line 229, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li,
 .region-sidebar-second .menu li {
   border-bottom: 1px solid #efefef;
@@ -1294,17 +1294,17 @@ footer .region-footer p a.toggled {
   padding-bottom: .5em;
   padding-top: 0;
 }
-/* line 233, ../sass/components/_menus.scss */
+/* line 234, ../sass/components/_menus.scss */
 .region-sidebar-first .menu li.last,
 .region-sidebar-second .menu li.last {
   border: none;
 }
 
-/* line 240, ../sass/components/_menus.scss */
+/* line 241, ../sass/components/_menus.scss */
 ul.primary {
   border-bottom: 1px solid #bbbbbb;
 }
-/* line 242, ../sass/components/_menus.scss */
+/* line 243, ../sass/components/_menus.scss */
 ul.primary li {
   display: inline-block;
   list-style: none;
@@ -1316,11 +1316,11 @@ ul.primary li {
   margin-right: 0.5em;
   padding: 0 1em;
 }
-/* line 252, ../sass/components/_menus.scss */
+/* line 253, ../sass/components/_menus.scss */
 ul.primary li a {
   text-decoration: none;
 }
-/* line 256, ../sass/components/_menus.scss */
+/* line 257, ../sass/components/_menus.scss */
 ul.primary li.toggled {
   background-color: #fefefe;
 }
@@ -1332,11 +1332,16 @@ ul.primary li.toggled {
 }
 
 /* line 7, ../sass/components/_regions.scss */
+.header-wrapper {
+  padding-top: 1rem;
+}
+
+/* line 11, ../sass/components/_regions.scss */
 img.header__logo-image {
   height: 63px;
 }
 
-/* line 11, ../sass/components/_regions.scss */
+/* line 15, ../sass/components/_regions.scss */
 .header__logo-image {
   float: left;
   height: auto;
@@ -1344,48 +1349,36 @@ img.header__logo-image {
   position: relative;
 }
 
-/* line 18, ../sass/components/_regions.scss */
+/* line 22, ../sass/components/_regions.scss */
 .header__name-and-slogan {
   float: left;
 }
 
-/* line 22, ../sass/components/_regions.scss */
+/* line 26, ../sass/components/_regions.scss */
 .region-branding {
   float: left;
   overflow: hidden;
-  padding: 1rem 0;
   position: relative;
 }
-@media (min-width: 60em) {
-  /* line 22, ../sass/components/_regions.scss */
-  .region-branding {
-    margin-bottom: 2rem;
-  }
-}
 
-/* line 32, ../sass/components/_regions.scss */
-.region-menu {
-  padding: 1rem 0;
-}
-
-/* line 43, ../sass/components/_regions.scss */
+/* line 39, ../sass/components/_regions.scss */
 #content {
   background: white;
   overflow: hidden;
 }
 
-/* line 48, ../sass/components/_regions.scss */
+/* line 44, ../sass/components/_regions.scss */
 #content .messages {
   margin-bottom: 1rem;
   padding: 20px;
 }
-/* line 51, ../sass/components/_regions.scss */
+/* line 47, ../sass/components/_regions.scss */
 #content .messages.status {
   background: #dfeff5;
   border: 1px solid #91c8dd;
 }
 
-/* line 58, ../sass/components/_regions.scss */
+/* line 54, ../sass/components/_regions.scss */
 .breadcrumb li {
   display: inline-block;
   list-style: none;
@@ -1394,43 +1387,37 @@ img.header__logo-image {
   font-size: 14.5px;
 }
 
-/* line 72, ../sass/components/_regions.scss */
+/* line 68, ../sass/components/_regions.scss */
 footer {
   clear: both;
 }
 
-/* line 76, ../sass/components/_regions.scss */
+/* line 72, ../sass/components/_regions.scss */
 .region-footer {
   padding: 10px 0;
 }
 
-/* line 80, ../sass/components/_regions.scss */
+/* line 76, ../sass/components/_regions.scss */
 .copyright {
   padding-bottom: 10px;
 }
-/* line 82, ../sass/components/_regions.scss */
+/* line 78, ../sass/components/_regions.scss */
 .copyright p {
   float: left;
   font-size: 12.5px;
 }
 
-/**
- * @file
- * Positioning for a responsive layout.
- *
- * Define CSS classes to create a fluid grid layout with optional sidebars
- * depending on whether blocks are placed in the left or right sidebars.
- *
- */
-/* line 16, ../sass/components/_layout.scss */
-header,
-.preface,
-.content-wrapper,
-footer {
-  clear: both;
+/* line 11, ../sass/components/_layout.scss */
+.grid-container {
   margin: 0 auto;
   max-width: 1000px;
-  padding: 0 17.5px;
+  padding: 0 17.5px 35px;
+}
+/* line 15, ../sass/components/_layout.scss */
+.grid-container:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
 /* line 24, ../sass/components/_layout.scss */
@@ -1439,63 +1426,53 @@ footer {
   float: left;
   width: 100%;
 }
-
-/* line 31, ../sass/components/_layout.scss */
-#content,
-.region-sidebar-first,
-.region-sidebar-second {
-  margin-bottom: 3rem;
+@media (min-width: 60em) {
+  /* line 24, ../sass/components/_layout.scss */
+  .region-branding,
+  .region-menu {
+    width: 50%;
+  }
 }
 
-@media all and (min-width: 40em) {
-  /* line 38, ../sass/components/_layout.scss */
-  .two-sidebars #content {
+@media (min-width: 40em) {
+  /* line 36, ../sass/components/_layout.scss */
+  .two-sidebars .region-content {
     float: left;
     padding-right: 35px;
     width: 67%;
   }
-  /* line 42, ../sass/components/_layout.scss */
-  .two-sidebars #content:after {
+  /* line 40, ../sass/components/_layout.scss */
+  .two-sidebars .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 47, ../sass/components/_layout.scss */
+  /* line 45, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-first {
     float: left;
     width: 33%;
   }
-  /* line 51, ../sass/components/_layout.scss */
+  /* line 49, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 33%;
   }
 }
-@media all and (min-width: 60em) {
-  /* line 62, ../sass/components/_layout.scss */
-  .region-branding {
-    width: 50%;
-  }
-
-  /* line 66, ../sass/components/_layout.scss */
-  .region-menu {
-    width: 50%;
-  }
-
-  /* line 72, ../sass/components/_layout.scss */
-  .two-sidebars #content {
+@media (min-width: 60em) {
+  /* line 59, ../sass/components/_layout.scss */
+  .two-sidebars .region-content {
     float: left;
     margin-left: 25%;
     padding-right: 35px;
     width: 50%;
   }
-  /* line 77, ../sass/components/_layout.scss */
-  .two-sidebars #content:after {
+  /* line 64, ../sass/components/_layout.scss */
+  .two-sidebars .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 82, ../sass/components/_layout.scss */
+  /* line 68, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-first {
     clear: none;
     float: left;
@@ -1503,47 +1480,47 @@ footer {
     padding-right: 35px;
     width: 25%;
   }
-  /* line 89, ../sass/components/_layout.scss */
+  /* line 75, ../sass/components/_layout.scss */
   .two-sidebars .region-sidebar-second {
     float: left;
     width: 25%;
   }
 
-  /* line 97, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-first #content {
+  /* line 83, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-first .region-content {
     float: left;
     margin-left: 33%;
     padding-right: 35px;
     width: 67%;
   }
-  /* line 102, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-first #content:after {
+  /* line 88, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-first .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 106, ../sass/components/_layout.scss */
+  /* line 92, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-first .region-sidebar-first {
     clear: none;
     float: left;
     margin-left: -100%;
     width: 33%;
-    padding-right: 30px;
+    padding-right: 35px;
   }
 
-  /* line 117, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-second #content {
+  /* line 103, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-second .region-content {
     float: left;
-    padding-right: 30px;
+    padding-right: 35px;
     width: 67%;
   }
-  /* line 121, ../sass/components/_layout.scss */
-  .one-sidebar.sidebar-second #content:after {
+  /* line 107, ../sass/components/_layout.scss */
+  .one-sidebar.sidebar-second .region-content:after {
     content: "";
     display: table;
     clear: both;
   }
-  /* line 125, ../sass/components/_layout.scss */
+  /* line 111, ../sass/components/_layout.scss */
   .one-sidebar.sidebar-second .region-sidebar-second {
     clear: none;
     float: left;

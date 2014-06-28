@@ -176,5 +176,38 @@ function prometheus_boxes_context_context_default_contexts() {
   t('Blocks');
   $export['sitewide_block_locations'] = $context;
 
+  $context = new stdClass();
+  $context->disabled = FALSE; /* Edit this to true to make a default context disabled initially */
+  $context->api_version = 3;
+  $context->name = 'user_block';
+  $context->description = 'Show user block to help demo three column layout';
+  $context->tag = 'Blocks';
+  $context->conditions = array(
+    'path' => array(
+      'values' => array(
+        'blog/three-column-layout-example' => 'blog/three-column-layout-example',
+      ),
+    ),
+  );
+  $context->reactions = array(
+    'block' => array(
+      'blocks' => array(
+        'user-login' => array(
+          'module' => 'user',
+          'delta' => 'login',
+          'region' => 'sidebar_first',
+          'weight' => '-10',
+        ),
+      ),
+    ),
+  );
+  $context->condition_mode = 0;
+
+  // Translatables
+  // Included for use with string extractors like potx.
+  t('Blocks');
+  t('Show user block to help demo three column layout');
+  $export['user_block'] = $context;
+
   return $export;
 }

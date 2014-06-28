@@ -1,7 +1,11 @@
-// header region
+// header
 .header-wrapper,
 .preface-wrapper {
   width: 100%;
+}
+
+.header-wrapper {
+  padding-top: 1rem;
 }
 
 img.header__logo-image {
@@ -22,15 +26,7 @@ img.header__logo-image {
 .region-branding {
   float: left;
   overflow: hidden;
-  padding: 1rem 0;
   position: relative;
-  @include breakpoint($desk) {
-    margin-bottom: 2rem;
-  }
-}
-
-.region-menu {
-  padding: 1rem 0;
 }
 
 // preface region
