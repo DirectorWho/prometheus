@@ -722,11 +722,12 @@ input[type="tel"] {
   font-size: 20px;
   height: 2.25rem;
   margin-bottom: .5rem;
+  max-width: 100%;
   padding: 0 .5rem;
   position: relative;
 }
 
-/* line 46, ../sass/components/_forms.scss */
+/* line 47, ../sass/components/_forms.scss */
 textarea {
   display: block;
   box-sizing: border-box;
@@ -735,7 +736,7 @@ textarea {
   width: 100%;
 }
 
-/* line 58, ../sass/components/_forms.scss */
+/* line 59, ../sass/components/_forms.scss */
 button, input[type="reset"],
 input[type="submit"],
 input[type="button"],
@@ -756,7 +757,7 @@ input[type="button"],
   transition: all .3s;
 }
 
-/* line 75, ../sass/components/_forms.scss */
+/* line 76, ../sass/components/_forms.scss */
 button:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover,
@@ -768,7 +769,7 @@ input[type="button"]:hover,
   cursor: pointer;
 }
 
-/* line 88, ../sass/components/_forms.scss */
+/* line 89, ../sass/components/_forms.scss */
 input[type='text']:focus,
 textarea:focus,
 select:focus,
@@ -782,12 +783,18 @@ input[type="tel"]:focus {
 }
 
 /* line 94, ../sass/components/_forms.scss */
+.form-required {
+  color: #237ad9;
+  font-weight: bold;
+}
+
+/* line 100, ../sass/components/_forms.scss */
 .form-item {
   margin-bottom: 1.5rem;
   overflow: hidden;
 }
 
-/* line 102, ../sass/components/_forms.scss */
+/* line 108, ../sass/components/_forms.scss */
 .form-item-pass-pass1,
 .form-item-pass-pass2 {
   overflow: visible;
@@ -795,25 +802,25 @@ input[type="tel"]:focus {
   width: 40%;
 }
 
-/* line 108, ../sass/components/_forms.scss */
+/* line 114, ../sass/components/_forms.scss */
 .page-user input.password-confirm {
   margin-top: 0;
 }
 
-/* line 113, ../sass/components/_forms.scss */
+/* line 119, ../sass/components/_forms.scss */
 .form-type-password-confirm {
   padding-bottom: 3rem;
   position: relative;
 }
 
-/* line 119, ../sass/components/_forms.scss */
+/* line 125, ../sass/components/_forms.scss */
 .password-strength,
 .password-confirm {
   display: block;
   margin-bottom: .5rem;
   padding: .5rem 0;
 }
-/* line 125, ../sass/components/_forms.scss */
+/* line 131, ../sass/components/_forms.scss */
 .password-strength .password-indicator div,
 .password-confirm .password-indicator div {
   background: #f76558;
@@ -821,35 +828,35 @@ input[type="tel"]:focus {
   width: 0;
 }
 
-/* line 132, ../sass/components/_forms.scss */
+/* line 138, ../sass/components/_forms.scss */
 .password-strength-title {
   margin-bottom: .5rem;
 }
 
-/* line 136, ../sass/components/_forms.scss */
+/* line 142, ../sass/components/_forms.scss */
 .password-strength-text {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 142, ../sass/components/_forms.scss */
+/* line 148, ../sass/components/_forms.scss */
 .password-confirm .error,
 .password-confirm .ok {
   font-size: 15px;
   font-weight: bold;
 }
 
-/* line 147, ../sass/components/_forms.scss */
+/* line 153, ../sass/components/_forms.scss */
 .password-strength-text {
   margin-top: .5rem;
 }
 
-/* line 151, ../sass/components/_forms.scss */
+/* line 157, ../sass/components/_forms.scss */
 .password-confirm .error {
   margin-top: .3rem;
 }
 
-/* line 155, ../sass/components/_forms.scss */
+/* line 161, ../sass/components/_forms.scss */
 .password-suggestions {
   background: #efefef;
   border: 1px solid #dddddd;
@@ -962,7 +969,7 @@ h6, h6 a {
   font-size: 13.4px;
 }
 
-@media all and (min-width: 40em) {
+@media (min-width: 40em) {
   /* line 49, ../sass/components/_typography.scss */
   h1, h1 a {
     font-size: 45px;
@@ -993,7 +1000,7 @@ h6, h6 a {
     font-size: 12.395px;
   }
 }
-@media all and (min-width: 60em) {
+@media (min-width: 60em) {
   /* line 83, ../sass/components/_typography.scss */
   body {
     font-size: 16.5px;
@@ -1545,22 +1552,29 @@ footer {
     width: 33%;
   }
 }
-/* line 5, ../sass/components/_misc.scss */
+/* line 3, ../sass/components/_misc.scss */
+.feed-icon {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* line 9, ../sass/components/_misc.scss */
 #admin-menu {
   font-size: 15px;
 }
 
-/* line 9, ../sass/components/_misc.scss */
+/* line 13, ../sass/components/_misc.scss */
 #admin-menu li.admin-menu-account > a {
   background: #237ad9;
 }
 
-/* line 13, ../sass/components/_misc.scss */
+/* line 17, ../sass/components/_misc.scss */
 #admin-menu .dropdown li li.expandable ul {
   margin: -27px 0 0 160px;
 }
 
-/* line 20, ../sass/components/_misc.scss */
+/* line 24, ../sass/components/_misc.scss */
 ul.pager {
   background: none;
   border: none;
@@ -1571,30 +1585,30 @@ ul.pager {
   text-align: right;
 }
 
-/* line 30, ../sass/components/_misc.scss */
+/* line 34, ../sass/components/_misc.scss */
 ul.pager li {
   border: none;
   font-size: 15px;
   padding: .5em 0 .5em 1em;
 }
 
-/* line 36, ../sass/components/_misc.scss */
+/* line 40, ../sass/components/_misc.scss */
 ul.pager li a {
   border: none;
 }
 
-/* line 41, ../sass/components/_misc.scss */
+/* line 45, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-previous {
   text-transform: capitalize;
 }
 
-/* line 45, ../sass/components/_misc.scss */
+/* line 49, ../sass/components/_misc.scss */
 .pager li.pager-current {
   font-weight: normal;
 }
 
-/* line 49, ../sass/components/_misc.scss */
+/* line 53, ../sass/components/_misc.scss */
 .pager li, .pager li.pager-next, .pager li.pager-previous, .pager li.pager-last, .pager li.pager-first {
   border: none;
   margin-left: 1em;
@@ -1602,28 +1616,28 @@ ul.pager li a {
   text-align: right;
 }
 
-/* line 56, ../sass/components/_misc.scss */
+/* line 60, ../sass/components/_misc.scss */
 .pager li.pager-first a, .pager li.pager-previous a, .pager li.pager-next a, .pager li.pager-last a {
   display: inline-block;
 }
 
-/* line 61, ../sass/components/_misc.scss */
+/* line 65, ../sass/components/_misc.scss */
 .pager li.pager-next,
 .pager li.pager-current {
   float: right;
 }
 
-/* line 65, ../sass/components/_misc.scss */
+/* line 69, ../sass/components/_misc.scss */
 .pager li.pager-previous {
   float: left;
 }
 
-/* line 69, ../sass/components/_misc.scss */
+/* line 73, ../sass/components/_misc.scss */
 .item-list .pager li {
   padding: .25em 1em;
 }
 
-/* line 78, ../sass/components/_misc.scss */
+/* line 82, ../sass/components/_misc.scss */
 .img-right {
   float: right;
   height: auto;
@@ -1631,7 +1645,7 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 85, ../sass/components/_misc.scss */
+/* line 89, ../sass/components/_misc.scss */
 .img-left {
   float: left;
   height: auto;
@@ -1639,33 +1653,33 @@ ul.pager li a {
   max-width: 50%;
 }
 
-/* line 95, ../sass/components/_misc.scss */
+/* line 99, ../sass/components/_misc.scss */
 .messages.error {
   background: #f5dfdf;
   border: 2px solid #ce9e9e;
 }
-/* line 99, ../sass/components/_misc.scss */
+/* line 103, ../sass/components/_misc.scss */
 .messages.warning {
   background: #f8fad5;
   border: 2px solid #e5d35b;
 }
-/* line 103, ../sass/components/_misc.scss */
+/* line 107, ../sass/components/_misc.scss */
 .messages.info {
   background: #dfeff5;
   border: 2px solid #9ebcce;
 }
-/* line 107, ../sass/components/_misc.scss */
+/* line 111, ../sass/components/_misc.scss */
 .messages.success {
   background: #e8f5df;
   border: 2px solid #9ece9e;
 }
-/* line 111, ../sass/components/_misc.scss */
+/* line 115, ../sass/components/_misc.scss */
 .messages h2 {
   font-size: 1rem;
   font-weight: 300;
 }
 
-/* line 121, ../sass/components/_misc.scss */
+/* line 125, ../sass/components/_misc.scss */
 .messages.error,
 .messages.warning,
 .messages.info,
@@ -1674,7 +1688,7 @@ ul.pager li a {
   margin-bottom: 2rem;
   padding: 1rem;
 }
-/* line 125, ../sass/components/_misc.scss */
+/* line 129, ../sass/components/_misc.scss */
 .messages.error li,
 .messages.warning li,
 .messages.info li,
@@ -1682,7 +1696,7 @@ ul.pager li a {
   color: #222222;
 }
 
-/* line 131, ../sass/components/_misc.scss */
+/* line 135, ../sass/components/_misc.scss */
 .element-invisible {
   position: absolute !important;
   height: 1px;
@@ -1691,96 +1705,9 @@ ul.pager li a {
   clip: rect(1px, 1px, 1px, 1px);
 }
 
-/* line 135, ../sass/components/_misc.scss */
+/* line 139, ../sass/components/_misc.scss */
 .clearfix:after {
   content: "";
   display: table;
   clear: both;
-}
-
-/**
- * @file
- * Print styling
- *
- * We provide some sane print styling for Drupal using Zen's layout method.
- */
-/**
- * By importing this CSS file as media "all", we allow this print file to be
- * aggregated with other stylesheets, for improved front-end performance.
- */
-@media print {
-  /* Underline all links. */
-  /* line 16, ../sass/_print.scss */
-  a:link,
-  a:visited {
-    text-decoration: underline !important;
-    /* Don't underline header. */
-  }
-  /* line 20, ../sass/_print.scss */
-  a:link.header__site-link,
-  a:visited.header__site-link {
-    text-decoration: none !important;
-  }
-
-  /* line 25, ../sass/_print.scss */
-  #content {
-    /* Add visible URL after links. */
-    /* Only display useful links. */
-    /* Add visible title after abbreviations. */
-  }
-  /* line 27, ../sass/_print.scss */
-  #content a[href]:after {
-    content: " (" attr(href) ")";
-    font-weight: normal;
-    font-size: 20px;
-  }
-  /* line 35, ../sass/_print.scss */
-  #content a[href^="javascript:"]:after,
-  #content a[href^="#"]:after {
-    content: "";
-  }
-  /* line 40, ../sass/_print.scss */
-  #content abbr[title]:after {
-    content: " (" attr(title) ")";
-  }
-
-  /* Un-float the content. */
-  /* line 46, ../sass/_print.scss */
-  #content {
-    float: none !important;
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-  }
-
-  /* Turn off any background colors or images. */
-  /* line 57, ../sass/_print.scss */
-  body,
-  #page,
-  #main,
-  #content {
-    color: #000;
-    background-color: transparent !important;
-    background-image: none !important;
-  }
-
-  /* Hide sidebars and nav elements. */
-  /* line 77, ../sass/_print.scss */
-  #skip-link,
-  #toolbar,
-  #navigation,
-  .region-sidebar-first,
-  .region-sidebar-second,
-  #footer,
-  .breadcrumb,
-  .tabs,
-  .action-links,
-  .links,
-  .book-navigation,
-  .forum-topic-navigation,
-  .pager,
-  .feed-icons {
-    visibility: hidden;
-    display: none;
-  }
 }
