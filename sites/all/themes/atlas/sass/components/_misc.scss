@@ -18,6 +18,22 @@
   margin: -27px 0 0 160px;
 }
 
+// CKEditor floated images in body field
+.img-left {
+  float: left;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-right: $pad * .5;
+  max-width: 50%;
+}
+
+.img-right {
+  float: right;
+  display: inline-block;
+  margin-bottom: 1rem;
+  margin-right: $pad * .5;
+  max-width: 50%;
+}
 
 // pager styles
 
