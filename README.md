@@ -15,7 +15,7 @@ The Sass files are structured according to [SMACSS](https://smacss.com/) princip
 
 This starter site was created with a few principles in mind. The first is that I wanted to include common configuration and site building tasks because starting from scratch every time is such a waste of time.
 
-The second principle is to eliminate unnecessary markup and CSS. I've done this mostly by modifying default  template files. At this writing, this task is ~90% complete.
+The second principle is to eliminate unnecessary markup and CSS. I've done this mostly by modifying default  template files and removing core CSS files. At this writing, this task is ~90% complete.
 
 The third principle is to avoid grid/CSS frameworks as well as reflexively looking for modules to accomplish&nbsp;frontend tasks. For my take on grid frameworks, [this post](http://css-tricks.com/dont-overthink-it-grids/) by Chris Coyier says it better than I ever could, but the point is you probably don't need a big honkin' framework. That said, if you have a favorite grid framework, it will be a snap adding it.
 
