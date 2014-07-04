@@ -35,10 +35,14 @@ function prometheus_content_dependecies_wysiwyg_default_profiles() {
           'PasteText' => 1,
           'PasteFromWord' => 1,
           'Format' => 1,
+          'Styles' => 1,
           'Table' => 1,
           'Iframe' => 1,
           'SpellChecker' => 1,
           'Scayt' => 1,
+        ),
+        'imce' => array(
+          'imce' => 1,
         ),
         'drupal' => array(
           'break' => 1,
@@ -57,8 +61,8 @@ function prometheus_content_dependecies_wysiwyg_default_profiles() {
       'block_formats' => 'p,address,pre,h2,h3,h4,h5,h6,div,figure,blockquote',
       'css_setting' => 'self',
       'css_path' => '/sites/all/themes/atlas/css/editor-styles.css',
-      'css_classes' => 'Image left=div.img-left
-Image right=div.img-right
+      'css_classes' => 'Image left=img.img-left
+Image right=img.img-right
 Responsive video=div.fitvids',
     ),
   );

@@ -113,7 +113,6 @@ function prometheus_profile_install() {
     'prometheus_breakpoints_and_image_styles',
     'prometheus_menus',
     'prometheus_page_manager_layouts',
-    'prometheus_sample_content_dependencies',
     'prometheus_variables',
     'prometheus_views'
   );

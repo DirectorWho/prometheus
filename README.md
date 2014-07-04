@@ -7,7 +7,7 @@ A demo of Prometheus is [here](http://dev-prometheus.gotpantheon.com/).
 
 ## Quick Overview
 
-Prometheus is the name of this&nbsp;installation profile - or starter site, if you like. It includes a theme called Atlas that uses Sass and Compass to help with the CSS chores. You can still use both the theme and installation profile if you don't know either, but you will get more value if you do.
+Prometheus is the name of this installation profile - or starter site, if you like. It includes a theme called Atlas that uses Sass and Compass to help with the CSS chores. You can still use both the theme and installation profile if you don't know either, but you will get more value if you do.
 
 The Sass files are structured according to [SMACSS](https://smacss.com/) principles which means the rules are divided up in a modular way - one for views, one for blocks, etc. This makes things much more maintainable and if you don't like the way I've handled something, you can easily chuck the file and replace it with your own without touching the rest.
 
@@ -15,7 +15,7 @@ The Sass files are structured according to [SMACSS](https://smacss.com/) princip
 
 This starter site was created with a few principles in mind. The first is that I wanted to include common configuration and site building tasks because starting from scratch every time is such a waste of time.
 
-The second principle is to eliminate unnecessary markup and CSS. I've done this by modifying many of the default template files. Doing it this way - instead of through preprocess, for example - makes it more approachable for those who aren't yet that deep in the Drupal woods. At this writing, this task is ~90% complete.
+The second principle is to eliminate unnecessary markup and CSS. I've done this mostly by modifying default  template files. At this writing, this task is ~90% complete.
 
 The third principle is to avoid grid/CSS frameworks as well as reflexively looking for modules to accomplish&nbsp;frontend tasks. For my take on grid frameworks, [this post](http://css-tricks.com/dont-overthink-it-grids/) by Chris Coyier says it better than I ever could, but the point is you probably don't need a big honkin' framework. That said, if you have a favorite grid framework, it will be a snap adding it.
 

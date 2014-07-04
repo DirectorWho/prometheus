@@ -56,7 +56,7 @@ function prometheus_profile_install_finished(&$install_state) {
 
   // revert features to ensure they are all installed
   $features = array(
-    'prometheus_sample_content_dependencies',
+    'prometheus_content_dependecies',
   );
   features_revert($features);
   // ignore any rebuild messages

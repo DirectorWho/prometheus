@@ -18,7 +18,6 @@ dependencies[] = context
 dependencies[] = context_ui
 ; Core
 dependencies[] = block
-dependencies[] = comment
 dependencies[] = contact
 dependencies[] = contextual
 dependencies[] = dblog
@@ -118,8 +117,6 @@ dependencies[] = metatag
 dependencies[] = metatag_views
 ; Taxonomy menu
 dependencies[] = taxonomy_menu
-; Theme Tools
-dependencies[] = commentsblock
 ; UUID
 dependencies[] = uuid
 dependencies[] = uuid_path
@@ -155,13 +152,14 @@ dependencies[] = uuid_features
 ; ----------
 ; Variables
 ; ----------
+variables[additional_settings__active_tab_article] = 'edit-comment'
 variables[admin_theme] = 'fm_admin'
 variables[anonymous] = 'Anonymous'
-variables[backup_migrate_destination_id] = 'download'
+variables[backup_migrate_destination_id] = '86c3cdfa9e69afcb50bfafc0d7870c7b'
 variables[backup_migrate_profile_id] = 'default'
 variables[backup_migrate_source_id] = 'db'
 variables[comment_anonymous_article] = '0'
-variables[comment_article] = '2'
+variables[comment_article] = '0'
 variables[comment_default_mode_article] = 1
 variables[comment_default_mode_page] = 1
 variables[comment_default_per_page_article] = '50'
@@ -174,6 +172,7 @@ variables[comment_preview_page] = '1'
 variables[comment_subject_field_article] = 1
 variables[comment_subject_field_page] = 1
 variables[context_block_rebuild_needed] = true
+variables[custom_breadcrumbs_show_form_table_article] = 1
 variables[date_api_version] = '7.2'
 variables[date_default_timezone] = 'America/New_York'
 variables[date_format_html5_tools_iso8601] = 'c'
@@ -182,6 +181,9 @@ variables[date_format_medium] = 'F j, Y - g:ia'
 variables[date_format_short] = 'm/d/Y - g:ia'
 variables[default_nodes_main] = '10'
 variables[default_page_manager_handlers][node_view_panel_context] = true
+variables[diff_enable_revisions_page_node_article] = 1
+variables[diff_show_preview_changes_node_article] = 1
+variables[diff_view_mode_preview_node_article] = 'full'
 variables[disable_messages_debug_visible_div] = '0'
 variables[disable_messages_enable] = '1'
 variables[disable_messages_enable_debug] = '0'
@@ -659,7 +661,7 @@ variables[taxonomy_menu_vocab_menu_utility_tags] = '0'
 variables[taxonomy_menu_vocab_parent_tags] = '0'
 variables[taxonomy_menu_vocab_parent_utility_tags] = '0'
 variables[theme_default] = 'atlas'
-variables[update_last_email_notification] = 1403811623
+variables[update_last_email_notification] = 1404421331
 variables[uuid_features_entity_node][article] = 'article'
 variables[uuid_features_entity_node][page] = 'page'
 variables[uuid_features_entity_taxonomy_term][tags] = 'tags'
@@ -694,8 +696,7 @@ variables[views_field_rewrite_elements][footer] = 'Footer'
 variables[views_field_rewrite_elements][header] = 'Header'
 variables[views_field_rewrite_elements][menu] = 'Menu'
 variables[views_field_rewrite_elements][nav] = 'Nav'
-variables[xmlsitemap_generated_last] = 1403717897
-variables[xmlsitemap_regenerate_needed] = true
+variables[xmlsitemap_generated_last] = 1404432607
 variables[xmlsitemap_settings_node_article][status] = '1'
 variables[xmlsitemap_settings_node_article][priority] = '0.5'
 variables[xmlsitemap_settings_node_page][status] = '0'
