@@ -84,6 +84,7 @@ features[variable][] = taxonomy_menu_vocab_menu_utility_tags
 features[variable][] = taxonomy_menu_vocab_parent_tags
 features[variable][] = taxonomy_menu_vocab_parent_utility_tags
 features[variable][] = theme_default
+features[variable][] = user_register
 features[variable][] = xmlsitemap_settings_node_article
 features[variable][] = xmlsitemap_settings_node_page
 project path = sites/all/modules/features
