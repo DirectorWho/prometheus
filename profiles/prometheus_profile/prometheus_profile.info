@@ -143,6 +143,7 @@ dependencies[] = features
 dependencies[] = features_roles_permissions
 dependencies[] = prometheus_boxes_context
 dependencies[] = prometheus_breakpoints_and_image_styles
+dependencies[] = prometheus_content
 dependencies[] = prometheus_content_dependecies
 dependencies[] = prometheus_menus
 dependencies[] = prometheus_page_manager_layouts
