@@ -30,6 +30,7 @@ function prometheus_content_dependecies_wysiwyg_default_profiles() {
           'Link' => 1,
           'Unlink' => 1,
           'Anchor' => 1,
+          'Image' => 1,
           'Blockquote' => 1,
           'Source' => 1,
           'PasteText' => 1,
@@ -43,6 +44,9 @@ function prometheus_content_dependecies_wysiwyg_default_profiles() {
         ),
         'imce' => array(
           'imce' => 1,
+        ),
+        'drupal_path' => array(
+          'Link' => 1,
         ),
         'drupal' => array(
           'break' => 1,
