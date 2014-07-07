@@ -143,7 +143,6 @@ dependencies[] = features
 dependencies[] = features_roles_permissions
 dependencies[] = prometheus_boxes_context
 dependencies[] = prometheus_breakpoints_and_image_styles
-dependencies[] = prometheus_content
 dependencies[] = prometheus_content_dependecies
 dependencies[] = prometheus_menus
 dependencies[] = prometheus_page_manager_layouts
@@ -714,4 +713,3 @@ variables[xmlsitemap_settings_node_article][status] = '1'
 variables[xmlsitemap_settings_node_article][priority] = '0.5'
 variables[xmlsitemap_settings_node_page][status] = '0'
 variables[xmlsitemap_settings_node_page][priority] = '0.5'
-
