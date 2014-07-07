@@ -54,11 +54,6 @@ function prometheus_profile_install_finished(&$install_state) {
   // Will also trigger indexing of profile-supplied content or feeds.
   drupal_cron_run();
 
-  // revert features to ensure they are all installed
-  $features = array(
-    'prometheus_content_dependecies',
-  );
-  features_revert($features);
   // ignore any rebuild messages
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages

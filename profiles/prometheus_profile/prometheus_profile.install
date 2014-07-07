@@ -115,6 +115,7 @@ function prometheus_profile_install() {
     'prometheus_page_manager_layouts',
     'prometheus_variables',
     'prometheus_views',
+    'prometheus_content_dependecies',
   );
   features_revert($features);
   // ignore any rebuild messages
