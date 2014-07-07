@@ -55,13 +55,15 @@ img {
 .img-left {
   float: left;
   display: inline-block;
-  margin-right: $pad * .5;
+  height: auto;
+  margin-right: 15px;
   max-width: 50%;
 }
 
 .img-right {
   float: right;
   display: inline-block;
-  margin-right: $pad * .5;
+  height: auto;
+  margin-right: 15px;
   max-width: 50%;
 }
