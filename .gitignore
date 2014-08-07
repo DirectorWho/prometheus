@@ -2,6 +2,7 @@
 /sites/*/private
 /files/*
 /cache
+sites/default/files
 
 # sensitive information
 
