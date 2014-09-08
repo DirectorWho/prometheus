@@ -65,12 +65,5 @@ $nav-height: 3em;
 $tabs-container-bg: #fff;
 $tabs-border: $gray;
 
-
-// =============================================================================
-// Partials to be shared with all .scss files.
-// =============================================================================
-@import "normalize";
-@import "compass/utilities/general/clearfix";
-
 // Now we add our custom helper mixins.
 @import "mixins";

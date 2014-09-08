@@ -1,6 +1,6 @@
 /**
  * @file
- * JavaScript file for Atlas
+ * JavaScript file for Atlas starter theme
  *
  */
 
@@ -8,15 +8,18 @@
 
 
 // To learn about behaviors, see https://drupal.org/node/756722#behaviors
-Drupal.behaviors.my_custom_behavior = {
+Drupal.behaviors.my_behavior = {
   attach: function(context, settings) {
 
   // start custom
-
   $(document).ready(function() {
 
-  //set up variable for mobile. set this to keep track of width so functions are run only on transition from
-  // mobile to desktop and vice versa. if this isn't done, functions will fire constantly as window is resized
+    /**
+     * set up variable for mobile. set this to keep track of width so functions are run only
+     * on transition from mobile to desktop and vice versa. if this isn't done, functions
+     * will fire constantly as window is resized
+     */
+
   var mobile = 0;
   // keeps track if function has been run
   var functionStatus = 0;

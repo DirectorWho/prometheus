@@ -1,24 +1,5 @@
 $pad: 35px;
 
-.panel-left {
+.column {
   margin-bottom: $vert-spacing;
-}
-
-@include breakpoint ($tab) {
-
-  .panel-left,
-  .panel-right {
-    float: left;
-    padding: 0 $pad;
-    width: 50%;
-  }
-
-  .panel-left {
-    margin-left: -($pad);
-  }
-
-  .panel-right {
-    margin-right: -($pad);
-  }
-
 }

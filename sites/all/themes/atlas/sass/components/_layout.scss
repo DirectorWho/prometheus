@@ -1,13 +1,13 @@
 // Inspired by CSS-Tricks Don't Overthink It Grid: http://css-tricks.com/dont-overthink-it-grids
 // I try to do things as simply as possible. Big grid frameworks usually aren't necessary.
-// If you need one, you can replace this file with the grid of your choice. Note that this is file
-// doesn't exactly replicate the CSS-Tricks exactly, but rather shares the same concept.
+// If you need one, you can replace this file with the grid of your choice. Note that this file
+// doesn't replicate the CSS-Tricks code, but rather shares the same concept.
 
 
 $max-width: 1000px;
 $pad: 35px;
 
-// this class is applied in page.tpl.php to the page elements that are grid containers
+// this class is applied in template files to the page elements that are grid containers
 .grid-container {
   margin: 0 auto;
   max-width: $max-width;
